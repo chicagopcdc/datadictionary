@@ -1,0 +1,130 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "subject"
+title: Subject 
+type: object
+namespace: http://cri.uchicago.edu/
+category: administrative
+program: '*'
+project: '*'
+description: "Patient Identifiers"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: persons
+    backref: subjects 
+    label: of
+    target_type: person
+    multiplicity: many_to_one    
+    required: true
+
+required:
+  # - honest_broker_subject_id
+  - submitter_id
+  - persons
+
+uniqueKeys:
+  - [ id ]
+  # - [ project_id, honest_broker_subject_id ]
+  - [ project_id, submitter_id ]
+
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "subject" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "honest_broker_subject_id"
+    # honest_broker_subject_id:
+    #   systemAlias: submitter_id
+    type:
+      - string
+  consortium:
+    description: "Consortium that governs use and release of data for the subject in a particular study"
+    enum:
+      - INRG
+      - INSTRuCT
+  data_contributor_id:
+    description: "An identifier assigned to a data contributor source where subject records originated"
+    enum:
+      - AIEOP
+      - BFM-SG
+      - COG
+      - DCOG
+      - MRC
+      - NOPHO
+      - PPLLSG
+      - SJCRH
+      - CCLG
+      - NRG-Oncology
+      - UUtah-Huntsman
+      - GPOH
+      - SSG
+      - FSG
+      - UK
+      - EURO-EWING Consortium
+      - ISG
+      - CRCTU
+      - University College of London
+      - JACLS
+      - JPLSG
+      - SFCE
+      - SOPOBE 
+      - DFCI
+      - JNBSG
+      - SIOPEN
+      - MMT
+      - EpSSG
+      - SIOP MMT
+      - ICG
+      - CWS
+  treatment_arm:
+    description: "A specific treatment plan within a clinical trial that describes the activities a subject will be involved in as he or she progresses through the study."
+    type:
+      - string
+  age_at_enrollment:
+    description: "Age of subject (in days) when the subject enrolled in the study."
+    type:
+      - number
+  year_at_enrollment:
+    description: "Year the subject was enrolled"
+    type:
+      - number
+  enrolled_status:
+    description: "The current status of the subject's enrollment."
+    enum:
+      - "Enrolled"
+      - "Not Enrolled"
+  censor_status:
+    description: "Censor Status"
+    enum:
+      - "Subject is censored (i.e. has had no events(s)"
+      - "Subject has had one or more events"
+      - Unknown
+
+
+
+  
+  persons:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"

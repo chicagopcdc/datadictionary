@@ -1,0 +1,68 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "late_effect"
+title: Late Effects
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Late Effects"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: clinical_events
+    backref: late_effects
+    label: part of
+    target_type: clinical_event
+    multiplicity: many_to_one
+    required: true
+
+required:
+  - submitter_id
+  - clinical_events
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "late_effect" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+      - "null"
+  age_at_le_eval:
+    description: "Age of the subject (in days) at late effect evaluation"
+    type:
+      - number
+
+  
+
+  clinical_events:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+

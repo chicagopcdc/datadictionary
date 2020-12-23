@@ -1,0 +1,157 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "biopsy_surgical_procedure"
+title: Biopsy Surgical Procedure
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Biopsy Surgical Procedure"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: biopsy_surgical_procedures 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+  - name: clinical_events
+    backref: biopsy_surgical_procedures 
+    label: of
+    target_type: clinical_event
+    multiplicity: many_to_one    
+    required: false
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "biopsy_surgical_procedure" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  age_at_procedure:
+    description: "Age of the subject (in days) at procedure"
+    type:
+      - number
+  procedure_tumor_classification:
+    description: "The classification of a tumor based primarily on histopathological characteristics."
+    enum:
+      - Primary
+      - Regional nodes
+      - Metastatic
+      - Unknown
+      - Not reported
+  procedure_site:
+    description: "The anatomical site on which surgery was performed."
+    enum:
+      - Pelvis
+      - Neck
+      - Retroperitoneal
+      - Perineum
+      - Ovary
+      - Paratesticular
+      - Abdomen
+      - Kidney
+      - Shoulder
+      - Scalp
+      - Upper arm
+      - Forearm
+      - Hand
+      - Thigh
+      - Knee
+      - Leg
+      - Lower Leg
+      - Foot
+      - Brain
+      - Paraspinal
+      - Vagina
+      - Eyelid
+      - Orbit
+      - Cheek
+      - Hypopharynx
+      - Larynx
+      - Oral cavity
+      - Oropharynx
+      - Parotid
+      - Thyroid and Parathyroid
+      - Middle ear
+      - Nasal Cavity and Paranasal Sinuses
+      - Nasal Cavity
+      - Paranasal Sinuses
+      - Nasopharynx
+      - "Infratemporal Fossa/Pterygopalatine and Parapharyngeal Area"
+      - "Infratemporal Fossa/Pterygopalatine"
+      - Parapharyngeal Area
+      - Bladder
+      - Prostate
+      - "Bladder/Prostate"
+      - Cervix
+      - Uterus
+      - Vulva
+      - Thorax
+      - "Anal/Perianal"
+      - Trunk
+      - Bone or Bone Marrow
+      - Bone
+      - Bone Marrow
+      - Distant Lymph Nodes
+      - Pleural Effusion
+      - Soft Tissue
+      - "Liver/Biliary Tract"
+      - Lung
+      - Other
+      - Unknown
+      - Not Reported
+  procedure_type:
+    description: "A categorization of surgical procedures by type or purpose"
+    enum:
+      - Surgery
+      - Biopsy
+  margins:
+    description: "One of the criteria for assessment of the effectiveness of given surgical procedure in achieving the local control of a neoplasm and the adequacy of tumor removal. It is defined by the tissue plane through which the dissection has been done and the actual or potential neoplastic tissue which has been left outside the boundary of a resected specimen within the patient. There are four types of surgical margins: intracapsular or intralesional, marginal, wide, and radical."
+    enum:
+      - Incomplete Resection
+      - "R0 - Complete Resection, Negative Margins"
+      - "R1 - Complete Resection, Positive Margins"
+      - "R2 - Gross Residual Disease"
+      - "Gross Total Resection, Unknown Margins"
+      - Unknown
+      - Not reported
+  
+  
+  clinical_events:
+    $ref: "_definitions.yaml#/to_one" 
+  subjects:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  state:
+    $ref: "_definitions.yaml#/state"
+

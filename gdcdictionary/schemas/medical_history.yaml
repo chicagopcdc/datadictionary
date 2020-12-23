@@ -1,0 +1,90 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "medical_history"
+title: Medical History
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Medical History"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: medical_historys 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "medical_history" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  medical_history:
+    description: "The verbatim description of the medical history being reported."
+    enum:
+      - Adenomatous Polyposis Coli
+      - Costello Syndrome
+      - DICER1 Syndrome
+      - Li-Fraumeni
+      - Neurofibromatosis Type 1
+      - RB Transcriptional Corepressor 1
+      - Secondary Malignancy
+      - Trisomy 21
+      - Trisomy 21 Mosaicism
+      - Turner Syndrome
+      - Klinerfelter Syndrome
+      - Swyer James Syndrome
+      - Frasier Syndrome
+      - Fanconi Anemia
+      - Lynch Syndrome
+      - Breast and Ovarian Cancer
+      - Other
+      - Unknown
+      - Not Reported
+  dysgenetic_gonad:
+    Description: "Dysgenetic Gonad"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported
+  
+  subjects:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+

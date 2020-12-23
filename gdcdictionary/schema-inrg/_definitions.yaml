@@ -13,43 +13,13 @@ parent_uuids:
         $ref: "#/UUID"
     uniqueItems: true
 
-foreign_key_project:
-    type: object
-    # Allow true here because we can have other unique keys defined on
-    # a target type
-    additionalProperties: true
-    # Can either use 'id' which are Gen3 IDs (UUID) or 'code'
-    # which is the user defined ID for project
-    properties:
-        id:
-            $ref: "#/UUID"
-        code:
-            type: string
-
-to_one_project:
-  anyOf:
-    - type: array
-      items:
-        $ref: "#/foreign_key_project"
-        minItems: 1
-        maxItems: 1
-    - $ref: "#/foreign_key_project"
-
-to_many_project:
-  anyOf:
-    - type: array
-      items:
-        $ref: "#/foreign_key_project"
-        minItems: 1
-    - $ref: "#/foreign_key_project"
-
 foreign_key:
     type: object
     # Allow true here because we can have other unique keys defined on
     # a target type
     additionalProperties: True
-    # Can either use 'id' which are GDC IDs (UUID) or 'submitter_id'
-    # which are user defined IDs ("submitter IDs in the backend")
+    #Can either use 'id' which are GDC IDs (UUID) or 'submitter_id'
+    #which are user defined IDs ("submitter IDs in the backend")
     properties:
         id:
             $ref: "#/UUID"
@@ -202,10 +172,6 @@ data_file_properties:
       - string
       - "null"
     description: "The file ID assigned by the submitter." # TOREVIEW
-  consent_codes:
-    type: array
-    items:
-      type: string
   file_name:
     $ref: "#/file_name"
   file_size:
@@ -280,22 +246,3 @@ ubiquitous_properties:
     $ref: "#/datetime"
   updated_datetime:
     $ref: "#/datetime"
-
-clinical_event_type:
-  term:
-      $ref: "_terms.yaml#/clinical_event_type"
-  enum:
-    - "disease phase"
-    - "course"
-
-
-
-# test_type_attribute:
-#   term: 
-        # $ref: "_terms.yaml#/file_state"
-#   default: 
-#   enum:
-#     - 
-
-
-# w

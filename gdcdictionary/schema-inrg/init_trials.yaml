@@ -1,15 +1,14 @@
 $schema: "http://json-schema.org/draft-04/schema#"
 
-id: "case"
-title: Case
+id: "init_trials"
+title: Init Trials
 type: object
 namespace: http://gdc.nci.nih.gov
 category: administrative
-program: '*'
 project: '*'
+program: '*'
 description: >
-  The collection of all data related to a specific subject in the
-  context of a specific experiment. 
+  Data file containing the metadata for the experiment performed.
 additionalProperties: false
 submittable: true
 validators: null
@@ -22,50 +21,53 @@ systemProperties:
   - state
 
 links:
-  - name: experiments 
-    backref: cases
-    label: member_of
-    target_type: experiment
+  - name: inrgs
+    backref: init_trials
+    label: happened_to
+    target_type: inrg
     multiplicity: many_to_one
-    required: true
+    required: false
 
 required:
   - submitter_id
-  - type
-  - experiments
+  - inrgs
 
 uniqueKeys:
-  - [id]
-  - [project_id, submitter_id]
+  - [ id ]
+  - [ project_id, submitter_id ]
 
-# Case properties
 properties:
   type:
-    type: string
+    enum: [ "init_trials" ]
   id:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
-  state:
-    $ref: "_definitions.yaml#/state"
+  init_trial:
+    description: "Clinical trial number (assigned by the country or cooperative group) of the patient’s initial treatment"
+    type:
+      - string
+      - "null"
+  inrgs:
+    $ref: "_definitions.yaml#/to_one"
+
+
   submitter_id:
     type:
       - string
       - "null"
-  consent_codes:
-    type: array
-    items:
-      type: string
-  primary_site:
-    description: "Primary site for the case."
-    type: string
-  disease_type:
-    description: "Name of the disease for the case."
-    type: string
-  experiments: 
-    $ref: "_definitions.yaml#/to_one"
   project_id:
     $ref: "_definitions.yaml#/project_id"
   created_datetime:
     $ref: "_definitions.yaml#/datetime"
   updated_datetime:
     $ref: "_definitions.yaml#/datetime"
+  
+
+  state:
+    $ref: "_definitions.yaml#/state"
+
+  
+
+  
+
+  

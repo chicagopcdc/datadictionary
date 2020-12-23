@@ -1,0 +1,127 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "molecular_analysis"
+title: Molecular Analysis
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Molecular Analysis"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: molecular_analysiss 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+  - name: clinical_events
+    backref: molecular_analysiss
+    label: part of
+    target_type: clinical_event
+    multiplicity: many_to_one
+    required: false
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "molecular_analysis" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  age_at_molecular_analysis:
+    description: Age of the subject (in days) at molecular analysis
+    type:
+      - number
+  molecular_abnormality:
+    description: "A molecular or cytogenic abnormality which occurs in either human disease states or disease models."
+    enum:
+      - "FOXO1-PAX3 fusion"
+      - "FOXO1-PAX7 fusion"
+      - "FOXO1-Other fusion"
+      - "PAX3-Other fusion"
+  variant_type:
+    description: "A variation in or modification of the molecular sequence of a gene or gene product."
+    enum:
+      - Translocation
+      - Inversion
+      - Mutation
+      - "Single Nucleotide Variant"
+      - "Copy Number Alteration"
+      - Rearrangement
+      - Deletion
+      - Amplification
+      - Other
+      - Unknown
+      - Not Reported
+  gene1:
+    description: "The gene symbol that represents either a single gene that has a mutation or the gene that comprises the 5' portion of the coding sequence involved in a fusion gene mutation."
+    type:
+      - string
+  gene2:
+    description: "The gene symbol that represents the gene that comprises the 3' portion of the coding sequence for a fusion gene."
+    type:
+      - string
+  molecular_abnormality_result:
+    description: "An indicator for whether a molecular analysis procedure was performed and whether the assay detected a molecular abnormality."
+    enum:
+      - Positive
+      - Negative
+      - Not Done
+      - Not Reported
+      - Unknown
+  anaplasia:
+    description: "An indicator of whether anaplasia was present in the subject"
+    enum:
+      - Absent
+      - Present
+      - Unknown
+      - Not reported
+  anaplasia_extent:
+    description: "An indicator of the extent of anaplasia present in the subject"
+    enum:
+      - Diffuse
+      - Focal
+      - Unknown
+      - Not reported
+  
+
+  
+
+  clinical_events:
+    $ref: "_definitions.yaml#/to_one" 
+  subjects:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+

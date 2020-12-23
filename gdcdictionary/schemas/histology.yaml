@@ -1,0 +1,88 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "histology"
+title: Histology
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Histology"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: histologys 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+  - name: clinical_events
+    backref: histologys
+    label: part of
+    target_type: clinical_event
+    multiplicity: many_to_one
+    required: false
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "histology" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  age_at_hist_assessment:
+    description: "Age of subject (in days) at histology assessment"
+    type:
+      - number
+  histology:
+    description: "The study of the structure of the cells and their arrangement to constitute tissues and, finally, the association among these to form organs.  In pathology, the microscopic process of identifying normal and abnormal morphologic characteristics in tissues, by employing various cytochemical and immunocytochemical stains."
+    enum:
+      - "Alveolar rhabdomyosarcoma (ARMS)"
+      - "Botryoid rhabdomyosarcoma (BRMS)"
+      - "Embryonal rhabdomyosarcoma (ERMS)"
+      - "Pleomorphic rhabdomyosarcoma (PRMS)"
+      - "Rhabdomyosarcoma (RMS), not classifiable"
+      - "Rhabdomyosarcoma (RMS), inadequate tissue for classification"
+      - "Rhabdomyosarcoma (RMS), with Mixed Embryonal and Alveolar Features"
+      - Spindle cell
+      - Unknown
+      - Not reported
+  
+
+  
+  clinical_events:
+    $ref: "_definitions.yaml#/to_one" 
+  subjects:
+    $ref: "_definitions.yaml#/to_one"  
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+

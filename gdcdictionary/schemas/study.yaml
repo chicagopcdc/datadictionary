@@ -1,0 +1,154 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "study"
+title: Study
+type: object
+namespace: http://cri.uchicago.edu/
+category: administrative
+program: '*'
+project: '*'
+description: "Study"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: studys 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "study" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  study_id:
+    description: "A sequence of characters used to identify, name, or characterize the study."
+    enum:
+      - AAML03P1
+      - AAML0531
+      - AAML1031
+      - AMLBFM2004
+      - AMLBFM2012
+      - AMLBFMRegistry2012
+      - SJCRHAML02
+      - JPLSGAML05
+      - AEIOPAML2002
+      - JACLSAML99
+      - DBAML01
+      - MRCAML12
+      - MRCAML15
+      - NOPHOAML2004
+      - NOPHOAML2012
+      - PPLLSGAML98
+      - AIEOPLAM92
+      - SCFEELAM02
+      - AHOD0831
+      - AHOD0431
+      - AHOD0031
+      - AHOD1331
+      - AHOD1221
+      - AHOD03P1
+      - "(HL st jude's trials)"
+      - AEWS1221
+      - AEWS0331
+      - AEWS0031
+      - ProjectGenESis
+      - AEWS1031
+      - EE99
+      - EICESS92
+      - AEWS07P1
+      - AALL0331
+      - AALL0232
+      - AALL0434
+      - AALL08B1
+      - AALL03B1
+      - TGM85
+      - TGM90
+      - TGM95
+      - GC1
+      - GC2
+      - GOG78
+      - GOG0090
+      - GOG116
+      - P9749
+      - POG9049
+      - AGCT01P1
+      - AGCT0132
+      - AGCT0521
+      - TE04
+      - TE05
+      - TE08
+      - TE22
+      - TE09
+      - TE13
+      - TE20
+      - TIP
+      - D9803
+      - D9802
+      - D9602
+      - ARST0331
+      - ARST0431
+      - ARST0531
+      - CWS91
+      - CWS-IV-2002
+      - CWS96
+      - CWS2002p
+      - RMS95
+      - ARST08P1
+  study_phase:
+    description: "Clinical trials are broken into three or four phases: Phase I tests a new drug or treatment for safety in a small group; Phase II expands the study to a larger group of people; Phase III expands the study to an even larger group of people to measure whether the treatment actually benefits patients, and whether its benefits exceed its risks; and Phase IV takes place after the drug or treatment has been licensed and marketed."
+    enum:
+      - "Pilot"
+      - "Phase 1"
+      - "Phase 2"
+      - "Phase 3"
+      - "Unknown"
+      - "Not Reported"
+  study_type:
+    description: "The nature of the investigation or the investigational use for which clinical study is being done."
+    enum:
+      - "Frontline"
+      - "Retrieval"
+      - "Unknown"
+      - "Not Reported"
+
+
+
+  
+  subjects:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+

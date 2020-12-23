@@ -1,0 +1,202 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "tumor_assessment"
+title: Tumor Assessment
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Tumor Assessment"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: tumor_assessments 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+  - name: clinical_events
+    backref: tumor_assessments
+    label: part of
+    target_type: clinical_event
+    multiplicity: many_to_one
+    required: false
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "tumor_assessment" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  age_at_tumor_assessment:
+    description: "Age in days at tumor assessment"
+    type:
+      - number
+  tumor_classification:
+    description: "Classification of the tumor"
+    enum:
+      - Primary
+      - Metastatic
+      - Unknown
+      - Not reported
+  tumor_site:
+    description: "Site of tumor"
+    enum:
+      - Pelvis
+      - Neck
+      - Retroperitoneum
+      - Perineum
+      - Ovary
+      - Paratesticular
+      - Abdomen
+      - Kidney
+      - Shoulder
+      - Scalp
+      - Upper arm
+      - Forearm
+      - Hand
+      - Thigh
+      - Knee
+      - Leg
+      - Lower Leg
+      - Foot
+      - Brain
+      - Buttock
+      - Paraspinal
+      - Vagina
+      - Eyelid
+      - Orbit
+      - Cheek
+      - Hypopharynx
+      - Larynx
+      - Oral cavity
+      - Oropharynx
+      - Parotid
+      - Thyroid and parathyroid
+      - Middle ear
+      - Nasal cavity and paranasal sinuses
+      - Nasal cavity
+      - Paranasal sinuses
+      - Nasopharynx
+      - Infratemporal fossa/pterygopalatine and parapharyngeal area
+      - Infratemporal fossa/pterygopalatine
+      - Parapharyngeal area
+      - Bladder
+      - Prostate
+      - Bladder/prostate
+      - Cervix
+      - Uterus
+      - Upper Arm
+      - Vulva
+      - Thorax
+      - Anal/Perianal
+      - Trunk
+      - Bone or bone marrow
+      - Bone
+      - Bone marrow
+      - Distant lymph nodes
+      - Pleural effusion
+      - Soft tissue
+      - Liver/Biliary tract
+      - Lung
+      - Other
+      - Unknown
+      - Not reported
+      - Other Extremity
+      - Other Head and Neck
+      - Other Parameningeal
+      - Other GU Non-Bladder/Prostate
+      - Other Orbit
+      - Other Face
+  tumor_site_other:
+    description: "Text description for tumor site if it is not one of the categorical values"
+    type:
+      - string
+  longest_diam_dim1:
+    description: "The longest diameter of the Tumor Dimension 1 (in centimeters)"
+    type:
+      - number
+  longest_diam_dim2:
+    description: "The longest diameter of the Tumor Dimension 2 (in centimeters)"
+    type:
+      - number
+  longest_diam_dim3:
+    description: "The longest diameter of the Tumor Dimension 3 (in centimeters)"
+    type:
+      - number
+  tumor_size:
+    description: "Categorical (binned) value for tumor size"
+    enum:
+      - "<=5 cm"
+      - ">5 cm"
+      - "Unknown"
+      - "Not reported"
+  invasiveness:
+    description: Tumor Invasiveness
+    enum:
+      - T1 Stage Finding
+      - T2 Stage Finding
+      - TX Stage Finding
+      - Unknown
+      - Not reported
+  nodal_pathology:
+    description: Pathological determination of regional lymph node involvement
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not reported
+  nodal_clinical:
+    description: "Clinical determination of regional lymph node involvement"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not reported
+  parameningeal_extension:
+    description: "Parameningeal Extension"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported 
+
+  
+  clinical_events:
+    $ref: "_definitions.yaml#/to_one" 
+  subjects:
+    $ref: "_definitions.yaml#/to_one"  
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+

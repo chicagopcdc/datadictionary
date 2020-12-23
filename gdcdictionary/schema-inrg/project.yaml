@@ -10,7 +10,7 @@ description: >
   Any specifically defined piece of work that is undertaken or attempted to meet a single
   requirement. (NCIt C47885)
 additionalProperties: false
-submittable: true
+submittable: true 
 validators: null
 
 systemProperties:
@@ -21,9 +21,8 @@ systemProperties:
   - intended_release_date
 
 required:
-  - code
-  - name
-  - dbgap_accession_number
+  - code 
+  - name 
   - programs
 
 uniqueKeys:
@@ -42,7 +41,6 @@ constraints: null
 
 properties:
   type:
-    description: "Default system-assigned property for each node"
     type: string
   id:
     $ref: "_definitions.yaml#/UUID"
@@ -51,9 +49,6 @@ properties:
   name:
     type: string
     description: "Display name/brief description for the project." # TOREVIEW
-  description:
-    type: string
-    description: "A description of the project."
   code:
     type: string
     description: "Unique identifier for the project."

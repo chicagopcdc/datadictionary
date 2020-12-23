@@ -1,0 +1,97 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "staging"
+title: Staging
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "Staging"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+  - state
+
+links:
+  - name: subjects
+    backref: stagings 
+    label: of
+    target_type: subject
+    multiplicity: many_to_one    
+    required: true
+  - name: clinical_events
+    backref: stagings
+    label: part of
+    target_type: clinical_event
+    multiplicity: many_to_one
+    required: false
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    description: "Default system-assigned property for each node"
+    enum: [ "staging" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    description: "PCDC internal person ID"
+    type:
+      - string
+  age_at_staging:
+    description: "Age of the subject (in days) at staging assessment"
+    type:
+      - number
+  tnm_finding:
+    description: "TNM finding" 
+    enum:
+      - "Favorable Site, M0"
+      - "Other Site, any T, a, N0, M0"
+      - "Other Site, any T, a, N1, M0, any T, b, N0/N1, M0"
+      - "Metastases, M1"
+      - Unknown
+      - Not reported
+  irs_group:
+    description: "IRS Surgical-Pathologic Grouping System"
+    enum:
+      - Group I
+      - Group IIA
+      - Group IIB
+      - Group IIC
+      - Group II, NOS
+      - Group III
+      - Group IV
+      - Unknown
+      - Not reported
+
+
+  
+
+  clinical_events:
+    $ref: "_definitions.yaml#/to_one" 
+  subjects:
+    $ref: "_definitions.yaml#/to_one"  
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+  state:
+    $ref: "_definitions.yaml#/state"
+
