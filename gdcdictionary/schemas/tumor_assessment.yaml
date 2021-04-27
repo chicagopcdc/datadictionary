@@ -82,6 +82,8 @@ properties:
   tumor_site:
     description: "Site of tumor"
     enum:
+      - Abdominal
+      - Lungs
       - Buttocks
       - Thalamus
       - Testis
@@ -152,7 +154,7 @@ properties:
       - Bone or bone marrow
       - Bone
       - Bone Marrow
-      - Distant lymph nodes
+      - Distant Lymph Nodes
       - Pleural effusion
       - Soft tissue
       - Liver/Biliary tract
