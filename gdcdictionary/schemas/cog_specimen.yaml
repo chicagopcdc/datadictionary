@@ -1,0 +1,104 @@
+$schema: "http://json-schema.org/draft-04/schema#"
+
+id: "cog_specimen"
+title: Cog Specimen
+type: object
+namespace: http://cri.uchicago.edu/
+category: clinical
+program: '*'
+project: '*'
+description: "COG Specimens"
+additionalProperties: false
+submittable: true
+validators: null
+
+systemProperties:
+  - id
+  - project_id
+  - created_datetime
+  - updated_datetime
+
+links:
+  - name: subjects
+    backref: cog_specimens 
+    label: of
+    target_type: cog_specimen
+    multiplicity: many_to_one    
+    required: true
+
+required:
+  - submitter_id
+  - subjects
+
+uniqueKeys:
+  - [ id ]
+  - [ project_id, submitter_id ]
+
+properties:
+  type:
+    enum: [ "cog_specimen" ]
+  id:
+    $ref: "_definitions.yaml#/UUID"
+    systemAlias: node_id
+  submitter_id:
+    type:
+      - string
+  biospecimen_media:
+    description: "Media/tube type"
+    type:
+      - string
+  biospecimen_unit_type:
+    description: "Container type"
+    type:
+      - string
+  biospecimen_type_summary:
+    description: "Specimen Type Summary"
+    type:
+      - string
+  protocol_codes:
+    description: "Protocol with out disease group, pipe-delimited"
+    type:
+      - string
+  collection_timepoint:
+    description: "Collected Timepoint"
+    type:
+      - string
+  nch_assigned_patient_usi:
+    description: "Six-character USI of the patient"
+    type:
+      - string
+  current_status:
+    description: "Specimen status"
+    type:
+      - string
+  data_snapshottime:
+    description: "Datetime when data was refreshed in the warehouse; format unspecified"
+    type:
+      - string
+  protocol_disease_group:
+    description: "Protocol disease group"
+    type:
+      - string
+  qty_current:
+    description: "Current amount including unit type"
+    type:
+      - string
+  qty_current_value:
+    description: "Current amount only"
+    type:
+      - string
+  qty_current_uom:
+    description: "Current amount unit of measure"
+    type:
+      - string
+  
+  subjects:
+    $ref: "_definitions.yaml#/to_one"   
+  project_id:
+    $ref: "_definitions.yaml#/project_id"
+  created_datetime:
+    $ref: "_definitions.yaml#/datetime"
+  updated_datetime:
+    $ref: "_definitions.yaml#/datetime"
+
+
