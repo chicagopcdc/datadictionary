@@ -51,9 +51,23 @@ Read how to contribute [here](https://github.com/NCI-GDC/portal-ui/blob/develop/
 
 ## Build JSON for deployment
 
-`cd datadictionary`
-`git clone https://github.com/chicagopcdc/dictionaryutils.git`
-go to branch `pcdc_dev`
-`cd dictionaryutils`
-`python bin/create_json.py`
-`bash ./bin/load_aws.sh`
+```
+# Checkout datadictionary pcdc_dev branch
+cd datadictionary
+git checkout pcdc_dev
+
+# Clone and install dictionaryutils repo inside of datadictionary
+git clone https://github.com/chicagopcdc/dictionaryutils.git
+cd dictionaryutils
+python -m venv env
+source ./env/bin/activate
+poetry install
+
+# Return to datadictionary and run setup to create the gdcdictionary module
+cd ..
+python setup.py install [--force]
+
+# Go back to dictionarytuils and create the json
+python ./bin/dump_schema.py
+```
+
