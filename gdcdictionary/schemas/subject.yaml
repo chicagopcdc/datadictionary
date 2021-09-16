@@ -31,6 +31,8 @@ required:
   # - honest_broker_subject_id
   - submitter_id
   - persons
+  - honest_broker_subject_id
+  - data_contributor_id
 
 uniqueKeys:
   - [ id ]
@@ -46,16 +48,25 @@ properties:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
   submitter_id:
-    description: "honest_broker_subject_id"
+    description: "{data_contributor_id}_{honest_broker_subject_id}"
     # honest_broker_subject_id:
     #   systemAlias: submitter_id
+    type:
+      - string
+  honest_broker_subject_id:
+    description: "honest_broker_subject_id"
     type:
       - string
   consortium:
     description: "Consortium that governs use and release of data for the subject in a particular study"
     enum:
-      - INRG
       - INSTRuCT
+      - MaGIC
+      - INRG
+      - NODAL
+      - INTERACT
+      - HIBISCUS
+      - ALL
   data_contributor_id:
     description: "An identifier assigned to a data contributor source where subject records originated"
     enum:
@@ -74,7 +85,7 @@ properties:
       - SSG
       - FSG
       - UK
-      - EURO-EWING Consortium
+      - EURO-EWING
       - ISG
       - CRCTU
       - University College of London
@@ -114,6 +125,10 @@ properties:
       - "Subject is censored (i.e. has had no event(s))"
       - "Subject has had one or more events"
       - Unknown
+  age_at_censor_status:
+    description: "Age of subject (in days) when the subject enrolled in the study."
+    type:
+      - number
 
 
 

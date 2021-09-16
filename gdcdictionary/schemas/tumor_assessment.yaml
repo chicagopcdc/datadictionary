@@ -49,7 +49,7 @@ properties:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
   submitter_id:
-    description: "PCDC internal person ID"
+    description: "PCDC internal tumor ID"
     type:
       - string
   age_at_tumor_assessment:
@@ -59,7 +59,9 @@ properties:
   tumor_detection_method:
     description: ""
     enum:
-      - "Imaging, Not Otherwise Specified"
+      - "X-Ray"
+      - "CT Scan"
+      - "Imaging"
       - PET
       - Unknown
       - Not Reported
@@ -68,8 +70,170 @@ properties:
     enum:
       - Primary
       - Metastatic
+      - Regional
       - Unknown
       - Not reported
+  tumor_site:
+    description: "Site of tumor"
+    enum:
+      - Abdomen
+      - Abdominal Wall
+      - Acetabulum
+      - Adrenal Gland
+      - Anal/Perianal
+      - Ankle
+      - Ascitic Fluid
+      - Axilla
+      - Suprasellar/Neurohypophyseal
+      - Bladder
+      - Bladder/Prostate
+      - Bone or Bone Marrow
+      - Bone
+      - Bone Marrow
+      - Brain
+      - Brain/Leptomeninges
+      - Breast
+      - Buttock
+      - Calcaneum
+      - Carpal Bone
+      - Central Nervous System
+      - Cervical Vertebra
+      - Cervix
+      - Cheek
+      - Chest
+      - Chest Wall
+      - Clavicle
+      - Coccyx
+      - Cerebrospinal Fluid
+      - Dorsal Vertebra
+      - Elbow
+      - Ethmoid Bone
+      - Eyelid
+      - Face
+      - Femur
+      - Fibula
+      - Fibular Head
+      - Finger
+      - Foot
+      - Forearm
+      - Frontal Bone
+      - Frontal Cortex
+      - Hand
+      - Head
+      - Head and Neck
+      - Hip
+      - Hip/Inguinal Region
+      - Humerus
+      - Hypopharynx
+      - Ilium
+      - Infratemporal fossa/Pterygopalatine and Parapharyngeal Area
+      - Infratemporal fossa/Pterygopalatine
+      - Intra-abdominal
+      - Intraperitoneal
+      - Intrathoracic
+      - Ischium
+      - Kidney
+      - Knee
+      - Lacrimal Bone
+      - Larynx
+      - Leg
+      - Liver
+      - Liver/Biliary Tract
+      - Lower Arm
+      - Lower Extremity
+      - Lower Leg
+      - Lumbar Vertebra
+      - Lung
+      - Lymph Nodes
+      - Mandible
+      - Maxilla
+      - Mediastinum
+      - Metacarpus
+      - Metatarsus
+      - Middle Ear
+      - Nasal Bone
+      - Nasal Cavity
+      - Nasal Cavity and Paranasal Sinuses
+      - Nasopharynx
+      - Neck
+      - Occipital Bone
+      - Occiptal Cortex
+      - Omentum/Peritoneum
+      - Oral Cavity
+      - Orbit
+      - Oropharynx
+      - Ovary
+      - Paranasal Sinuses
+      - Parapharyngeal Area
+      - Paraspinal
+      - Paratesticular
+      - Parietal Bone
+      - Parietal Cortex
+      - Parotid
+      - Patella
+      - Pelvis
+      - Perineum
+      - Peritoneum
+      - Pineal
+      - Pleura
+      - Pleural Effusion
+      - Prostate
+      - Radius Bone
+      - Retroperitoneum
+      - Rib
+      - Sacral Region
+      - Sacrococcygeal
+      - Scalp
+      - Scapula
+      - Shoulder
+      - Skin
+      - Skull
+      - Soft Tissue
+      - Spheniod Bone
+      - Spinal Cord
+      - Spine
+      - Sternum
+      - Suprasellar/Neurohypophyseal
+      - Talus
+      - Tarsal Bone
+      - Temporal Bone
+      - Temporal Cortex
+      - Testis
+      - Thalamus
+      - Thigh
+      - Thoracic Vertebra
+      - Thorax
+      - Thyroid and Parathyroid
+      - Tibia
+      - Trunk
+      - Ulna
+      - Upper Arm
+      - Upper Extremity
+      - Urogenital
+      - Uterus
+      - Vagina
+      - Vulva
+      - Wrist
+      - Zygomatic Bone
+      - Other Orbit
+      - Other Face
+      - Other Head and Neck
+      - Other Parameningeal
+      - Other GU Non-Bladder/Prostate
+      - Other Extremity
+      - Other
+      - Unknown
+      - Not Reported
+  tumor_site_other:
+    description: "Text description for tumor site if it is not one of the categorical values"
+    type:
+      - string
+  tumor_state:
+    description: "A condition or state of a tumor at a particular time and a particular tumor site."
+    enum:
+      - Present
+      - Absent
+      - Unknown
   tumor_laterality:
     description: "Dominant use or manifestations of one side of the body versus the other; referring to a side of the body or of a structure."
     enum: 
@@ -79,104 +243,23 @@ properties:
       - Midline
       - Unknown
       - Not Reported
-  tumor_site:
-    description: "Site of tumor"
-    enum:
-      - Abdominal
-      - Lungs
-      - Buttocks
-      - Thalamus
-      - Testis
-      - Temporal Cortex
-      - Pineal
-      - Suprasellar/Neurohypophyseal and Pineal
-      - Suprasellar/Neurohypophyseal
-      - Spine
-      - Spinal Cord
-      - Sacrococcygeal
-      - Parietal Cortex
-      - Omentum/Peritoneum
-      - Occipital Cortex
-      - Mediastinum
-      - Head and Neck
-      - Frontal Cortex
-      - Cerebrospinal Fluid
-      - Ascitic Fluid
-      - Pelvis
-      - Neck
-      - Retroperitoneum
-      - Perineum
-      - Ovary
-      - Paratesticular
-      - Abdomen
-      - Kidney
-      - Shoulder
-      - Scalp
-      - Upper arm
-      - Forearm
-      - Hand
-      - Thigh
-      - Knee
-      - Leg
-      - Lower Leg
-      - Foot
-      - Brain
-      - Buttock
-      - Paraspinal
-      - Vagina
-      - Eyelid
-      - Orbit
-      - Cheek
-      - Hypopharynx
-      - Larynx
-      - Oral cavity
-      - Oropharynx
-      - Parotid
-      - Thyroid and parathyroid
-      - Middle ear
-      - Nasal cavity and paranasal sinuses
-      - Nasal cavity
-      - Paranasal sinuses
-      - Nasopharynx
-      - Infratemporal fossa/pterygopalatine and parapharyngeal area
-      - Infratemporal fossa/pterygopalatine
-      - Parapharyngeal area
-      - Bladder
-      - Prostate
-      - Bladder/prostate
-      - Cervix
-      - Uterus
-      - Upper Arm
-      - Vulva
-      - Thorax
-      - Anal/Perianal
-      - Trunk
-      - Bone or bone marrow
-      - Bone
-      - Bone Marrow
-      - Distant Lymph Nodes
-      - Pleural effusion
-      - Soft tissue
-      - Liver/Biliary tract
-      - Liver
-      - Lung
-      - Skin
-      - Central Nervous System
-      - Adrenal Gland
-      - Other
+  site_within_bone:
+    description: ""
+    enum: 
+      - Distal
+      - Proximal
+      - Epiphysis
+      - Metaphysis
+      - Diaphysis
       - Unknown
-      - Not reported
-      - Other Extremity
-      - Other Head and Neck
-      - Other Parameningeal
-      - Other GU Non-Bladder/Prostate
-      - Other Orbit
-      - Other Face
       - Not Reported
-  tumor_site_other:
-    description: "Text description for tumor site if it is not one of the categorical values"
-    type:
-      - string
+  facture:
+    description: ""
+    enum: 
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported
   longest_diam_dim1:
     description: "The longest diameter of the Tumor Dimension 1 (in centimeters)"
     type:
@@ -189,6 +272,21 @@ properties:
     description: "The longest diameter of the Tumor Dimension 3 (in centimeters)"
     type:
       - number
+  computed_volume:
+    description: "Computed Volume (mL)"
+    type:
+      - number
+  estimated_volume:
+    description: "Estimated Volume (mL)"
+    type:
+      - number
+  tumor_volume:
+    description: "Categorical (binned) value for tumor volume"
+    enum:
+      - "<200 mL"
+      - ">=200 mL"
+      - Unknown
+      - Not Reported
   tumor_size:
     description: "Categorical (binned) value for tumor size"
     enum:
@@ -204,20 +302,46 @@ properties:
       - TX Stage Finding
       - Unknown
       - Not reported
+  depth:
+    enum:
+      - Superficial
+      - Deep
+      - Unknown
+      - Not Reported
+  necrosis:
+    enum:
+      - "Score 0: No Necrosis"
+      - "<50% Necrosis"
+      - ">=50% Necrosis"
+      - Unknown
+      - Not Reported
+  necrosis_pct:
+    description: "Tumor Necrosis (%)"
+    type:
+      - number
+  joint_involvement:
+    description: "Tumor Involvement into Surrounding Soft Tissues of Joint"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not reported
   nodal_pathology:
     description: Pathological determination of regional lymph node involvement
     enum:
-      - "No"
-      - "Yes"
+      - N0 Stage Finding
+      - N1 Stage FInding
+      - NX Stage Finding
       - Unknown
-      - Not reported
+      - Not Reported
   nodal_clinical:
     description: "Clinical determination of regional lymph node involvement"
     enum:
-      - "No"
-      - "Yes"
+      - N0 Stage Finding
+      - N1 Stage FInding
+      - NX Stage Finding
       - Unknown
-      - Not reported
+      - Not Reported
   nodal_involvement:
     description: "A finding indicating that a malignant neoplasm has spread to regional lymph nodes."
     enum:
@@ -243,6 +367,104 @@ properties:
       - "Yes"
       - Unknown
       - Not Reported 
+  skip_lesion:
+    description: "Skip Lesion Present"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported  
+  ipsilateral_nodules:
+    description: "Ipsilateral Pleural-based Secondary Tumor Nodules Present"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported   
+  pleural_effusion:
+    description: "pleural effusion"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported   
+  pleural_cytology:
+    description: "Pleural Effusion Cytologyn"
+    enum:
+      - Negative
+      - Positive
+      - Unknown
+      - Not Reported   
+  peritoneal_effusion:
+    description: "Peritoneal Effusion"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported   
+  peritoneal_cytology:
+    description: "Peritoneal Effusion Cytology"
+    enum:
+      - Negative
+      - Positive
+      - Unknown
+      - Not Reported
+  extension_site:
+    description: ""
+    enum:
+    - Abdominal Wall
+    - Acetabulum
+    - Ankle
+    - Axilla
+    - Buttock
+    - Calcaneum
+    - Carpal Bone
+    - Cervical Vertebra
+    - Chest Wall
+    - Clavicle
+    - Dorsal Vertebra
+    - Elbow
+    - Face
+    - Femur
+    - Fibula
+    - Finger
+    - Foot
+    - Forearm
+    - Hand
+    - Hip/Inguinal Region
+    - Humerus
+    - Intra-abdominal
+    - Intraspinal
+    - Ischium
+    - Kidney
+    - Knee
+    - Leg
+    - Lumbar Vertebra
+    - Mandible
+    - Maxilla
+    - Metacarpus
+    - Metatarsus
+    - Neck
+    - Pelvis
+    - Radius Bone
+    - Retroperitoneal
+    - Rib
+    - Sacral Region
+    - Scalp
+    - Scapula
+    - Shoulder
+    - Skull
+    - Sternum
+    - Talus
+    - Thigh
+    - Tibia
+    - Toe
+    - Ulna
+    - Upper Arm
+    - Wrist
+    - Other
+    - Unknown
+    - Not Reported
 
   
   clinical_events:

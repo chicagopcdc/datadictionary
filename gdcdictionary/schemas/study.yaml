@@ -43,7 +43,7 @@ properties:
     $ref: "_definitions.yaml#/UUID"
     systemAlias: node_id
   submitter_id:
-    description: "PCDC internal person ID"
+    description: "PCDC internal study record ID"
     type:
       - string
   study_id:
@@ -318,6 +318,7 @@ properties:
       - ABTR04B1
       - ACCL0935
       - ANBL17P1
+      - ANBL19P1
       - ACCL1032
       - ADVL1111
       - ANBL09P1
