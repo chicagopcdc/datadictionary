@@ -26,10 +26,10 @@ links:
     target_type: subject
     multiplicity: many_to_one    
     required: true
-  - name: clinical_events
+  - name: timings
     backref: molecular_analysiss
-    label: part of
-    target_type: clinical_event
+    label: part_of
+    target_type: timing
     multiplicity: many_to_one
     required: false
 
@@ -96,7 +96,7 @@ properties:
     description: ""
     enum:
       - "DNA Index <= 1 (Hypodiploid, Diploid)"
-      - "DNA Index >1 (Hyperdiploid)"
+      - "DNA Index > 1 (Hyperdiploid)"
       - Unknown
       - Not Reported
   dna_index_numeric:
@@ -316,7 +316,7 @@ properties:
       - 11q deletion
       - 1p deletion
       - 17q gain
-      - MYCN amplification
+      - MYCN Amplification
       - FOXO1 rearranged
       - SMARCB1 deleted/mutated
       - ETV6 rearranged
@@ -427,7 +427,7 @@ properties:
 
   
 
-  clinical_events:
+  timings:
     $ref: "_definitions.yaml#/to_one" 
   subjects:
     $ref: "_definitions.yaml#/to_one"   

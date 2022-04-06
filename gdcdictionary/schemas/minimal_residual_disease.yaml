@@ -26,10 +26,10 @@ links:
     target_type: subject
     multiplicity: many_to_one    
     required: true
-  - name: clinical_events
+  - name: timings
     backref: minimal_residual_diseases
-    label: part of
-    target_type: clinical_event
+    label: part_of
+    target_type: timing
     multiplicity: many_to_one
     required: false
 
@@ -87,9 +87,9 @@ properties:
       - "%"
       - Unknown
       - Not Reported
-  mrd_sensitivty:
+  mrd_sensitivity:
     description: "Minimal Residual Disease Method Sensitivity"
-    tyoe:
+    type:
       - number
   mrd_sample_source:
     description: "Minimal Residual Disease Sample Source"
@@ -161,7 +161,7 @@ properties:
 
 
 
-  clinical_events:
+  timings:
     $ref: "_definitions.yaml#/to_one" 
   subjects:
     $ref: "_definitions.yaml#/to_one"  
