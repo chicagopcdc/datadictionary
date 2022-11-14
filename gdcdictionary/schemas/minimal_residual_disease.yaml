@@ -60,7 +60,6 @@ properties:
     description: "Minimal Residual Disease Method"
     enum:
       - Flow Cytometry
-      - Flow Cytometry
       - Molecular Real-time Quantitative PCR
       - Next Generation Sequencing
       - Other
