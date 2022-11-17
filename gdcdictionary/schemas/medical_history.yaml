@@ -50,56 +50,55 @@ properties:
     description: "The verbatim description of the medical history being reported."
     enum:
       - Adenomatous Polyposis Coli
-      - Costello Syndrome
-      - DICER1 Syndrome
-      - Li-Fraumeni
-      - Neurofibromatosis Type 1
-      - RB Transcriptional Corepressor 1
-      - Secondary Malignancy
-      - Trisomy 21
-      - Trisomy 21 Mosaicism
-      - Turner Syndrome
-      - Klinerfelter Syndrome
-      - Swyer Syndrome
-      - Frasier Syndrome
-      - Fanconi Anemia
-      - Lynch Syndrome
-      - Breast and Ovarian Cancer
       - Beckwith-Wiedemann Syndrome
-      - Central Hypoventilation Syndrome
-      - Cushings Syndrome
-      - Denys-Drash Syndrome
-      - Down Syndrome
-      - Gorlin Syndrome
-      - Hemihypertrophy
-      - Heretidary Retinoblastoma
-      - Hirschprung Disease
-      - Neurofibromatosis Type I
-      - Noonan Syndrome
-      - WAGR Syndrome
-      - Werner Syndrome
+      - Breast and Ovarian Cancer
       - Celiac Disease
-      - Diabetes Mellitus (Type I)
-      - Goodpasture's Syndrome
-      - Graves' Disease
-      - Hashimoto's Thyroiditis
-      - Inflammatory Bowel Disease (Crohn's Disease or Ulcerative Colitis)
-      - Juvenile Idiopathic Arthritis
-      - Multiple Sclerosis
-      - Psoriasis
-      - Scleroderma
-      - Systematic Lupus Erythematosus
-      - Vitiligo
+      - Central Hypoventilation Syndrome
       - Cleft Lip
       - Cleft Palate
       - Clubfoot
+      - Costello Syndrome
+      - Cushings Syndrome
+      - Denys-Drash Syndrome
+      - Diabetes Mellitus (Type I)
+      - DICER1 Syndrome
+      - Down Syndrome
+      - Fanconi Anemia
+      - Frasier Syndrome
       - Gastroschisis
-      - Heart Defect
-      - Mixed Connective Tissue Disease
+      - Goodpasture's Syndrome
+      - Gorlin Syndrome
       - Graves' Disease
-      - Other
-      - Unknown
+      - Hashimoto's Thyroiditis
+      - Heart Defect
+      - Hemihypertrophy
+      - Heretidary Retinoblastoma
+      - Hirschprung Disease
+      - Inflammatory Bowel Disease (Crohn's Disease or Ulcerative Colitis)
+      - Juvenile Idiopathic Arthritis
+      - Klinerfelter Syndrome
+      - Li-Fraumeni
+      - Lynch Syndrome
+      - Mixed Connective Tissue Disease
+      - Multiple Sclerosis
+      - Neurofibromatosis Type 1
+      - Neurofibromatosis Type I
+      - Noonan Syndrome
       - Not Reported
+      - Other
+      - Psoriasis
+      - RB Transcriptional Corepressor 1
+      - Scleroderma
+      - Secondary Malignancy
+      - Swyer Syndrome
+      - Systematic Lupus Erythematosus
+      - Trisomy 21
+      - Trisomy 21 Mosaicism
+      - Turner Syndrome
+      - Unknown
+      - Vitiligo
+      - WAGR Syndrome
+      - Werner Syndrome
   medical_history_category:
     Description: "Medical History Category"
     enum:
