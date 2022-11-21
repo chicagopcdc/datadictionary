@@ -66,6 +66,7 @@ properties:
       - Fanconi Anemia
       - Frasier Syndrome
       - Gastroschisis
+      - Gonadal Dysgenesis
       - Goodpasture's Syndrome
       - Gorlin Syndrome
       - Graves' Disease
@@ -107,11 +108,11 @@ properties:
       - Congenital Anomaly
       - Unknown
       - Not Reported
-  dysgenetic_gonad:
-    Description: "Dysgenetic Gonad"
+  medical_history_status:
+    Description: "Medical History Status"
     enum:
-      - "No"
-      - "Yes"
+      - Present
+      - Absent
       - Unknown
       - Not Reported
   assisted_conception:
