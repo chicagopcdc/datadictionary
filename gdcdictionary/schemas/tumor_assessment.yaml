@@ -84,12 +84,11 @@ properties:
       - Ankle
       - Ascitic Fluid
       - Axilla
-      - Suprasellar/Neurohypophyseal
       - Bladder
       - Bladder/Prostate
-      - Bone or Bone Marrow
       - Bone
       - Bone Marrow
+      - Bone or Bone Marrow
       - Brain
       - Brain/Leptomeninges
       - Breast
@@ -97,6 +96,7 @@ properties:
       - Calcaneum
       - Carpal Bone
       - Central Nervous System
+      - Cerebrospinal Fluid
       - Cervical Vertebra
       - Cervix
       - Cheek
@@ -104,7 +104,6 @@ properties:
       - Chest Wall
       - Clavicle
       - Coccyx
-      - Cerebrospinal Fluid
       - Dorsal Vertebra
       - Elbow
       - Ethmoid Bone
@@ -126,8 +125,8 @@ properties:
       - Humerus
       - Hypopharynx
       - Ilium
-      - Infratemporal fossa/Pterygopalatine and Parapharyngeal Area
-      - Infratemporal fossa/Pterygopalatine
+      - Infratemporal Fossa/Pterygopalatine
+      - Infratemporal Fossa/Pterygopalatine and Parapharyngeal Area
       - Intra-abdominal
       - Intraperitoneal
       - Intrathoracic
@@ -156,12 +155,20 @@ properties:
       - Nasal Cavity and Paranasal Sinuses
       - Nasopharynx
       - Neck
+      - Not Reported
       - Occipital Bone
       - Occiptal Cortex
       - Omentum/Peritoneum
       - Oral Cavity
       - Orbit
       - Oropharynx
+      - Other
+      - Other Extremity
+      - Other Face
+      - Other GU Non-Bladder/Prostate
+      - Other Head and Neck
+      - Other Orbit
+      - Other Parameningeal
       - Ovary
       - Paranasal Sinuses
       - Parapharyngeal Area
@@ -207,6 +214,7 @@ properties:
       - Tibia
       - Trunk
       - Ulna
+      - Unknown
       - Upper Arm
       - Upper Extremity
       - Urogenital
@@ -215,15 +223,6 @@ properties:
       - Vulva
       - Wrist
       - Zygomatic Bone
-      - Other Orbit
-      - Other Face
-      - Other Head and Neck
-      - Other Parameningeal
-      - Other GU Non-Bladder/Prostate
-      - Other Extremity
-      - Other
-      - Unknown
-      - Not Reported
   tumor_site_other:
     description: "Text description for tumor site if it is not one of the categorical values"
     type:
@@ -330,7 +329,7 @@ properties:
     description: Pathological determination of regional lymph node involvement
     enum:
       - N0 Stage Finding
-      - N1 Stage FInding
+      - N1 Stage Finding
       - NX Stage Finding
       - Unknown
       - Not Reported
@@ -338,7 +337,7 @@ properties:
     description: "Clinical determination of regional lymph node involvement"
     enum:
       - N0 Stage Finding
-      - N1 Stage FInding
+      - N1 Stage Finding
       - NX Stage Finding
       - Unknown
       - Not Reported

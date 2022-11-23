@@ -74,13 +74,13 @@ properties:
   procedure_site:
     description: "The anatomical site on which surgery was performed."
     enum:
+      - "Waldeyer's Ring: Nasopharynx, Tonsils"
       - Abdomen
       - Abdominal Wall
       - Acetabulum
       - Ankle
       - Axilla
       - Axillary Nodes
-      - "Suprasellar/Neurohypophyseal"
       - Bone
       - Bone Marrow
       - Brain
@@ -133,8 +133,10 @@ properties:
       - Metatarsus
       - Nasal Bone
       - Neck
+      - Not Reported
       - Occipital Bone
       - Occiptal Cortex
+      - Other
       - Ovary
       - Para-aortic Nodes, Portal, Retrocrural
       - Parietal Bone
@@ -166,21 +168,18 @@ properties:
       - Tarsus
       - Temporal Bone
       - Temporal Cortex
-      - Testes
+      - Testis
       - Thalamus
       - Thigh
       - Thoracic vertebra
       - Tibia
       - Ulna
+      - Unknown
       - Upper Arm
       - Upper Extremity
       - Vagina
-      - "Waldeyer's Ring: Nasopharynx, Tonsils"
       - Wrist
       - Zygomatic bone
-      - Other
-      - Unknown
-      - Not Reported
   procedure_laterality:
     description: ""
     enum:
