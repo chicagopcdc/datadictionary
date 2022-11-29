@@ -253,6 +253,7 @@ properties:
   margins:
     description: "One of the criteria for assessment of the effectiveness of given surgical procedure in achieving the local control of a neoplasm and the adequacy of tumor removal. It is defined by the tissue plane through which the dissection has been done and the actual or potential neoplastic tissue which has been left outside the boundary of a resected specimen within the patient. There are four types of surgical margins: intracapsular or intralesional, marginal, wide, and radical."
     enum:
+      - Biopsy Only
       - Incomplete Resection
       - "R0 - Complete Resection, Negative Margins"
       - "R1 - Complete Resection, Positive Margins"

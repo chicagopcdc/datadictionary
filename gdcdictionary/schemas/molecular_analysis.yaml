@@ -355,6 +355,9 @@ properties:
   cytodifferentiation:
     description: "Cytodifferentiation Score"
     enum: 
+      - 1
+      - 2
+      - 3
       - Unknown
       - Not Reported
   mitoses:
