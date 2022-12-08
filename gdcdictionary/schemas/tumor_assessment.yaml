@@ -252,7 +252,7 @@ properties:
       - Diaphysis
       - Unknown
       - Not Reported
-  facture:
+  fracture:
     description: ""
     enum: 
       - "No"
