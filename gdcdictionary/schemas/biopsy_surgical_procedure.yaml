@@ -282,11 +282,10 @@ properties:
          source: NCI Thesaurus
          term_id: C28397
          term_version: 19.03d (Release date:2019-03-25)
-    termDef:
        - term: met_non_lung_mgmt
          source: hp
          term_id: HP:0002099
-         term_version: "2019-04-15"
+         term_version: "2019-04-15" 
     enumDef:
        - enumeration: "Yes"
          source: NCI Thesaurus
