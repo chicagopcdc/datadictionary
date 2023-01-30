@@ -320,7 +320,13 @@ properties:
       - Other
       - Unknown
       - Not Reported
-
+  procedure_performed:
+    description:
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported
 
 
 

@@ -174,7 +174,23 @@ properties:
       - Other
       - Unknown
       - Not Reported
-
+  administration_status:
+    description:
+    enum:
+      - Administered
+      - Not Administered
+      - Unknown
+      - Not Reported
+  rt_timing:
+    description:
+    enum:
+      - Prior to Diagnosis
+      - Definitive
+      - Pre-operative
+      - Post-operative
+      - None
+      - Unknown
+      - Not Reported
 
 
 
