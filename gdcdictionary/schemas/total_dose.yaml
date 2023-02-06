@@ -165,6 +165,13 @@ properties:
       - IU/m2
       - Unknown
       - Not Reported
+  administration_status:
+    description:
+    enum:
+      - Medication Administered
+      - Medication Not Administered
+      - Unknown
+      - Not Reported
 
 
   timings:
