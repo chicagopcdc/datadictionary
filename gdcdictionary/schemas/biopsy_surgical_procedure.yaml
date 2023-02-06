@@ -327,7 +327,13 @@ properties:
       - "Yes"
       - Unknown
       - Not Reported
-
+  procedure_treatment_timing:
+    description:
+    enum:
+      - Initial
+      - Delayed
+      - Unknown
+      - Not Reported
 
 
 
