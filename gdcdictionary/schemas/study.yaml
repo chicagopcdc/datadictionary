@@ -108,6 +108,7 @@ properties:
       - "9900"
       - "9907"
       - "MTS2008_RMS"
+      - "MTS2008_NRSTS"
       - "RMS4.99"
       - 0892
       - 0896
@@ -274,6 +275,7 @@ properties:
       - AREN0321
       - AREN03B2
       - ARST0331
+      - ARST0332
       - ARST0431
       - ARST0531
       - ARST08P1
@@ -317,6 +319,7 @@ properties:
       - N891
       - NOPHOAML2004
       - NOPHOAML2012
+      - NRSTS2005
       - P9462
       - P9480
       - P9485

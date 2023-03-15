@@ -90,11 +90,12 @@ properties:
   smn_site:
     description: "SMN Site"
     enum:
-      - Head and Neck
-      - Thorax
-      - Limbs
       - Abdomen
+      - CNS
+      - Head and Neck
+      - Limbs
       - Pelvis
+      - Thorax
       - Other
       - Not Applicable
       - Unknown
@@ -102,9 +103,11 @@ properties:
   smn_type:
     description: "SMN type"
     enum:
-      - Leukemia
-      - Sarcoma
+      - Brain cancer, NOS
       - Carcinoma
+      - Leukemia
+      - Lymphoma
+      - Sarcoma
       - Other
       - Unknown
       - Not Reported

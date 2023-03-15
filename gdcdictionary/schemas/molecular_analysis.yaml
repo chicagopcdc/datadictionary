@@ -174,12 +174,14 @@ properties:
       - EWSR1-DDIT3
       - EWSR1-ERG
       - EWSR1-ETV1
+      - EWSR1-ETV1/4
       - EWSR1-ETV4
       - EWSR1-FEV
       - EWSR1-FLI1
       - EWSR1-KLF17
       - EWSR1-NR4A3
       - EWSR1-PBX1
+      - EWSR1-PBX1/ZNF44/POU5F1
       - EWSR1-POU5F1
       - EWSR1-WT1
       - EWSR1-ZNF444
@@ -355,6 +357,9 @@ properties:
   cytodifferentiation:
     description: "Cytodifferentiation Score"
     enum: 
+      - "1"
+      - "2"
+      - "3"
       - Unknown
       - Not Reported
   mitoses:

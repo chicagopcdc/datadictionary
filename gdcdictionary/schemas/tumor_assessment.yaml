@@ -136,6 +136,7 @@ properties:
       - Lacrimal Bone
       - Larynx
       - Leg
+      - Limbs, NOS
       - Liver
       - Liver/Biliary Tract
       - Lower Arm
@@ -193,6 +194,7 @@ properties:
       - Scalp
       - Scapula
       - Shoulder
+      - Site cannot be confirmed
       - Skin
       - Skull
       - Soft Tissue
@@ -252,7 +254,7 @@ properties:
       - Diaphysis
       - Unknown
       - Not Reported
-  facture:
+  fracture:
     description: ""
     enum: 
       - "No"

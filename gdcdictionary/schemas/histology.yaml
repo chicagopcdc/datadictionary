@@ -205,10 +205,10 @@ properties:
       - Grade 3
       - Undifferentiated or Poorly Differentiated
       - Differentiating
-      - FNCLCC Sarcoma Grade GX
-      - FNCLCC Sarcoma Grade 1
-      - FNCLCC Sarcoma Grade 2
-      - FNCLCC Sarcoma Grade 3
+      - FNCLCC, Grade GX
+      - FNCLCC, Grade 1
+      - FNCLCC, Grade 2
+      - FNCLCC, Grade 3
       - Unknown
       - Not Reported
   hist_ICD_O_morph_code:
