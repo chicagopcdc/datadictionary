@@ -1,0 +1,11 @@
+id: _CDE_generated_terms
+
+met_non_lung_mgmt:
+  description: >
+    Non-lung Metastatic Site Surgical Management.
+  termDef:
+    term: Non-lung Metastatic Site Surgical Management
+    source: caDSR
+    cde_id: C175028
+    cde_version: 19.03d (Release date:2019-03-25)
+    term_url: "https://cdebrowser.nci.nih.gov/CDEBrowser/search?elementDetails=9&FirstTimer=0&PageId=ElementDetailsGroup&publicId=3225640&version=2.0"
