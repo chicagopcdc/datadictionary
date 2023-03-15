@@ -92,6 +92,7 @@ properties:
       - Busulfan
       - Carboplatin
       - Carmustine
+      - Chemotherapy, NOS
       - Cisplatin
       - Cladribine
       - Clofarabine
@@ -162,6 +163,13 @@ properties:
       - mg
       - IU
       - IU/m2
+      - Unknown
+      - Not Reported
+  administration_status:
+    description:
+    enum:
+      - Medication Administered
+      - Medication Not Administered
       - Unknown
       - Not Reported
 

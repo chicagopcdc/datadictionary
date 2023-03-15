@@ -133,12 +133,13 @@ properties:
     description: Type of particles and energy
     enum:
       - 3D Conformal
-      - Intensity-Modulated Radiation Therapy
-      - Proton Stereotactic Body Radiation Therapy
-      - Photon Stereotactic Body Radiation Therapy
-      - Proton
       - Brachytherapy
       - Electrons
+      - Intensity-Modulated Radiation Therapy
+      - Photon
+      - Photon Stereotactic Body Radiation Therapy
+      - Proton
+      - Proton Stereotactic Body Radiation Therapy
       - Unknown
       - Other
       - Not Reported
@@ -174,7 +175,23 @@ properties:
       - Other
       - Unknown
       - Not Reported
-
+  administration_status:
+    description:
+    enum:
+      - Administered
+      - Not Administered
+      - Unknown
+      - Not Reported
+  rt_timing:
+    description:
+    enum:
+      - Prior to Diagnosis
+      - Definitive
+      - Pre-operative
+      - Post-operative
+      - None
+      - Unknown
+      - Not Reported
 
 
 

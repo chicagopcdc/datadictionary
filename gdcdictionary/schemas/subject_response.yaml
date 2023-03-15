@@ -88,14 +88,15 @@ properties:
     description: "Description of the subject's response" 
     enum:
       - Complete Remission
-      - Non-Response
-      - Partial Response
-      - Stable Disease
-      - Progressive Disease
       - Complete Response
-      - Very Good Partial Response
       - Mixed Response
+      - Non-Response
+      - Not Applicable
       - Not Evaluable
+      - Partial Response
+      - Progressive Disease
+      - Stable Disease
+      - Very Good Partial Response
       - Unknown
       - Not Reported
   response_method:

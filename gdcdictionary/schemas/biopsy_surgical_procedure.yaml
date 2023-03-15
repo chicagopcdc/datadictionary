@@ -74,13 +74,13 @@ properties:
   procedure_site:
     description: "The anatomical site on which surgery was performed."
     enum:
+      - "Waldeyer's Ring: Nasopharynx, Tonsils"
       - Abdomen
       - Abdominal Wall
       - Acetabulum
       - Ankle
       - Axilla
       - Axillary Nodes
-      - "Suprasellar/Neurohypophyseal"
       - Bone
       - Bone Marrow
       - Brain
@@ -133,8 +133,10 @@ properties:
       - Metatarsus
       - Nasal Bone
       - Neck
+      - Not Reported
       - Occipital Bone
       - Occiptal Cortex
+      - Other
       - Ovary
       - Para-aortic Nodes, Portal, Retrocrural
       - Parietal Bone
@@ -166,21 +168,18 @@ properties:
       - Tarsus
       - Temporal Bone
       - Temporal Cortex
-      - Testes
+      - Testis
       - Thalamus
       - Thigh
       - Thoracic vertebra
       - Tibia
       - Ulna
+      - Unknown
       - Upper Arm
       - Upper Extremity
       - Vagina
-      - "Waldeyer's Ring: Nasopharynx, Tonsils"
       - Wrist
       - Zygomatic bone
-      - Other
-      - Unknown
-      - Not Reported
   procedure_laterality:
     description: ""
     enum:
@@ -254,6 +253,7 @@ properties:
   margins:
     description: "One of the criteria for assessment of the effectiveness of given surgical procedure in achieving the local control of a neoplasm and the adequacy of tumor removal. It is defined by the tissue plane through which the dissection has been done and the actual or potential neoplastic tissue which has been left outside the boundary of a resected specimen within the patient. There are four types of surgical margins: intracapsular or intralesional, marginal, wide, and radical."
     enum:
+      - Biopsy Only
       - Incomplete Resection
       - "R0 - Complete Resection, Negative Margins"
       - "R1 - Complete Resection, Positive Margins"
@@ -346,8 +346,20 @@ properties:
       - Other
       - Unknown
       - Not Reported
-
-
+  procedure_performed:
+    description:
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Reported
+  procedure_treatment_timing:
+    description:
+    enum:
+      - Initial
+      - Delayed
+      - Unknown
+      - Not Reported
 
 
 
