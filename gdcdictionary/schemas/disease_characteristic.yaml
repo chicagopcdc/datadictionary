@@ -144,6 +144,7 @@ properties:
   detection_method:
     description: "The method used to detect the extent of the disease involvement."
     enum:
+      - Bone Marrow Results
       - Cerebrospinal Fluid Results
       - Clinical Signs or Symptoms
       - Tumor Marker
