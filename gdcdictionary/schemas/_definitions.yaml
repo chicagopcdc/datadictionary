@@ -290,13 +290,3 @@ timing_type:
     - "Course"
 
 
-
-# test_type_attribute:
-#   term: 
-        # $ref: "_terms.yaml#/file_state"
-#   default: 
-#   enum:
-#     - 
-
-
-# w
