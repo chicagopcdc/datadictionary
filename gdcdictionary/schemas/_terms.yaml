@@ -1,65 +1,1801 @@
-id: _terms
-
-
-data_category: # TOREVIEW
-  description: >
-    Broad categorization of the contents of the data file.
-
-data_file_error_type: # TOREVIEW
-  description: >
-    Type of error for the data file object.
-
-data_format: # TOREVIEW
-  description: >
-    Format of the data files.
-
-data_type: # TOREVIEW
-  description: >
-    Specific content type of the data file.
-
-datetime:
-  description: >
-    A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
-
-file_name: # TOREVIEW
-  description: >
-    The name (or part of a name) of a file (of any type).
-
-file_size: # TOREVIEW
-  description: >
-    The size of the data file (object) in bytes.
-
-file_state: # TOREVIEW
-  description: >
-    The current state of the data file object.
-
-timing_type:
-  description: >
-    The time frame or phase the patient got a treatment or data have been collected
-
-md5sum: # TOREVIEW
-  description: >
-    The 128-bit hash value expressed as a 32 digit hexadecimal number used as a file's digital
-    fingerprint.
-
-project_id: # TOREVIEW
-  description: >
-    Unique ID for any specific defined piece of work that is undertaken or attempted to
-    meet a single requirement.
-
-state: # TOREVIEW
-  description: >
-    The current state of the object.
-
 UUID:
-  description: >
-    A 128-bit identifier. Depending on the mechanism used to generate it, it is either guaranteed to
-    be different from all other UUIDs/GUIDs generated until 3400 AD or extremely likely to be
-    different. Its relatively small size lends itself well to sorting, ordering, and hashing of all
-    sorts, storing in databases, simple allocation, and ease of programming in general.
+  description: 'A 128-bit identifier. Depending on the mechanism used to generate
+    it, it is either guaranteed to be different from all other UUIDs/GUIDs generated
+    until 3400 AD or extremely likely to be different. Its relatively small size lends
+    itself well to sorting, ordering, and hashing of all sorts, storing in databases,
+    simple allocation, and ease of programming in general.'
   termDef:
-    term: Universally Unique Identifier
-    source: NCIt
     cde_id: C54100
     cde_version: null
-    term_url: "https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100"
+    source: NCIt
+    term: Universally Unique Identifier
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
+data_category:
+  description: 'Broad categorization of the contents of the data file.'
+data_file_error_type:
+  description: 'Type of error for the data file object.'
+data_format:
+  description: 'Format of the data files.'
+data_type:
+  description: 'Specific content type of the data file.'
+datetime:
+  description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]'
+file_name:
+  description: 'The name (or part of a name) of a file (of any type).'
+file_size:
+  description: 'The size of the data file (object) in bytes.'
+file_state:
+  description: 'The current state of the data file object.'
+id: _terms
+md5sum:
+  description: 'The 128-bit hash value expressed as a 32 digit hexadecimal number
+    used as a file''s digital fingerprint.'
+ncit_C116832:
+  description: The status describing the extent of central nervous system involvement
+    at the time of leukemia diagnosis.
+  termDef:
+    cde_id: C116832
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: CNS Involvement Status at Leukemia Diagnosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C116832
+ncit_C117142:
+  description: A character or string that represents the full name of the laboratory
+    assessment.
+  termDef:
+    cde_id: C117142
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Laboratory Test Name
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117142
+ncit_C117526:
+  description: A qualifier for the side of the body the procedure is performed.
+  termDef:
+    cde_id: C117526
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Procedure Laterality
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C117526
+ncit_C119931:
+  description: A qualifier for the side of the body the tumor findings assessment
+    is performed.
+  termDef:
+    cde_id: C119931
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Tumor Findings Laterality
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C119931
+ncit_C119940:
+  description: The type of material sample taken from a biological entity for tumor
+    findings assessment testing.
+  termDef:
+    cde_id: C119940
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Tumor Findings Specimen Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C119940
+ncit_C127797:
+  description: A globally unique identifier for a biomedical article, as assigned
+    by PubMed.
+  termDef:
+    cde_id: C127797
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: PubMed Unique Identifier
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C127797
+ncit_C12917:
+  description: Cells of, or derived from, a malignant tumor.
+  termDef:
+    cde_id: C12917
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Malignant Cell
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12917
+ncit_C13202:
+  description: A structure found in cells that is comprised of a strand of linearized
+    double-stranded DNA plus proteins that package the DNA in a condensed coil form
+    and regulate chromosomal function.
+  termDef:
+    cde_id: C13202
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Chromosome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13202
+ncit_C137812:
+  description: One or more extra radiation treatments targeted at the tumor bed, given
+    after the regular sessions of radiation are complete.
+  termDef:
+    cde_id: C137812
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Radiation Boost
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C137812
+ncit_C137815:
+  description: The distance of the closest surgical margin from tumor after surgical
+    resection of the tumor. The closest distance between a tumor and its resection
+    margin has prognostic significance.
+  termDef:
+    cde_id: C137815
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Distance of Closest Surgical Margin
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C137815
+ncit_C142175:
+  description: The nature of the investigation or the investigational use for which
+    the study is being done.
+  termDef:
+    cde_id: C142175
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Study Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C142175
+ncit_C15179:
+  description: The surgical removal of all or part of a limb or other appendage.
+  termDef:
+    cde_id: C15179
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Amputation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15179
+ncit_C15189:
+  description: The removal of tissue specimens or fluid from the living body for microscopic
+    examination, performed to establish a diagnosis.
+  termDef:
+    cde_id: C15189
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Biopsy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15189
+ncit_C15313:
+  description: Treatment of a disease by means of exposure of the target or the whole
+    body to radiation. Radiation therapy is often used as part of curative therapy
+    and occasionally as a component of palliative treatment for cancer. Other uses
+    include total body irradiation prior to transplantation.
+  termDef:
+    cde_id: C15313
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Radiation Therapy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15313
+ncit_C154628:
+  description: Vital signs (such as height, weight, and blood pressure) directly measure
+    an individual's current state of attributes.
+  termDef:
+    cde_id: C154628
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Vital Signs
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C154628
+ncit_C15538:
+  description: A specific treatment plan within a clinical trial that describes the
+    activities a subject will be involved in as he or she progresses through the study.
+  termDef:
+    cde_id: C15538
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Protocol Treatment Arm
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15538
+ncit_C156450:
+  description: An international standard for human chromosome nomenclature, which
+    includes band names, symbols and abbreviated terms used in the description of
+    human chromosome and chromosome abnormalities.
+  termDef:
+    cde_id: C156450
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: International System for Human Cytogenetic Nomenclature
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C156450
+ncit_C157443:
+  description: The degree to which the lesion has been cut out, or resected.
+  termDef:
+    cde_id: C157443
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Extent of Resection
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C157443
+ncit_C158954:
+  description: A request to enter the specific molecular analysis method used to detect
+    abnormalities in the study.
+  termDef:
+    cde_id: C158954
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Specify Molecular Abnormality Analysis Method
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C158954
+ncit_C159157:
+  description: A classification of acute myeloid leukemia tumors by the World Health
+    Organization (WHO).
+  termDef:
+    cde_id: C159157
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: WHO AML Classification of Tumors
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C159157
+ncit_C159481:
+  description: A quantitative measurement of the percent of cells undergoing necrosis
+    compared to the number of total cells present in a sample.
+  termDef:
+    cde_id: C159481
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Percent of Necrosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C159481
+ncit_C16042:
+  description: A procedure to avoid amputation of an arm or leg.
+  termDef:
+    cde_id: C16042
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Limb Salvage Procedure
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16042
+ncit_C161601:
+  description: A categorization of surgical procedures by type or purpose.
+  termDef:
+    cde_id: C161601
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Surgical Procedure by Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C161601
+ncit_C164323:
+  description: The anatomical site on which surgery was performed.
+  termDef:
+    cde_id: C164323
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Surgical Site
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C164323
+ncit_C16493:
+  description: The person or authoritative body who provided the information.
+  termDef:
+    cde_id: C16493
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Data Source
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16493
+ncit_C16564:
+  description: A social group characterized by a distinctive social and cultural tradition
+    that is maintained from generation to generation. Members share a common history
+    and origin and a sense of identification with the group. They have similar and
+    distinctive features in their lifestyle habits and shared experiences. They often
+    have a common genetic heritage which may be reflected in their experience of health
+    and disease.
+  termDef:
+    cde_id: C16564
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Ethnic Group
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16564
+ncit_C16612:
+  description: A functional unit of heredity which occupies a specific position on
+    a particular chromosome and serves as the template for a product that contributes
+    to a phenotype or a biological function.
+  termDef:
+    cde_id: C16612
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Gene
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16612
+ncit_C166208:
+  description: The number of the individual chemotherapeutic cycle.
+  termDef:
+    cde_id: C166208
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Chemotherapeutic Cycle Number
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C166208
+ncit_C166232:
+  description: Specifies the anatomic site of a localized pathological or traumatic
+    structural change, damage, deformity, or discontinuity of tissue, organ, or body
+    part.
+  termDef:
+    cde_id: C166232
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Lesion Site
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C166232
+ncit_C166235:
+  description: The number assigned to a course of therapeutic agent administration,
+    indicating where a particular course of treatment falls within a sequence of treatments.
+  termDef:
+    cde_id: C166235
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Medication Course Number
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C166235
+ncit_C16681:
+  description: The study of the structure of the cells and their arrangement to constitute
+    tissues and, finally, the association among these to form organs.  In pathology,
+    the microscopic process of identifying normal and abnormal morphologic characteristics
+    in tissues, by employing various cytochemical and immunocytochemical stains.
+  termDef:
+    cde_id: C16681
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Histology
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16681
+ncit_C168807:
+  description: The type of protocol treatment course administered.
+  termDef:
+    cde_id: C168807
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Protocol Treatment Course
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168807
+ncit_C168823:
+  description: The year when a disease phase was assigned to an individual's condition.
+  termDef:
+    cde_id: C168823
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Year at Disease Phase
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168823
+ncit_C168843:
+  description: Age of subject (in days) when the subject enrolled in the study.
+  termDef:
+    cde_id: C168843
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Enrollment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168843
+ncit_C168844:
+  description: Age of subject (in days) at the last known survival status.
+  termDef:
+    cde_id: C168844
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Last Known Survival
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168844
+ncit_C168848:
+  description: Age of subject (in days) when molecular analysis was performed.
+  termDef:
+    cde_id: C168848
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Molecular Analysis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168848
+ncit_C168850:
+  description: Age of subject (in days) at the start of the course of treatment.
+  termDef:
+    cde_id: C168850
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Start of Treatment Course
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168850
+ncit_C168851:
+  description: Age of subject (in days) at the end of the treatment course.
+  termDef:
+    cde_id: C168851
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at End of Treatment Course
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168851
+ncit_C168852:
+  description: Age of subject (in days) when their neutrophil count exceeded a threshold
+    of 500 (ANC/mm3) during the course.
+  termDef:
+    cde_id: C168852
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Course ANC 500
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168852
+ncit_C168868:
+  description: Specific details of the cause of death.
+  termDef:
+    cde_id: C168868
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Cause of Death Detail
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168868
+ncit_C168871:
+  description: The status of the subject's karyotype.
+  termDef:
+    cde_id: C168871
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Karyotype Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168871
+ncit_C168878:
+  description: The stage or period of an individual's disease.
+  termDef:
+    cde_id: C168878
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Disease Phase
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168878
+ncit_C168879:
+  description: Contamination of a cerebrospinal fluid sample by red blood cells greater
+    than 10/mm3.
+  termDef:
+    cde_id: C168879
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Traumatic Tap
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168879
+ncit_C168928:
+  description: The current status of the subject's enrollment.
+  termDef:
+    cde_id: C168928
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Subject Enrollment Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168928
+ncit_C168931:
+  description: The individual's last known survival status.
+  termDef:
+    cde_id: C168931
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Last Known Survival Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168931
+ncit_C168932:
+  description: Assigning a weighted relevance to the cause of death.
+  termDef:
+    cde_id: C168932
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Cause of Death Ranking
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168932
+ncit_C168949:
+  description: Subject identifier assigned by the honest broker.
+  termDef:
+    cde_id: C168949
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Honest Broker Subject ID
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168949
+ncit_C168950:
+  description: An identifier assigned to a data contributor.
+  termDef:
+    cde_id: C168950
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Data Contributor ID
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168950
+ncit_C168972:
+  description: Age of subject (in days) at the disease phase.
+  termDef:
+    cde_id: C168972
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Disease Phase
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168972
+ncit_C16899:
+  description: The extent of a cancer in the body.
+  termDef:
+    cde_id: C16899
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Neoplasm Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16899
+ncit_C17049:
+  description: A geographic ancestral origin category that is assigned to a population
+    group based mainly on physical characteristics that are thought to be distinct
+    and inherent.
+  termDef:
+    cde_id: C17049
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Race
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17049
+ncit_C171253:
+  description: The gene symbol that represents the gene that comprises the 3' portion
+    of the coding sequence for a fusion gene.
+  termDef:
+    cde_id: C171253
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Fusion Gene Downstream Gene Symbol
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C171253
+ncit_C172679:
+  description: Age of subject (in days) when the subject was lost to follow-up.
+  termDef:
+    cde_id: C172679
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days When Lost to Follow-up
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172679
+ncit_C172686:
+  description: Age of subject (in days) at the end of the total dose calculation.
+  termDef:
+    cde_id: C172686
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at End of Total Dose Calculation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172686
+ncit_C172691:
+  description: Age of subject (in days) when the laboratory test was performed.
+  termDef:
+    cde_id: C172691
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Time of Laboratory Test
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172691
+ncit_C172695:
+  description: Age of subject (in days) at the start of radiation therapy.
+  termDef:
+    cde_id: C172695
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Radiation Therapy Course Start
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172695
+ncit_C172696:
+  description: Age of subject (in days) at the end of radiation therapy.
+  termDef:
+    cde_id: C172696
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at End of Radiation Therapy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172696
+ncit_C172698:
+  description: Age of subject (in days) at the start of the total dose calculation.
+  termDef:
+    cde_id: C172698
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Start of Total Dose Calculation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172698
+ncit_C173256:
+  description: The code used to designate that the subject went off therapy or off
+    the study.
+  termDef:
+    cde_id: C173256
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Off Protocol Therapy or Study Code
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173256
+ncit_C173258:
+  description: The number of the disease phase.
+  termDef:
+    cde_id: C173258
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Disease Phase Number
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173258
+ncit_C173260:
+  description: The type of treatment related to the mortality of the subject.
+  termDef:
+    cde_id: C173260
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Treatment-related Mortality Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173260
+ncit_C173262:
+  description: The method used to detect the extent of the disease involvement.
+  termDef:
+    cde_id: C173262
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Disease Involvement Detection Method
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173262
+ncit_C173263:
+  description: The anatomic site of the disease.
+  termDef:
+    cde_id: C173263
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Disease Involvement Site
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173263
+ncit_C173268:
+  description: The numeric values of the vital signs.
+  termDef:
+    cde_id: C173268
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Numeric Vitals Signs Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173268
+ncit_C173274:
+  description: The numeric unit that expresses the lab result.
+  termDef:
+    cde_id: C173274
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Lab Result Unit
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173274
+ncit_C173278:
+  description: A karyotype finding as classified by the International System for Human
+    Cytogenetic Nomenclature.
+  termDef:
+    cde_id: C173278
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Karyotype ISCN
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173278
+ncit_C173281:
+  description: The anatomic site of the radiation therapy.
+  termDef:
+    cde_id: C173281
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Site of Radiation Therapy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173281
+ncit_C173282:
+  description: The total radiation dose administered.
+  termDef:
+    cde_id: C173282
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Total Radiation Dose
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173282
+ncit_C173293:
+  description: The total number of doses administered to the patient over the defined
+    period of time.
+  termDef:
+    cde_id: C173293
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Number of Doses
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173293
+ncit_C173294:
+  description: The total amount of the medication intended to be administered to the
+    patient over the defined period of time.
+  termDef:
+    cde_id: C173294
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Total Dose Intended
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173294
+ncit_C173297:
+  description: The status of the medication administration.
+  termDef:
+    cde_id: C173297
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Medication Administration Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173297
+ncit_C173519:
+  description: The reason a subject went off the therapy or study.
+  termDef:
+    cde_id: C173519
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Off Protocol Therapy or Study Reason Code
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173519
+ncit_C173522:
+  description: The results of the vital sign measurements.
+  termDef:
+    cde_id: C173522
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Vital Signs Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173522
+ncit_C173595:
+  description: The gene symbol that represents either a single gene that has a mutation
+    or the gene that comprises the 5' portion of the coding sequence involved in a
+    fusion gene mutation.
+  termDef:
+    cde_id: C173595
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: First Variant Gene Symbol
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173595
+ncit_C173596:
+  description: An indicator for whether a molecular analysis procedure was performed
+    and whether the assay detected a molecular abnormality.
+  termDef:
+    cde_id: C173596
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Molecular Abnormality Result Indicator
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173596
+ncit_C17369:
+  description: Any technology or method that aids in the visualization of any biological
+    process, cell, tissue or organ for use in screening, diagnosis, surgical procedures
+    or therapy.
+  termDef:
+    cde_id: C17369
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Imaging Technique
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17369
+ncit_C17395:
+  description: Phase of the cell cycle following G1 and preceding G2 when the entire
+    DNA content of the nucleus is replicated (Synthesis phase). It is achieved by
+    bidirectional replication at multiple sites along each chromosome.
+  termDef:
+    cde_id: C17395
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: S Phase Process
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17395
+ncit_C174442:
+  description: A measure of an individual's overall performance status or ability
+    to perform their activities of daily living.
+  termDef:
+    cde_id: C174442
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: GPOH Performance Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174442
+ncit_C174453:
+  description: A finding indicating the spread of cancer to a joint.
+  termDef:
+    cde_id: C174453
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Joint Involvement
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174453
+ncit_C174454:
+  description: A benign or malignant pathologic process which is patchy and skips
+    areas which are normal (uninvolved by the pathologic process).
+  termDef:
+    cde_id: C174454
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Skip Lesion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174454
+ncit_C174455:
+  description: A metastatic tumor nodule located in the same side of the organ in
+    which the primary tumor occurred.
+  termDef:
+    cde_id: C174455
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Ipsilateral Nodule
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174455
+ncit_C174459:
+  description: The classification of a tumor based primarily on histopathological
+    characteristics.
+  termDef:
+    cde_id: C174459
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Tumor Classification
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174459
+ncit_C174998:
+  description: The anatomic site within the bone.
+  termDef:
+    cde_id: C174998
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Site within Bone
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174998
+ncit_C175002:
+  description: An examination of cells obtained from a sample of pleural fluid.
+  termDef:
+    cde_id: C175002
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Pleural Cytology
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175002
+ncit_C175004:
+  description: Age of subject (in days) at histology assessment.
+  termDef:
+    cde_id: C175004
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age In Days at Histology Assessment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175004
+ncit_C175006:
+  description: Age of subject (in days) at immunohistochemistry assessment.
+  termDef:
+    cde_id: C175006
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Immunohistochemistry
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175006
+ncit_C175007:
+  description: The result from the immunohistochemical test.
+  termDef:
+    cde_id: C175007
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Immunohistochemical Test Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175007
+ncit_C175008:
+  description: Age of subject (in days) at procedure.
+  termDef:
+    cde_id: C175008
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Procedure
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175008
+ncit_C175009:
+  description: Surgical procedures on a limb.
+  termDef:
+    cde_id: C175009
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Limb Surgery
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175009
+ncit_C175028:
+  description: Surgical treatment of metastatic disease not involving the lungs.
+  termDef:
+    cde_id: C175028
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Surgical Management of Metastatic Non-Lung Disease
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175028
+ncit_C175029:
+  description: Surgical treatment of disease metastatic to the lungs.
+  termDef:
+    cde_id: C175029
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Surgical Management of Metastatic Lung Disease
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175029
+ncit_C175034:
+  description: The number of divided radiation doses received per day.
+  termDef:
+    cde_id: C175034
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Number of Fractions Per Day
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175034
+ncit_C175035:
+  description: A procedure to move organs out of the range of the damaging effects
+    of radiation.
+  termDef:
+    cde_id: C175035
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Organ Transposition Procedure
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175035
+ncit_C175038:
+  description: A description of the timing of when the non-protocol therapy was received.
+  termDef:
+    cde_id: C175038
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Non-Protocol Therapy Timing
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175038
+ncit_C175041:
+  description: The type of therapy that the patient received outside of the protocol.
+  termDef:
+    cde_id: C175041
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Non-Protocol Therapy Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175041
+ncit_C175523:
+  description: The laterality intended for radiation therapy.
+  termDef:
+    cde_id: C175523
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Radiation Therapy Laterality
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175523
+ncit_C175524:
+  description: An examination of cells obtained from a sample of peritoneal fluid.
+  termDef:
+    cde_id: C175524
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Peritoneal Cytology
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175524
+ncit_C175529:
+  description: Age of subject (in days) when the treatment was assigned.
+  termDef:
+    cde_id: C175529
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Treatment Assignment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175529
+ncit_C176708:
+  description: The result of an evaluation technique using a visual display of structural
+    or functional patterns of organs or tissues that is performed to determine the
+    presence, absence, or degree of a condition.
+  termDef:
+    cde_id: C176708
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Imaging Finding
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176708
+ncit_C17726:
+  description: A record of a patient's background regarding health and disease events
+    of blood relatives. A patient's family medical history may be important in diagnosing
+    existing conditions.
+  termDef:
+    cde_id: C17726
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Family Medical History
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17726
+ncit_C177353:
+  description: The year at which a subject enrolled in a study.
+  termDef:
+    cde_id: C177353
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Year at Enrollment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177353
+ncit_C177359:
+  description: Age of subject (in days) at the time of the staging assessment.
+  termDef:
+    cde_id: C177359
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days of Staging Assessment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177359
+ncit_C177360:
+  description: The name of the institution or central histological assessment.
+  termDef:
+    cde_id: C177360
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Source of Institutional or Central Histological Assessment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177360
+ncit_C177365:
+  description: The maximum level that must be exceeded for a certain reaction to occur
+    or be manifested.
+  termDef:
+    cde_id: C177365
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: High Threshold
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177365
+ncit_C177366:
+  description: The minimum level that must be attained for a certain reaction to occur
+    or be manifested.
+  termDef:
+    cde_id: C177366
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Low Threshold
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177366
+ncit_C177368:
+  description: The numerical identifier of an immunohistochemistry specimen assessment
+    result.
+  termDef:
+    cde_id: C177368
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Immunohistochemistry Test Numeric Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177368
+ncit_C177369:
+  description: Age of subject (in days) at the time of the cytology test.
+  termDef:
+    cde_id: C177369
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Cytology Test
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177369
+ncit_C177370:
+  description: The number of chromosomes upon karyotype analysis.
+  termDef:
+    cde_id: C177370
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Number of Chromosomes on Karyotype
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177370
+ncit_C177413:
+  description: The type of a material sample taken from a biological entity for testing,
+    diagnostic, propagation, treatment or research purposes
+  termDef:
+    cde_id: C177413
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Cytology Specimen Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177413
+ncit_C178073:
+  description: The subject was enrolled in another therapeutic study after going off
+    the previous study.
+  termDef:
+    cde_id: C178073
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Enrolled in Another Therapeutic Study After Off Study
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178073
+ncit_C178074:
+  description: The last know survival status of the individual with the disease.
+  termDef:
+    cde_id: C178074
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Last Known Survival Status with Disease
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178074
+ncit_C178075:
+  description: When the maximum width of a mass is equal or greater than one-third
+    of the internal transverse diameter of the thorax at the level of T5/6 on a PA
+    CXR. Bulk at an alternate site is defined as any mass measuring 10 cm or more
+    by any imaging study.
+  termDef:
+    cde_id: C178075
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Bulky Mediastinal Mass
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178075
+ncit_C178076:
+  description: The subject received steroids within one week prior to diagnosis of
+    the disease phase.
+  termDef:
+    cde_id: C178076
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Subject Received Steroids Within One Week Prior to Diagnosis of Disease
+      Phase
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178076
+ncit_C178077:
+  description: The subject received steroids within one month prior to diagnosis of
+    the disease phase.
+  termDef:
+    cde_id: C178077
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Subject Received Steroids Within One Month Prior to Diagnosis of Disease
+      Phase
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178077
+ncit_C178079:
+  description: The morphology characteristics of the bone marrow blasts.
+  termDef:
+    cde_id: C178079
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Bone Marrow Blasts Morphology
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178079
+ncit_C178080:
+  description: The anatomic source of the molecular analysis sample.
+  termDef:
+    cde_id: C178080
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Molecular Analysis Sample Source
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178080
+ncit_C18000:
+  description: The degree of abnormality of cancer cells, a measure of differentiation,
+    the extent to which cancer cells are similar in appearance and function to healthy
+    cells of the same tissue type. The degree of differentiation often relates to
+    the clinical behavior of the particular tumor. Based on the microscopic findings,
+    tumor grade is commonly described by one of four degrees of severity. Histopathologic
+    grade of a tumor may be used to plan treatment and estimate the future course,
+    outcome, and overall prognosis of disease. Certain types of cancers, such as soft
+    tissue sarcoma, primary brain tumors, lymphomas, and breast have special grading
+    systems.
+  termDef:
+    cde_id: C18000
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Histologic Grade
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18000
+ncit_C18004:
+  description: A systematic method for clinicopathologic evaluation of tumors.
+  termDef:
+    cde_id: C18004
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18004
+ncit_C180371:
+  description: The percentage of cartilage.
+  termDef:
+    cde_id: C180371
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Percent of Cartilage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C180371
+ncit_C18068:
+  description: A unit of measurement of the dose of radiation received or absorbed.
+  termDef:
+    cde_id: C18068
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Radiation Dose Unit
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18068
+ncit_C181330:
+  description: An assessment of the variability in the number of replicas of a gene
+    within the genome.
+  termDef:
+    cde_id: C181330
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Copy Number Variation Assessment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C181330
+ncit_C185316:
+  description: Age of subject (in days) at the end of the treatment cycle.
+  termDef:
+    cde_id: C185316
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Cycle End
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185316
+ncit_C185317:
+  description: Age of subject (in days) at the beginning of the treatment cycle.
+  termDef:
+    cde_id: C185317
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Cycle Start
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185317
+ncit_C185318:
+  description: The type of cancer that an individual had previously.
+  termDef:
+    cde_id: C185318
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Prior Cancer Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185318
+ncit_C185323:
+  description: A measurement of the width of the mediastinum divided by the width
+    of the chest.
+  termDef:
+    cde_id: C185323
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Mediastinal Width Ratio
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185323
+ncit_C185324:
+  description: The institution which has reviewed the lesion assessment.
+  termDef:
+    cde_id: C185324
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Lesion Assessment Review Institution
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185324
+ncit_C185477:
+  description: A single lesion in bulky nodal disease.
+  termDef:
+    cde_id: C185477
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Bulky Lesion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185477
+ncit_C185478:
+  description: The anatomic location outside of the lymph nodes into which a disease
+    lesion has directly spread.
+  termDef:
+    cde_id: C185478
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Extranodal Site of the Extended Lesion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185478
+ncit_C185485:
+  description: Age of subject (in days) at assessment of lesion.
+  termDef:
+    cde_id: C185485
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Lesion Assessment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185485
+ncit_C185489:
+  description: The classification of a lesion of interest.
+  termDef:
+    cde_id: C185489
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Lesion Classification
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185489
+ncit_C185497:
+  description: The percentage of change in a particular lesion.
+  termDef:
+    cde_id: C185497
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Lesion Percentage of Change
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185497
+ncit_C185535:
+  description: The type of a material sample taken from a biological entity for immunohistochemistry
+    testing.
+  termDef:
+    cde_id: C185535
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Immunohistochemistry Specimen Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185535
+ncit_C185621:
+  description: The unit of an immunohistochemistry test result.
+  termDef:
+    cde_id: C185621
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Immunohistochemistry Test Result Unit
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185621
+ncit_C185622:
+  description: Age of subject (in days) at the time of imaging test.
+  termDef:
+    cde_id: C185622
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Imaging
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185622
+ncit_C185623:
+  description: A methodology that provides semi-automatic quantification for interim
+    FDG-PET response in lymphoma. It extends the ordinal Deauville score to a continuous
+    scale.
+  termDef:
+    cde_id: C185623
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: qPET Score
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185623
+ncit_C185624:
+  description: Age of subject (in days) at the time of the function test.
+  termDef:
+    cde_id: C185624
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Function Test
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185624
+ncit_C185625:
+  description: A grouping of items based on their function.
+  termDef:
+    cde_id: C185625
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Function Category
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185625
+ncit_C185629:
+  description: The result of a function test expressed as a number.
+  termDef:
+    cde_id: C185629
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Function Result Numeric
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185629
+ncit_C185632:
+  description: The kind of modification.
+  termDef:
+    cde_id: C185632
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Modification Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185632
+ncit_C185634:
+  description: A medication was substituted with another.
+  termDef:
+    cde_id: C185634
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Agent Substitution
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185634
+ncit_C185636:
+  description: The rationale for why an entity or event is changed.
+  termDef:
+    cde_id: C185636
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Treatment Modification Rationale
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185636
+ncit_C185649:
+  description: Toxicity related to an infusion.
+  termDef:
+    cde_id: C185649
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Infusion Related Toxicity
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185649
+ncit_C185650:
+  description: The first agent planned for a therapy.
+  termDef:
+    cde_id: C185650
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Original Agent
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185650
+ncit_C185679:
+  description: The dose amount of the radiation boost.
+  termDef:
+    cde_id: C185679
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Radiation Boost Dose
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185679
+ncit_C185693:
+  description: Information about the conditions surrounding the toxicity.
+  termDef:
+    cde_id: C185693
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Toxicity Details
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185693
+ncit_C186304:
+  description: The test of the function of an organ or body system.
+  termDef:
+    cde_id: C186304
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Function Test
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186304
+ncit_C186305:
+  description: The unit in which the function test was measured.
+  termDef:
+    cde_id: C186305
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Function Result Unit
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186305
+ncit_C186559:
+  description: The intended area to be affected by the choice of a particular route
+    of administration of a medication.
+  termDef:
+    cde_id: C186559
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Medication Intended Route Effect
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186559
+ncit_C186651:
+  description: The qualitative/quantitative value for the percent of necrosis.
+  termDef:
+    cde_id: C186651
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Textual Percent Necrosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186651
+ncit_C186693:
+  description: An indication of what method was used to normalize the data.
+  termDef:
+    cde_id: C186693
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Normalization Basis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186693
+ncit_C186756:
+  description: A query about the type of resection.
+  termDef:
+    cde_id: C186756
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Type of Resection
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186756
+ncit_C187025:
+  description: The result of a function query.
+  termDef:
+    cde_id: C187025
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Function Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C187025
+ncit_C19697:
+  description: A piece of tissue removed from an organism for examination, analysis,
+    or propagation.
+  termDef:
+    cde_id: C19697
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Tissue Sample
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19697
+ncit_C21480:
+  description: A person related by blood or marriage.
+  termDef:
+    cde_id: C21480
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Relative
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C21480
+ncit_C25185:
+  description: Dominant use or manifestations of one side of the body versus the other;
+    referring to a side of the body or of a structure.
+  termDef:
+    cde_id: C25185
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Laterality
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25185
+ncit_C25196:
+  description: The allocation of individuals to groups by chance, especially in order
+    to control the variables in an experiment.
+  termDef:
+    cde_id: C25196
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Randomization
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25196
+ncit_C25333:
+  description: The extent downward or inward; the perpendicular measurement from the
+    surface downward to determine deepness.
+  termDef:
+    cde_id: C25333
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Depth
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25333
+ncit_C25351:
+  description: Surgical restoration of function or form of a part.
+  termDef:
+    cde_id: C25351
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Reconstructive Surgery
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25351
+ncit_C25765:
+  description: An acute myeloid leukemia arising from prior myelodysplastic syndrome,
+    myeloproliferative neoplasm, or myelodysplastic/myeloproliferative neoplasm, or
+    as a result of previous exposure to alkylating agents or topoisomerase II inhibitors.
+  termDef:
+    cde_id: C25765
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Secondary Acute Myeloid Leukemia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25765
+ncit_C26588:
+  description: This gene is involved in proteolysis in seminal fluid.
+  termDef:
+    cde_id: C26588
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: PRSS8 Gene
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C26588
+ncit_C274:
+  description: A substance that inhibits the maturation, growth or spread of tumor
+    cells.
+  termDef:
+    cde_id: C274
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Antineoplastic Agent
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C274
+ncit_C28264:
+  description: The process of determining or marking the location or site of a lesion
+    or disease.
+  termDef:
+    cde_id: C28264
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Localization
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28264
+ncit_C28421:
+  description: The assemblage of physical properties or qualities by which male is
+    distinguished from female; the physical difference between male and female; the
+    distinguishing peculiarity of male or female.
+  termDef:
+    cde_id: C28421
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Sex
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28421
+ncit_C3167:
+  description: Leukemia with an acute onset, characterized by the presence of lymphoblasts
+    in the bone marrow and the peripheral blood. It includes the acute B lymphoblastic
+    leukemia and acute T lymphoblastic leukemia.
+  termDef:
+    cde_id: C3167
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Acute Lymphoblastic Leukemia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3167
+ncit_C3319:
+  description: Fluid collection within the pericardial sac, usually due to inflammation.
+  termDef:
+    cde_id: C3319
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Pericardial Effusion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3319
+ncit_C3331:
+  description: Increased amounts of fluid within the pleural cavity. Symptoms include
+    shortness of breath, cough, and chest pain. It is usually caused by lung infections,
+    congestive heart failure, pleural and lung tumors, connective tissue disorders,
+    and trauma.
+  termDef:
+    cde_id: C3331
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Pleural Effusion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3331
+ncit_C34402:
+  description: The abnormal collection of fluid in the peritoneal cavity resulting
+    in ascites.
+  termDef:
+    cde_id: C34402
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Peritoneal Effusion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C34402
+ncit_C3520:
+  description: A tumor mass composed of myeloblasts or immature myeloid cells.  It
+    occurs in extramedullary sites or the bone.  (WHO, 2001)
+  termDef:
+    cde_id: C3520
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Myeloid Sarcoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3520
+ncit_C35529:
+  description: A finding indicating the spread of cancer to regional or distant lymph
+    node(s).
+  termDef:
+    cde_id: C35529
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Lymph Node Involvement
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C35529
+ncit_C36292:
+  description: The outcome of a laboratory test.
+  termDef:
+    cde_id: C36292
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Laboratory Test Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C36292
+ncit_C38114:
+  description: Designation of the part of the body through which or into which, or
+    the way in which, the medicinal product is intended to be introduced. In some
+    cases a medicinal product can be intended for more than one route and/or method
+    of administration.
+  termDef:
+    cde_id: C38114
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Route of Administration
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C38114
+ncit_C3910:
+  description: A molecular or cytogenic abnormality which occurs in either human disease
+    states or disease models.
+  termDef:
+    cde_id: C3910
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Molecular Abnormality
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3910
+ncit_C41227:
+  description: 'One of the criteria for assessment of the effectiveness of given surgical
+    procedure in achieving the local control of a neoplasm and the adequacy of tumor
+    removal. It is defined by the tissue plane through which the dissection has been
+    done and the actual or potential neoplastic tissue which has been left outside
+    the boundary of a resected specimen within the patient. There are four types of
+    surgical margins: intracapsular or intralesional, marginal, wide, and radical.'
+  termDef:
+    cde_id: C41227
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Surgical Margin
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C41227
+ncit_C43223:
+  description: Acute myeloid leukemia or myelodysplastic syndrome occurring in children
+    with Down syndrome.  The acute myeloid leukemia is usually an acute megakaryoblastic
+    leukemia, and is associated with GATA1 gene mutation.
+  termDef:
+    cde_id: C43223
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Myeloid Leukemia Associated with Down Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C43223
+ncit_C45581:
+  description: An increase in the copy number of a particular gene. This type of abnormality
+    can be either inherited or somatic.
+  termDef:
+    cde_id: C45581
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Gene Amplification Abnormality
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C45581
+ncit_C45824:
+  description: The genetic condition of a zygote, especially with respect to its being
+    a homozygote or a heterozygote.
+  termDef:
+    cde_id: C45824
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Zygosity
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C45824
+ncit_C459:
+  description: A drug product that contains one or more active and/or inactive ingredients;
+    it is intended to treat, prevent or alleviate the symptoms of disease. This term
+    does not refer to the individual ingredients that make up the product.
+  termDef:
+    cde_id: C459
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Medication
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C459
+ncit_C48281:
+  description: 'Clinical trials are broken into three or four phases: Phase I tests
+    a new drug or treatment for safety in a small group; Phase II expands the study
+    to a larger group of people; Phase III expands the study to an even larger group
+    of people to measure whether the treatment actually benefits patients, and whether
+    its benefits exceed its risks; and Phase IV takes place after the drug or treatment
+    has been licensed and marketed.'
+  termDef:
+    cde_id: C48281
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Trial Phase
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48281
+ncit_C49142:
+  description: The number of molecules of a particular type on or in a cell or part
+    of a cell. Usually applied to specific genes or to plasmids within a bacterium.
+  termDef:
+    cde_id: C49142
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Copy Number
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C49142
+ncit_C49672:
+  description: The act of assessing an individual's current temperature, heart rate,
+    respiratory rate, pulse oxygenation, and blood pressure.
+  termDef:
+    cde_id: C49672
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Vital Signs Measurement
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C49672
+ncit_C49675:
+  description: The unit used to record and describe the result of a test investigating
+    a vital sign.
+  termDef:
+    cde_id: C49675
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Units for Vital Signs Results
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C49675
+ncit_C51944:
+  description: A diagnostic test in which an antibody is used to link a cellular antigen
+    specifically to a stain that can be seen with a microscope.
+  termDef:
+    cde_id: C51944
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Immunohistochemical Test
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C51944
+ncit_C63814:
+  description: Toxicity that impairs or damages the immune system.
+  termDef:
+    cde_id: C63814
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Immunotoxicity
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C63814
+ncit_C70952:
+  description: A numeric representation of a test result.
+  termDef:
+    cde_id: C70952
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Numeric Test Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C70952
+ncit_C81239:
+  description: The circumstance or condition that results in the death of a living
+    being.
+  termDef:
+    cde_id: C81239
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Cause of Death
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C81239
+ncit_C82179:
+  description: An acute leukemia of ambiguous lineage.  It is characterized by the
+    presence of either separate populations of blasts of more than one lineage, or
+    one population of blasts co-expressing markers of more than one lineage.
+  termDef:
+    cde_id: C82179
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Mixed Phenotype Acute Leukemia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82179
+ncit_C82339:
+  description: A myeloid proliferation occurring in newborns with Down syndrome.  It
+    is clinically and morphologically indistinguishable from acute myeloid leukemia
+    and is associated with GATA1 mutations.  The blasts display morphologic and immunophenotypic
+    features of megakaryocytic lineage.  In the majority of patients the myeloid proliferation
+    undergoes spontaneous remission.
+  termDef:
+    cde_id: C82339
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Transient Abnormal Myelopoiesis Associated with Down Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C82339
+ncit_C83017:
+  description: A classification of the laboratory test.
+  termDef:
+    cde_id: C83017
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Laboratory Test Category
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83017
+ncit_C83018:
+  description: A classification of the medical history.
+  termDef:
+    cde_id: C83018
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Medical History Category
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83018
+ncit_C83082:
+  description: A sequence of characters used to identify, name, or characterize the
+    study.
+  termDef:
+    cde_id: C83082
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Study Identifier
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83082
+ncit_C83118:
+  description: The verbatim description of the medical history being reported.
+  termDef:
+    cde_id: C83118
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Medical History Reported Term
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83118
+ncit_C83312:
+  description: A systematic course of action that is performed in order to complete
+    a laboratory test.
+  termDef:
+    cde_id: C83312
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Laboratory Test Method
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83312
+ncit_C83315:
+  description: The type of a material sample taken from a biological entity for laboratory
+    testing.
+  termDef:
+    cde_id: C83315
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Laboratory Specimen Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C83315
+ncit_C86972:
+  description: The ratio of the DNA content or chromosome number in a tumor sample
+    compared to that in a normal sample.
+  termDef:
+    cde_id: C86972
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: DNA Index
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C86972
+ncit_C91220:
+  description: A classification system for acute myeloid leukemias, acute lymphoblastic
+    leukemias, and myelodysplastic syndromes.  It is based on the morphologic and
+    cytochemical evaluation of bone marrow and peripheral blood smears.
+  termDef:
+    cde_id: C91220
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: French-American-British Classification
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91220
+ncit_C93529:
+  description: The rationale for why an entity or event is changed.
+  termDef:
+    cde_id: C93529
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Change Reason
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C93529
+ncit_C94394:
+  description: The total amount of an agent (e.g., drug, biologic, radiation, etc.)
+    administered to a subject over a defined period of time.
+  termDef:
+    cde_id: C94394
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Cumulative Dose
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C94394
+ncit_C94534:
+  description: A qualitative or quantitative measurement of the response of a target
+    lesion(s) to the therapy.
+  termDef:
+    cde_id: C94534
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Response in Target Lesion
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C94534
+ncit_C96643:
+  description: The condition or state of the tumor at a particular time.
+  termDef:
+    cde_id: C96643
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Tumor Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96643
+ncit_C96684:
+  description: The longest possible length of a straight line passing through the
+    center of a circular or spheroid object that connects two points on the circumference.
+  termDef:
+    cde_id: C96684
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Longest Diameter
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96684
+ncit_C97928:
+  description: A variation in the sequence of a specific gene product.
+  termDef:
+    cde_id: C97928
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Gene Product Sequence Variation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C97928
+ncit_C99723:
+  description: A 5 point scale devised to assess the response to treatment of Hodgkin
+    and Aggressive Non-Hodgkin Lymphoma.
+  termDef:
+    cde_id: C99723
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: London Deauville Criteria Point Scale
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99723
+project_id:
+  description: 'Unique ID for any specific defined piece of work that is undertaken
+or attempted to meet a single requirement.'
+state:
+  description: 'The current state of the object.'
+timing_type:
+  description: 'The time frame or phase the patient got a treatment or data have been collected'
