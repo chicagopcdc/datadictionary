@@ -1,9 +1,9 @@
 UUID:
-  description: 'A 128-bit identifier. Depending on the mechanism used to generate
-    it, it is either guaranteed to be different from all other UUIDs/GUIDs generated
-    until 3400 AD or extremely likely to be different. Its relatively small size lends
-    itself well to sorting, ordering, and hashing of all sorts, storing in databases,
-    simple allocation, and ease of programming in general.'
+  description: A 128-bit identifier. Depending on the mechanism used to generate it,
+    it is either guaranteed to be different from all other UUIDs/GUIDs generated until
+    3400 AD or extremely likely to be different. Its relatively small size lends itself
+    well to sorting, ordering, and hashing of all sorts, storing in databases, simple
+    allocation, and ease of programming in general.
   termDef:
     cde_id: C54100
     cde_version: null
@@ -11,25 +11,25 @@ UUID:
     term: Universally Unique Identifier
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=16.02d&ns=NCI_Thesaurus&code=C54100
 data_category:
-  description: 'Broad categorization of the contents of the data file.'
+  description: Broad categorization of the contents of the data file.
 data_file_error_type:
-  description: 'Type of error for the data file object.'
+  description: Type of error for the data file object.
 data_format:
-  description: 'Format of the data files.'
+  description: Format of the data files.
 data_type:
-  description: 'Specific content type of the data file.'
+  description: Specific content type of the data file.
 datetime:
-  description: 'A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]'
+  description: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
 file_name:
-  description: 'The name (or part of a name) of a file (of any type).'
+  description: The name (or part of a name) of a file (of any type).
 file_size:
-  description: 'The size of the data file (object) in bytes.'
+  description: The size of the data file (object) in bytes.
 file_state:
-  description: 'The current state of the data file object.'
+  description: The current state of the data file object.
 id: _terms
 md5sum:
-  description: 'The 128-bit hash value expressed as a 32 digit hexadecimal number
-    used as a file''s digital fingerprint.'
+  description: The 128-bit hash value expressed as a 32 digit hexadecimal number used
+    as a file's digital fingerprint.
 ncit_C116832:
   description: The status describing the extent of central nervous system involvement
     at the time of leukemia diagnosis.
@@ -74,6 +74,14 @@ ncit_C119940:
     source: ncit
     term: Tumor Findings Specimen Type
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C119940
+ncit_C124446:
+  description: The number of lymph nodes that were examined.
+  termDef:
+    cde_id: C124446
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Number of Lymph Nodes Examined
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C124446
 ncit_C127797:
   description: A globally unique identifier for a biomedical article, as assigned
     by PubMed.
@@ -157,6 +165,17 @@ ncit_C15313:
     source: ncit
     term: Radiation Therapy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15313
+ncit_C15329:
+  description: A diagnostic or treatment procedure performed by manual and/or instrumental
+    means, often involving an incision and the removal or replacement of a diseased
+    organ or tissue; of or relating to or involving or used in surgery or requiring
+    or amenable to treatment by surgery.
+  termDef:
+    cde_id: C15329
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Surgical Procedure
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15329
 ncit_C154628:
   description: Vital signs (such as height, weight, and blood pressure) directly measure
     an individual's current state of attributes.
@@ -526,6 +545,14 @@ ncit_C172696:
     source: ncit
     term: Age in Days at End of Radiation Therapy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172696
+ncit_C172697:
+  description: Age of subject (in days) at the start of the transfusion procedure.
+  termDef:
+    cde_id: C172697
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Start of Transfusion Procedure
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172697
 ncit_C172698:
   description: Age of subject (in days) at the start of the total dose calculation.
   termDef:
@@ -534,6 +561,22 @@ ncit_C172698:
     source: ncit
     term: Age in Days at Start of Total Dose Calculation
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172698
+ncit_C173057:
+  description: An infusion or replacement of blood components.
+  termDef:
+    cde_id: C173057
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Transfusion Type
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173057
+ncit_C173195:
+  description: Age of subject (in days) at the start of the cellular immunotherapy.
+  termDef:
+    cde_id: C173195
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Age in Days at Start of Cellular Immunotherapy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173195
 ncit_C173256:
   description: The code used to designate that the subject went off therapy or off
     the study.
@@ -616,6 +659,14 @@ ncit_C173282:
     source: ncit
     term: Total Radiation Dose
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173282
+ncit_C173287:
+  description: The type of product intended for transfusion.
+  termDef:
+    cde_id: C173287
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Transfusion Product
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173287
 ncit_C173293:
   description: The total number of doses administered to the patient over the defined
     period of time.
@@ -1161,6 +1212,23 @@ ncit_C185497:
     source: ncit
     term: Lesion Percentage of Change
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185497
+ncit_C185516:
+  description: A question whether an individual has a single or multiple lymph nodes
+    involved.
+  termDef:
+    cde_id: C185516
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Single or Multiple Lymph Node Involvement
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185516
+ncit_C185526:
+  description: The reason a procedure is performed.
+  termDef:
+    cde_id: C185526
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Procedure Purpose
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185526
 ncit_C185535:
   description: The type of a material sample taken from a biological entity for immunohistochemistry
     testing.
@@ -1260,6 +1328,22 @@ ncit_C185650:
     source: ncit
     term: Original Agent
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185650
+ncit_C185655:
+  description: The type of processing that is used on the transfusion product.
+  termDef:
+    cde_id: C185655
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Transfusion Product Processing
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185655
+ncit_C185656:
+  description: The number of units transfused into an individual.
+  termDef:
+    cde_id: C185656
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Number of Units of Product Transfused
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185656
 ncit_C185679:
   description: The dose amount of the radiation boost.
   termDef:
@@ -1317,6 +1401,14 @@ ncit_C186693:
     source: ncit
     term: Normalization Basis
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186693
+ncit_C186711:
+  description: An query about the involved area of the pelvis.
+  termDef:
+    cde_id: C186711
+    cde_version: Version:23.02d (Release date:2023-02-27)
+    source: ncit
+    term: Pelvic Involvement
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186711
 ncit_C186756:
   description: A query about the type of resection.
   termDef:
@@ -1784,8 +1876,7 @@ ncit_C97928:
     term: Gene Product Sequence Variation
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C97928
 ncit_C99723:
-  description: A 5 point scale devised to assess the response to treatment of Hodgkin
-    and Aggressive Non-Hodgkin Lymphoma.
+  description: A 5 point scale devised to assess the response to treatment of Hodgkin and Aggressive Non-Hodgkin Lymphoma.
   termDef:
     cde_id: C99723
     cde_version: Version:23.02d (Release date:2023-02-27)
@@ -1793,9 +1884,8 @@ ncit_C99723:
     term: London Deauville Criteria Point Scale
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99723
 project_id:
-  description: 'Unique ID for any specific defined piece of work that is undertaken
-or attempted to meet a single requirement.'
+  description: Unique ID for any specific defined piece of work that is undertaken or attempted to meet a single requirement.
 state:
-  description: 'The current state of the object.'
+  description: The current state of the object.
 timing_type:
-  description: 'The time frame or phase the patient got a treatment or data have been collected'
+  description: The time frame or phase the patient got a treatment or data have been collected
