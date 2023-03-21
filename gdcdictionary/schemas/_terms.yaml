@@ -27,6 +27,8 @@ file_size:
 file_state:
   description: The current state of the data file object.
 id: _terms
+experimental_strategy: # TOREVIEW
+  description: The sequencing strategy used to generate the data file.
 md5sum:
   description: The 128-bit hash value expressed as a 32 digit hexadecimal number used
     as a file's digital fingerprint.
