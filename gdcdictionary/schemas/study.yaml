@@ -375,7 +375,24 @@ properties:
       - "Retrieval"
       - "Unknown"
       - "Not Reported"
-
+  treatment_arm:
+    description: "The specific treatment plan(s) within a clinical trial that describe(s) the activities subjects will be involved in as they progress through the study."
+    type: array
+    items:
+      type: string
+  age_at_enrollment:
+    description: "Age of subject (in days) when the subject enrolled in the study."
+    type:
+      - number
+  year_at_enrollment:
+    description: "Year the subject was enrolled"
+    type:
+      - number
+  enrolled_status:
+    description: "The current status of the subject's enrollment."
+    enum:
+      - "Enrolled"
+      - "Not Enrolled"
 
 
   
