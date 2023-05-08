@@ -92,6 +92,7 @@ properties:
       - "9347"
       - "9360"
       - "9361"
+      - "9372"
       - "9375"
       - "9376"
       - "9382"
@@ -173,6 +174,7 @@ properties:
       - ADVL0212
       - ADVL0214
       - ADVL0215
+      - ADVL0314
       - ADVL0316
       - ADVL0413
       - ADVL0414
@@ -317,6 +319,13 @@ properties:
       - MRCAML12
       - MRCAML15
       - N891
+      - NB2005
+      - NB2008
+      - NB2012
+      - NB84
+      - NB8814
+      - NB91
+      - NB97
       - NOPHOAML2004
       - NOPHOAML2012
       - NRSTS2005
@@ -330,6 +339,8 @@ properties:
       - P9851
       - P9963
       - P9972
+      - PEPN2011
+      - PEPN2111
       - POG-8844
       - POG9049
       - PPLLSGAML98
