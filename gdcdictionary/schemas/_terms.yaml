@@ -20,6 +20,8 @@ data_type:
   description: Specific content type of the data file.
 datetime:
   description: A combination of date and time of day in the form [-]CCYY-MM-DDThh:mm:ss[Z|(+|-)hh:mm]
+experimental_strategy:
+  description: The sequencing strategy used to generate the data file.
 file_name:
   description: The name (or part of a name) of a file (of any type).
 file_size:
@@ -27,8 +29,6 @@ file_size:
 file_state:
   description: The current state of the data file object.
 id: _terms
-experimental_strategy: # TOREVIEW
-  description: The sequencing strategy used to generate the data file.
 md5sum:
   description: The 128-bit hash value expressed as a 32 digit hexadecimal number used
     as a file's digital fingerprint.
@@ -138,6 +138,16 @@ ncit_C102955:
     source: ncit
     term: Great Blood Vessel
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C102955
+ncit_C103144:
+  description: A rare, autosomal recessive syndrome characterized by the presence
+    of polyhydramnios, neonatal macrosomia, craniofacial abnormalities, nephroblastomatosis,
+    and predisposition to Wilms tumor.  The prognosis is poor.
+  termDef:
+    cde_id: C103144
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Perlman Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C103144
 ncit_C103253:
   description: A 10 question instrument designed to provide an efficient way of gathering
     general perceptions of health.
@@ -147,6 +157,15 @@ ncit_C103253:
     source: ncit
     term: PROMIS Global Health Questionnaire
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C103253
+ncit_C103424:
+  description: Not all target lesions were assessed. Or not all non-target lesions
+    were assessed.
+  termDef:
+    cde_id: C103424
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Not All Lesions Evaluated
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C103424
 ncit_C103429:
   description: A lymph node located anterior to the auricle of the ear.
   termDef:
@@ -314,6 +333,36 @@ ncit_C111655:
     source: ncit
     term: Ventricular Dysfunction
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C111655
+ncit_C111784:
+  description: Indicates a task, process or examination that has been performed and
+    completed.
+  termDef:
+    cde_id: C111784
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Done
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C111784
+ncit_C111802:
+  description: A rare genetic disorder characterized by nail dystrophy, reticulated
+    skin pigmentation especially on the neck and chest, and oral leukoplakia.  In
+    about half the cases mutations in the TERT, TERC, DKC1, or TINF2 genes are identified.  Patients
+    are at an increased risk of developing bone marrow failure, myelodysplastic syndrome,
+    leukemia, or cancer, especially in the head and neck region.
+  termDef:
+    cde_id: C111802
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Dyskeratosis Congenita
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C111802
+ncit_C113243:
+  description: Neoplasm-derived DNA found in blood plasma and other bodily fluids
+    that is not associated with cells.
+  termDef:
+    cde_id: C113243
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Circulating Tumor-Derived DNA
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C113243
 ncit_C113593:
   description: Human OLFM4 wild-type allele is located in the vicinity of 13q14.3
     and is approximately 23 kb in length. This allele, which encodes olfactomedin-4
@@ -333,6 +382,15 @@ ncit_C113673:
     source: ncit
     term: Reactive Airway Disease
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C113673
+ncit_C113747:
+  description: The collection of cells from the inside of a person's cheek using a
+    swab collection device.
+  termDef:
+    cde_id: C113747
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Buccal Swab
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C113747
 ncit_C114357:
   description: A group of chronic, inflammatory childhood disorders of unknown etiology
     that primarily involve joints.
@@ -362,6 +420,16 @@ ncit_C114879:
     source: ncit
     term: Response Assessment in Neuro-Oncology Criteria
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C114879
+ncit_C115207:
+  description: A rare, autosomal recessive inherited disorder caused by mutation in
+    the c-Mpl gene.  It is characterized by thrombocytopenia and absence of megakaryocytes.  It
+    presents with bleeding in the first month of life.
+  termDef:
+    cde_id: C115207
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Congenital Amegakaryocytic Thrombocytopenia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C115207
 ncit_C115459:
   description: Toxicity that impairs or damages the kidney. This condition is often
     caused by the administration of a pharmaceutical agent that causes damage to the
@@ -389,6 +457,17 @@ ncit_C116151:
     source: ncit
     term: Single Nucleotide Polymorphism Array
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C116151
+ncit_C116161:
+  description: A type of high-throughput, multiplex PCR method used to determine abnormal
+    DNA copy number changes of up to 50 genomic DNA or RNA sequences with a single
+    pair of PCR primers. It is frequently used in the detection of genetic aberrations
+    in tumors, and can distinguish sequences differing in only a single nucleotide.
+  termDef:
+    cde_id: C116161
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Multiplex Ligation-dependent Probe Amplification
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C116161
 ncit_C116396:
   description: A molecular genetic abnormality indicating the presence of a mutation
     in exon 17 of the KIT gene located within 4q11-q12.
@@ -580,6 +659,30 @@ ncit_C118396:
     source: ncit
     term: TP53 Gene Mutation
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C118396
+ncit_C119333:
+  description: The eye positioned in the right orbit.
+  termDef:
+    cde_id: C119333
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Right Eye
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C119333
+ncit_C119334:
+  description: The eye positioned in the left orbit.
+  termDef:
+    cde_id: C119334
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Left Eye
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C119334
+ncit_C119335:
+  description: Of or pertaining to both the left and right eyes,
+  termDef:
+    cde_id: C119335
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Both Eyes
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C119335
 ncit_C119546:
   description: The mean forced expiratory flow rate at 25-75% of the forced vital
     capacity as a proportion of the predicted normal value.
@@ -830,6 +933,20 @@ ncit_C123317:
     source: ncit
     term: DICER1 Syndrome
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C123317
+ncit_C123333:
+  description: A staging system for intraocular retinoblastoma that was developed
+    in the 1960s, when children were treated with external beam radiation therapy.
+    This system can help determine the likelihood of preserving the vision while the
+    tumor is being treated. It is divided into 5 stages, and each stage predicts the
+    potential to save the eye with external beam radiation therapy. Today, radiation
+    therapy is reserved as a last resort to save a second eye, when all other treatments
+    have failed. As a result, the Reese-Ellsworth classification is now rarely used.
+  termDef:
+    cde_id: C123333
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Reese-Ellsworth Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C123333
 ncit_C123452:
   description: A period in a clinical study during which subjects receive continuation
     therapy. This therapy is usually different from the therapy given during the induction
@@ -1474,6 +1591,13 @@ ncit_C124874:
     source: ncit
     term: Intrachromosomal Amplification of Chromosome 21
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C124874
+ncit_C12488:
+  termDef:
+    cde_id: C12488
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Small Cell
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12488
 ncit_C12510:
   description: The uppermost portion of the brainstem located between the pons and
     the diencephalon. The midbrain contains the cerebral peduncles, oculomotor, trochlear
@@ -1515,6 +1639,27 @@ ncit_C125459:
     source: ncit
     term: Improved
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125459
+ncit_C125599:
+  description: A rare syndrome caused by mutations in the EZH2 gene, and rarely mutations
+    in the NSD1 gene. It is characterized by advanced bone age, foot deformities,
+    permanently bent joints, macrocephaly, flattened back of the head, a broad forehead,
+    hypertelorism, large, low-set ears, micrognathia, delayed development of motor
+    skills, and mild intellectual disability.
+  termDef:
+    cde_id: C125599
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Weaver Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125599
+ncit_C125738:
+  description: A set of staging terms for carcinoma developed by the International
+    Federation of Gynecology and Obstetrics (FIGO).
+  termDef:
+    cde_id: C125738
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: FIGO Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C125738
 ncit_C125932:
   description: A standard from which a judgment concerning tumor response to therapy
     can be established.
@@ -1561,6 +1706,42 @@ ncit_C126298:
     source: ncit
     term: HLA Mismatch
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C126298
+ncit_C126344:
+  description: An autosomal recessive immunodeficiency caused but mutation(s) in the
+    ITK gene, encoding tyrosine-protein kinase ITK/TSK. It is characterized by the
+    early childhood onset of Epstein-Barr virus (EBV)-associated immune dysregulation
+    leading to lymphoma, lymphomatoid granulomatosis, hemophagocytic lymphohistiocytosis,
+    and/or hypogammaglobulinemia.
+  termDef:
+    cde_id: C126344
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Lymphoproliferative Syndrome 1
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C126344
+ncit_C126349:
+  description: A condition of decreased or absent presence or activity of endothelial
+    transcription factor GATA-2 protein. Deficiency of this protein is associated
+    with immunodeficiency 21 and autosomal dominant and sporadic monocytopenia and
+    mycobacterial infection syndrome (MonoMAC).
+  termDef:
+    cde_id: C126349
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: GATA2 Deficiency
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C126349
+ncit_C1266:
+  description: A nonsteroidal selective estrogen receptor modulator (SERM) with potential
+    antineoplastic activity.  Trioxifene competes with estradiol in binding to estrogen
+    receptor alpha (ER alpha), thereby inhibiting ER alpha-mediated signal transduction
+    and gene expression. In addition, trioxifene exerts intrinsic estrogenic activity
+    depending on the tissue. Clinical development of trioxifene has not been preceded
+    due to its side effect profile and lack of increased efficacy over tamoxifen.
+  termDef:
+    cde_id: C1266
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Trioxifene
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C1266
 ncit_C12664:
   description: The cavity located between the lungs and pelvis. It contains the lower
     esophagus, stomach, pancreas, intestines, liver, gallbladder and spleen.
@@ -2037,6 +2218,18 @@ ncit_C12809:
     source: ncit
     term: Ulna
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12809
+ncit_C128192:
+  description: An autosomal recessive genetic disorder caused by mutation(s) in the
+    BUB1B gene, encoding mitotic checkpoint serine/threonine-protein kinase B. The
+    condition is characterized by a predisposition to mitotic non-disjunction, resulting
+    in a high percentage of aneuploid cells. The phenotype is variable and there is
+    a predisposition to cancer.
+  termDef:
+    cde_id: C128192
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Mosaic Variegated Aneuploidy Syndrome 1
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C128192
 ncit_C1282:
   description: A second-generation platinum compound with a broad spectrum of antineoplastic
     properties.  Carboplatin contains a platinum atom complexed with two ammonia groups
@@ -2190,6 +2383,16 @@ ncit_C12917:
     source: ncit
     term: Malignant Cell
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12917
+ncit_C129308:
+  description: An autosomal dominant disorder associated with mutation(s) in the SETBP1
+    gene, encoding SET-binding protein. It is characterized by unique facial features,
+    including midface hypoplasia, skeletal abnormalities, and mental retardation.
+  termDef:
+    cde_id: C129308
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Schinzel-Giedion Midface-Retraction Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C129308
 ncit_C129447:
   description: A medulloblastoma which has not been further characterized.
   termDef:
@@ -2311,6 +2514,18 @@ ncit_C130057:
     source: ncit
     term: Number of Events
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C130057
+ncit_C130202:
+  description: A rare childhood cancer predisposition syndrome caused by biallelic
+    inheritance of mutations in MLH1, MSH2, MSH6, or PMS2 genes. It is characterized
+    by the development of childhood cancers, usually hematological malignancies and/or
+    brain tumors, and colorectal cancers with multiple intestinal polyps. The majority
+    of patients show signs of neurofibromatosis type 1.
+  termDef:
+    cde_id: C130202
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Constitutional Mismatch Repair Deficiency Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C130202
 ncit_C13039:
   description: Any component of the female organs and tissues involved in the production
     and maturation of gametes and in their union and subsequent development as offspring.
@@ -2376,6 +2591,28 @@ ncit_C13071:
     source: ncit
     term: Face
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13071
+ncit_C131002:
+  description: An X-linked recessive syndrome caused by mutation(s) in the GPC3, OFD1,
+    or rarely the GPC4 gene, encoding glypican 3, oral-facial-digital syndrome 1 protein,
+    and glypican 4, respectively. The condition is characterized by macrosomia, coarse
+    facies, cryptorchidism, congenital heart, kidney, liver, spleen, and musculoskeletal
+    abnormalities.
+  termDef:
+    cde_id: C131002
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Simpson-Golabi-Behmel Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C131002
+ncit_C131006:
+  description: A group of syndromes caused by autosomal dominant mutation(s) in the
+    WT1 gene, encoding Wilms tumor protein. Patients with this mutation may have a
+    predisposition to developing Wilms tumors.
+  termDef:
+    cde_id: C131006
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Wilms Tumor 1 Gene Syndromes
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C131006
 ncit_C131131:
   description: Response assessment criteria for the evaluation of patients undergoing
     immunotherapy for the treatment of malignant glioma. These recommendations integrate
@@ -2421,6 +2658,17 @@ ncit_C131505:
     source: ncit
     term: t(11;15)(p15;q35)
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C131505
+ncit_C131533:
+  description: An autosomal dominant condition caused by mutation(s) in the ASXL1
+    gene, encoding putative polycomb group protein ASXL1. It is characterized by severe
+    intrauterine growth retardation, profound mental retardation, craniofacial dysmorphisms,
+    and flexion deformities of the upper limbs.
+  termDef:
+    cde_id: C131533
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Bohring-Opitz Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C131533
 ncit_C131672:
   description: Surgical removal of an entire visible lesion, with no obvious lesion
     detected on post-operative evaluation; microscopic residual disease may be present.
@@ -2467,6 +2715,17 @@ ncit_C13202:
     source: ncit
     term: Chromosome
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13202
+ncit_C132067:
+  description: A grade I or grade II glioma arising from the central nervous system.
+    This category includes pilocytic astrocytoma, diffuse astrocytoma, subependymal
+    giant cell astrocytoma, ependymoma, oligodendroglioma, oligoastrocytoma, and angiocentric
+    glioma.
+  termDef:
+    cde_id: C132067
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Low Grade Glioma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132067
 ncit_C132102:
   description: A cytogenetic abnormality that refers to the translocation of chromosome
     10p12 with chromosome 11q23. It is associated with acute myeloid leukemia in childhood.
@@ -2476,6 +2735,14 @@ ncit_C132102:
     source: ncit
     term: t(10;11)(p12;q23)
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132102
+ncit_C132248:
+  description: A cancer stage defined according to the AJCC 8th edition criteria.
+  termDef:
+    cde_id: C132248
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: AJCC v8 Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132248
 ncit_C1326:
   description: The hydrochloride salt of doxorubicin, an anthracycline antibiotic
     with antineoplastic activity. Doxorubicin, isolated from the bacterium Streptomyces
@@ -2570,6 +2837,16 @@ ncit_C13332:
     source: ncit
     term: Bilateral
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13332
+ncit_C133427:
+  description: A clinical staging system for neuroblastoma based on preoperative imaging
+    and determined prior to any treatment, including surgery. It includes two stages
+    of localized disease (L1 and L2) and two stages of metastatic disease (M and MS).
+  termDef:
+    cde_id: C133427
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: International Neuroblastoma Risk Group Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C133427
 ncit_C13352:
   description: Relating to the peritoneal cavity as the intended site of administration.
   termDef:
@@ -2610,6 +2887,19 @@ ncit_C134731:
     source: ncit
     term: Perihilar Bile Duct Cancer Pathologic Regional Lymph Nodes TNM Finding v8
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C134731
+ncit_C134969:
+  description: 'A term that refers to the staging of AIDS-related Kaposi sarcoma according
+    to the AIDS Clinical Trials Group system. The latter incorporates the extent of
+    tumor (T), the status of the immune system (I), as measured by the number of CD4
+    cells present in the blood, and the extent of involvement within the body or systemic
+    illness (S). Under each major heading, there are 2 subgroups: either a 0 (good
+    risk) or a 1 (poor risk) group. (American Cancer Society)'
+  termDef:
+    cde_id: C134969
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: AIDS-Related Kaposi Sarcoma Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C134969
 ncit_C13727:
   description: A translocation between chromosomes 12 and 21 involved in TEL-AML1
     oncogene formation. The translocation produces a chimeric gene encoding a protein
@@ -2745,6 +3035,34 @@ ncit_C139731:
     source: ncit
     term: EWSR1/ZNF444 Fusion Gene
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C139731
+ncit_C140258:
+  description: A staging system for malignant mesenchymal tumors that takes into account
+    the surgical grade, local extent, and presence or absence of metastasis.
+  termDef:
+    cde_id: C140258
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Enneking Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C140258
+ncit_C140270:
+  description: A staging system for Wilms' Tumor that is based on the extent of tumor
+    spread at surgery, after the patient has received neo-adjuvant chemotherapy.
+  termDef:
+    cde_id: C140270
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: International Society of Pediatric Oncology Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C140270
+ncit_C140271:
+  description: A staging system for Wilms' Tumor that is based on the postoperative,
+    pre-chemotherapy pathological features and findings relating to the extent of
+    tumor spread.
+  termDef:
+    cde_id: C140271
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Children's Oncology Group/National Wilms' Tumor Study Group Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C140271
 ncit_C140330:
   description: A semi-quantitative microscopic finding indicating that 25 percent
     or more of the nucleated cells in a bone marrow sample are immature mononuclear
@@ -2776,6 +3094,59 @@ ncit_C1411:
     source: ncit
     term: Paclitaxel
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C1411
+ncit_C141133:
+  description: A staging system designed by the International Childhood Liver Tumor
+    Strategy Group (SIOPEL) for staging and risk stratification of liver tumors. A
+    PRETEXT stage number is based on the number of contiguous liver sections not involved
+    by tumor, corresponding to a rough estimate of the difficulty of the expected
+    surgical procedure. It is used to describe tumor extent before any therapy, thus
+    allowing more effective comparison between studies conducted by different groups.
+  termDef:
+    cde_id: C141133
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: PRETEXT Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C141133
+ncit_C141138:
+  description: A lymphoma anatomic stage defined according to the Ann Arbor classification
+    criteria.
+  termDef:
+    cde_id: C141138
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Ann Arbor Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C141138
+ncit_C141147:
+  description: An adult non-Hodgkin lymphoma and adult and childhood Hodgkin lymphoma
+    stage defined according to the Lugano classification criteria.
+  termDef:
+    cde_id: C141147
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Lugano Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C141147
+ncit_C141216:
+  description: A stage defined according to St. Jude Children's Research Hospital
+    staging system for childhood non-Hodgkin lymphoma.
+  termDef:
+    cde_id: C141216
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: St. Jude Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C141216
+ncit_C1413:
+  description: A semisynthetic derivative of camptothecin, a cytotoxic, quinoline-based
+    alkaloid extracted from the Asian tree Camptotheca acuminata. Topotecan inhibits
+    topoisomerase I activity by stabilizing the topoisomerase I-DNA covalent complexes
+    during S phase of cell cycle, thereby inhibiting religation of topoisomerase I-mediated
+    single-strand DNA breaks and producing potentially lethal double-strand DNA breaks
+    when encountered by the DNA replication machinery.
+  termDef:
+    cde_id: C1413
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Topotecan
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C1413
 ncit_C14174:
   description: A term referring to the clinical or pathologic observation of a tumor
     extension from its original site of growth to another anatomic site.
@@ -2824,6 +3195,18 @@ ncit_C142099:
     source: ncit
     term: Trisomy 21 Mosaicism
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C142099
+ncit_C14215:
+  description: Hepatitis B Virus (HBV) is the prototype of the Hepadnavirus Family.  Included
+    in the family are the Woodchuck Hepatitis Virus (WHV) and the Duck Hepatitis B
+    Virus (DHBV) which provide animal models of infection.  The HBV genome is a partially
+    double stranded circular DNA.  A viral reverse transcriptase is bound to the 5'
+    extremity of the long strand.
+  termDef:
+    cde_id: C14215
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Hepatitis B Virus
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14215
 ncit_C142170:
   description: A patient is receiving treatment.
   termDef:
@@ -2928,6 +3311,28 @@ ncit_C1474:
     source: ncit
     term: Filgrastim
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C1474
+ncit_C147530:
+  description: An autosomal dominant condition caused by mutation(s) in the SAMD9
+    gene, encoding sterile alpha motif domain-containing protein 9A. It is a syndromic
+    condition comprising myelodysplasia, infection, restriction of growth, adrenal
+    hypoplasia, genital abnormalities, and enteropathy.
+  termDef:
+    cde_id: C147530
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: MIRAGE Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C147530
+ncit_C148010:
+  description: 'Staging and grouping for rhabdomyosarcoma that groups patients into
+    low, intermediate, or high clinical risk groups based on: histologic type, tumor
+    site, tumor size, and pathologic TNM. Note: this is not the TNM system described
+    in AJCC.'
+  termDef:
+    cde_id: C148010
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Intergroup Rhabdomyosarcoma Study Group Clinical Staging and Grouping System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C148010
 ncit_C150887:
   description: A female progeny with genetic makeup inherited from the parent.
   termDef:
@@ -2961,6 +3366,14 @@ ncit_C15189:
     source: ncit
     term: Biopsy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15189
+ncit_C151909:
+  description: A change in the nucleotide sequence of the ANKRD26 gene.
+  termDef:
+    cde_id: C151909
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: ANKRD26 Gene Mutation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C151909
 ncit_C15191:
   description: A procedure that collects a component of the peripheral blood while
     returning the rest to the donor.
@@ -3001,6 +3414,14 @@ ncit_C15195:
     source: ncit
     term: Brachytherapy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15195
+ncit_C152088:
+  description: A change in the nucleotide sequence of the ACD gene.
+  termDef:
+    cde_id: C152088
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: ACD Gene Mutation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C152088
 ncit_C15232:
   description: The surgical removal of a lesion, often as part of a biopsy and with
     healthy margins.
@@ -3274,6 +3695,14 @@ ncit_C156057:
     source: ncit
     term: MicroRNA Sequencing
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C156057
+ncit_C15607:
+  description: A diagnosis made from a study of the signs and symptoms of a disease.
+  termDef:
+    cde_id: C15607
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Clinical Diagnosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15607
 ncit_C15632:
   description: The use of synthetic or naturally-occurring chemicals for the treatment
     of diseases.
@@ -3302,6 +3731,14 @@ ncit_C156450:
     source: ncit
     term: International System for Human Cytogenetic Nomenclature
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C156450
+ncit_C15650:
+  description: Radiation therapy using electron beam.
+  termDef:
+    cde_id: C15650
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Electron Beam Therapy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C15650
 ncit_C156660:
   description: A non-neoplastic or neoplastic disorder that affects the genitourinary
     system.
@@ -3366,6 +3803,14 @@ ncit_C1570:
     source: ncit
     term: Dinutuximab
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C1570
+ncit_C157432:
+  description: Nothing was identified.
+  termDef:
+    cde_id: C157432
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: None Identified
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C157432
 ncit_C157443:
   description: The degree to which the lesion has been cut out, or resected.
   termDef:
@@ -3374,6 +3819,17 @@ ncit_C157443:
     source: ncit
     term: Extent of Resection
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C157443
+ncit_C157449:
+  description: An autosomal dominant tumor syndrome caused by germline CDKN1B mutations
+    that result in a phenotype similar to that of multiple endocrine neoplasia type
+    1, characterized by endocrine neoplasms, particularly in the parathyroid glands,
+    pituitary, and pancreas. (WHO 2017)
+  termDef:
+    cde_id: C157449
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Multiple Endocrine Neoplasia Type 4
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C157449
 ncit_C15753:
   description: Cancer registries gather a wide variety of specific information on
     cancer patients that can be analyzed to identify health disparity trends in cancer
@@ -3559,6 +4015,15 @@ ncit_C160424:
     source: ncit
     term: Non-Regional Lymph Node New Tumor Event
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C160424
+ncit_C160903:
+  description: A code for the primary site of a tumor being reported using either
+    ICD-O-2 or ICD-O-3.
+  termDef:
+    cde_id: C160903
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: ICD-O Tumor Topography Code
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C160903
 ncit_C16104:
   description: Clinical trial conducted according to a single protocol but at more
     than one site and, therefore, carried out by more than one investigator.
@@ -3622,6 +4087,24 @@ ncit_C162614:
     source: ncit
     term: Tumor Laterality Midline
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C162614
+ncit_C162615:
+  description: A finding indicating the tumor laterality is unknown.
+  termDef:
+    cde_id: C162615
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Tumor Laterality Unknown
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C162615
+ncit_C162696:
+  description: An autosomal dominant condition caused by mutation(s) in the RUNX1
+    gene, encoding runt-related transcription factor 1. It is characterized by thrombocytopenia,
+    abnormal platelet function, and a propensity to develop acute myeloid leukemia.
+  termDef:
+    cde_id: C162696
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Familial Platelet Disorder with Associated Myeloid Malignancy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C162696
 ncit_C16313:
   description: A specific humoral or cell-mediated immune response against autologous
     (self) antigens.
@@ -4188,6 +4671,14 @@ ncit_C168821:
     source: ncit
     term: Match at Both HLA Alleles
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168821
+ncit_C168822:
+  description: The site of the extramedullary myeloid sarcoma.
+  termDef:
+    cde_id: C168822
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Extramedullary Myeloid Sarcoma Site
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168822
 ncit_C168823:
   description: The year when a disease phase was assigned to an individual's condition.
   termDef:
@@ -4535,6 +5026,14 @@ ncit_C168895:
     source: ncit
     term: Measurable Residual Disease Molecular Marker
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168895
+ncit_C168918:
+  description: The number of cells in metaphase during karyotype analysis.
+  termDef:
+    cde_id: C168918
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Number of Cells in Metaphase during Karyotyping
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C168918
 ncit_C168923:
   description: The extent of HLA-A matching between the donor and the recipient.
   termDef:
@@ -5036,6 +5535,19 @@ ncit_C172233:
     source: ncit
     term: Site of Metastasis
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172233
+ncit_C172639:
+  description: A syndrome caused by germline mutations in the BAP1 gene. It is inherited
+    in an autosomal dominant pattern. Individuals carrying heterozygous BAP1 mutations
+    have an increased risk of developing various tumor types, most commonly BAP1-inactivated
+    nevi /melanocytomas of the skin, uveal and cutaneous melanomas, peritoneal and
+    pleural mesotheliomas, clear cell renal cell carcinoma, and basal cell carcinoma.
+    (WHO 2018)
+  termDef:
+    cde_id: C172639
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: BAP1 Tumor Predisposition Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C172639
 ncit_C172677:
   description: Age of subject (in days) at the onset of the adverse event.
   termDef:
@@ -5297,6 +5809,15 @@ ncit_C173278:
     source: ncit
     term: Karyotype ISCN
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173278
+ncit_C173279:
+  description: The number of independent aberrations found in the karyotype during
+    analysis.
+  termDef:
+    cde_id: C173279
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Number of Independent Aberrations in Karyotype
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173279
 ncit_C173281:
   description: The anatomic site of the radiation therapy.
   termDef:
@@ -5564,6 +6085,15 @@ ncit_C173543:
     source: ncit
     term: t(2;12)
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173543
+ncit_C173545:
+  description: The determination of the ratio of variant alleles to wild-type alleles
+    present in a sample.
+  termDef:
+    cde_id: C173545
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Allele Ratio Measurement
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173545
 ncit_C173595:
   description: The gene symbol that represents either a single gene that has a mutation
     or the gene that comprises the 5' portion of the coding sequence involved in a
@@ -5611,6 +6141,14 @@ ncit_C17395:
     source: ncit
     term: S Phase Process
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17395
+ncit_C174119:
+  description: A small volume of saliva removed for testing or storage.
+  termDef:
+    cde_id: C174119
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Saliva Sample
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174119
 ncit_C174442:
   description: A measure of an individual's overall performance status or ability
     to perform their activities of daily living.
@@ -6139,6 +6677,16 @@ ncit_C174989:
     source: ncit
     term: VAIA-VAIA Treatment Arm of AEWS07P1
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C174989
+ncit_C17499:
+  description: Regulatory protein E2 (365 aa, ~42 kDa) is encoded by the human papillomavirus
+    type 18 E2 gene. This protein plays a role in both transcription and replication
+    of viral genes.
+  termDef:
+    cde_id: C17499
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Regulatory Protein E2, Human Papillomavirus Type 18
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17499
 ncit_C174990:
   description: The treatment arm EVAIA-EVAIA of EWS study AEWS07P1.
   termDef:
@@ -6556,6 +7104,15 @@ ncit_C175529:
     source: ncit
     term: Age in Days at Treatment Assignment
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175529
+ncit_C175600:
+  description: A unique identifier for a subject in a Pediatric Cancer Data Commons
+    (PCDC) study.
+  termDef:
+    cde_id: C175600
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: PCDC Subject Identifier
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C175600
 ncit_C17563:
   description: A physical mapping approach that uses fluorescent tags to detect hybridization
     of probes within metaphase chromosomes or less condensed somatic interphase chromatin.
@@ -6602,6 +7159,28 @@ ncit_C17649:
     source: ncit
     term: Other
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17649
+ncit_C176588:
+  description: An autosomal dominant cancer predisposition syndrome caused by germline
+    mutations of the CHEK2 gene. It is associated with breast carcinoma, gastric carcinoma,
+    colorectal carcinoma, thyroid gland carcinoma, kidney carcinoma, prostate carcinoma,
+    and non-Hodgkin lymphoma.
+  termDef:
+    cde_id: C176588
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: CHEK2-Associated Li-Fraumeni-Like Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176588
+ncit_C176628:
+  description: A cancer susceptibility syndrome caused by inactivating germline mutations
+    of the CDH1 gene. It is associated with the development of lobular carcinoma of
+    the breast. Females with mutation of the CDH1 gene have a 40% risk of developing
+    lobular breast carcinoma.
+  termDef:
+    cde_id: C176628
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: CDH1-Associated Breast Carcinoma Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176628
 ncit_C17666:
   description: Any mutation that appears in the gametes and which will therefore be
     transmitted to the progeny with some frequency.
@@ -6659,6 +7238,64 @@ ncit_C17687:
     source: ncit
     term: Adenomatous Polyposis Coli Protein
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17687
+ncit_C176906:
+  description: An inherited condition caused by autosomal dominant mutation(s) in
+    the KIT or PDGFRA genes, encoding mast/stem cell growth factor receptor Kit and
+    platelet derived growth factor receptor alpha respectively. The condition is characterized
+    by the occurrence of multiple gastrointestinal stromal tumors (GIST).
+  termDef:
+    cde_id: C176906
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Hereditary Gastrointestinal Stromal Tumor
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176906
+ncit_C176907:
+  description: An inherited condition caused by mutation(s) in the PAX5 gene, encoding
+    paired box protein Pax-5. The condition is characterized by an increased risk
+    of developing B-cell acute lymphoblastic leukemia.
+  termDef:
+    cde_id: C176907
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Acute Lymphoblastic Leukemia, Susceptibility to, 3
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176907
+ncit_C176909:
+  description: An inherited condition caused by autosomal dominant mutation(s) in
+    the SAMD9L gene, encoding sterile alpha motif domain-containing protein 9-like.
+    The condition is characterized by cerebellar ataxia, variable hematologic cytopenias,
+    and predisposition to bone marrow failure and myeloid leukemia.
+  termDef:
+    cde_id: C176909
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Ataxia-Pancytopenia Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176909
+ncit_C176941:
+  description: An inherited condition caused by autosomal dominant mutation(s) in
+    the SPRED1 gene, encoding sprouty-related, EVH1 domain-containing protein 1. The
+    condition resembles neurofibromatosis type I but is less severe. Affected individuals
+    may present with multiple cafe-au-lait spots, variable dysmorphic features, including
+    hypertelorism or macrocephaly, lipomas, and mild learning disabilities or attention
+    problems.
+  termDef:
+    cde_id: C176941
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Legius Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176941
+ncit_C176942:
+  description: An inherited condition caused by autosomal dominant mutation(s) in
+    the CBL gene, encoding E3 ubiquitin-protein ligase CBL. The condition resembles
+    Noonan syndrome 1 and is characterized by facial dysmorphism, a wide spectrum
+    of cardiac disease, reduced growth, variable cognitive deficits, and ectodermal
+    and musculoskeletal anomalies. Affected individuals may have an increased risk
+    for certain malignancies, particularly juvenile myelomonocytic leukemia.
+  termDef:
+    cde_id: C176942
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Noonan Syndrome-Like Disorder with or without Juvenile Myelomonocytic Leukemia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C176942
 ncit_C17726:
   description: A record of a patient's background regarding health and disease events
     of blood relatives. A patient's family medical history may be important in diagnosing
@@ -6893,6 +7530,41 @@ ncit_C177360:
     source: ncit
     term: Source of Institutional or Central Histological Assessment
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177360
+ncit_C177361:
+  description: The numeric value for the histology result.
+  termDef:
+    cde_id: C177361
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Numeric Histology Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177361
+ncit_C177362:
+  description: The unit being used as the measurement for the histology test.
+  termDef:
+    cde_id: C177362
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Numeric Histology Result Unit
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177362
+ncit_C177363:
+  description: A nodule of mature glial tissue that develops in the peritoneum. It
+    is usually accompanied by mature or immature ovarian teratoma.
+  termDef:
+    cde_id: C177363
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Mature Glial Implant
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177363
+ncit_C177364:
+  description: A malignant non-germ cell component that typically develops secondarily
+    within a germ cell tumor. The malignant cellular component is usually sarcomatous
+    or carcinomatous.
+  termDef:
+    cde_id: C177364
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Somatic-Type Malignancy
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177364
 ncit_C177365:
   description: The maximum level that must be exceeded for a certain reaction to occur
     or be manifested.
@@ -6954,6 +7626,14 @@ ncit_C177374:
     source: ncit
     term: Pulmonary Toxicity
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177374
+ncit_C177376:
+  description: The therapy chosen to treat Growing Teratoma Syndrome.
+  termDef:
+    cde_id: C177376
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Growing Teratoma Syndrome Treatment
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177376
 ncit_C177377:
   description: Survey measures that are completed by the patient which help assess
     patient status with regards to pain, mobility, quality of life, ability to perform
@@ -7007,6 +7687,54 @@ ncit_C177585:
     source: ncit
     term: Ann Arbor B Symptoms Indicator
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177585
+ncit_C177587:
+  description: An indication of whether malignant cells are present in a bone marrow
+    sample.
+  termDef:
+    cde_id: C177587
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Bone Marrow Malignant Cell Indicator
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177587
+ncit_C177630:
+  description: A staging system developed by Children's Oncology Group (COG) that
+    categorizes liver tumors based on the size and extent of the tumor.
+  termDef:
+    cde_id: C177630
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Children's Oncology Group Liver Tumor Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177630
+ncit_C177631:
+  description: A staging system that categorizes treatment intensity for patients
+    with neuroblastoma on the basis of risk (prognostic) factors defined by Children's
+    Oncology Group (COG).
+  termDef:
+    cde_id: C177631
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Children's Oncology Group Neuroblastoma Risk Group Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177631
+ncit_C177632:
+  description: A staging system developed by Children's Oncology Group (COG) that
+    categorizes renal tumors, often Wilms tumor, based on the size and extent of the
+    tumor.
+  termDef:
+    cde_id: C177632
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Children's Oncology Group Renal Cancer Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177632
+ncit_C177633:
+  description: A staging system that categorizes treatment intensity for patients
+    with retinoblastoma on the basis of risk (prognostic) factors defined by Children's
+    Oncology Group (COG).
+  termDef:
+    cde_id: C177633
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Children's Oncology Group Retinoblastoma Risk Group Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C177633
 ncit_C1777:
   description: A bicyclam with hematopoietic stem cell-mobilizing activity. Plerixafor
     blocks the binding of stromal cell-derived factor (SDF-1alpha) to the cellular
@@ -7299,6 +8027,21 @@ ncit_C178095:
     source: ncit
     term: AALL0331 ALL Study Identifier
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178095
+ncit_C178129:
+  description: An inherited condition caused by autosomal dominant mutation(s) in
+    the SHOC2 or PPP1CB genes, encoding leucine-rich repeat protein SHOC-2 and serine/threonine-protein
+    phosphatase PP1-beta catalytic subunit, respectively. The condition is characterized
+    by facial features similar to those seen in Noonan syndrome but may also include
+    short stature, cognitive deficits, relative macrocephaly, small posterior fossa
+    resulting in Chiari I malformation, hypernasal voice, cardiac defects, and ectodermal
+    abnormalities, which typically presents as slow-growing, sparse, and/or unruly
+    hair.
+  termDef:
+    cde_id: C178129
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Noonan Syndrome-Like Disorder with Loose Anagen Hair
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178129
 ncit_C178140:
   description: A measurement of the length of time that it takes for clotting to occur
     when no activating reagents are added to a biological specimen. The test is partial
@@ -7327,6 +8070,20 @@ ncit_C178270:
     source: ncit
     term: Delayed Intensification Therapy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178270
+ncit_C178285:
+  description: 'A group of rare disorders that are usually caused by somatic mutations
+    in the PIK3CA gene, but may rarely be caused by de novo germline mutations. These
+    disorders are typically characterized by sporadic overgrowth of parts of the body,
+    intellectual disability, low muscle tone, and vascular malformations with congenital
+    or early childhood onset. Representative examples include: fibroadipose hyperplasia,
+    CLOVES syndrome, megalencephaly-capillary malformation syndrome, hemihyperplasia-multiple
+    lipomatosis syndrome, hemimegalencephaly, and facial infiltrating lipomatosis.'
+  termDef:
+    cde_id: C178285
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: PIK3CA-Related Overgrowth Spectrum
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178285
 ncit_C178287:
   description: A word or phrase that describes the type or extent of anaplasia found
     during a histopathologic exam.
@@ -7336,6 +8093,100 @@ ncit_C178287:
     source: ncit
     term: Anaplasia Descriptor
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178287
+ncit_C178379:
+  description: An autosomal dominant condition caused by mutation(s) in the CEBPA
+    gene, encoding CCAAT/enhancer-binding protein alpha. It is characterized by an
+    increased risk of developing hematologic malignancies, primarily myeloid.
+  termDef:
+    cde_id: C178379
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: CEPBA-Related Predisposition to Leukemia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178379
+ncit_C178380:
+  description: An autosomal dominant condition caused by mutation(s) in the DDX41
+    gene, encoding probable ATP-dependent RNA helicase DDX41. It is characterized
+    by an increased risk of developing hematologic malignancies, including myeloid
+    and lymphoid leukemias and lymphoma.
+  termDef:
+    cde_id: C178380
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: DDX41-Related Predisposition to Leukemia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178380
+ncit_C178382:
+  description: A group of autosomal dominant-inherited disorders caused by mutation(s)
+    in the CDC73 gene, encoding parafibromin. These disorders are associated with
+    hyperparathyroidism secondary to parathyroid neoplasms.
+  termDef:
+    cde_id: C178382
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: CDC73-Related Neoplastic Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178382
+ncit_C178386:
+  description: An autosomal dominant condition caused by mutation(s) in the ETV6 gene,
+    encoding transcription factor ETV6. It is characterized by an increased risk of
+    developing thrombocytopenia and diverse hematologic malignancies, including myelodysplastic
+    syndrome, acute myeloid leukemia, chronic myelomonocytic leukemia, B lymphoblastic
+    leukemia, and plasma cell myeloma.
+  termDef:
+    cde_id: C178386
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: ETV6-Related Predisposition to Leukemia and Thrombocytopenia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178386
+ncit_C178387:
+  description: An autosomal dominant condition caused by mutation(s) in the ANKRD26
+    gene, encoding ankyrin repeat domain-containing protein 26. It is characterized
+    by moderate thrombocytopenia and an increased risk of developing myelodysplastic
+    syndrome/acute myeloid leukemia.
+  termDef:
+    cde_id: C178387
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: ANKRD26-Related Predisposition to Leukemia and Thrombocytopenia
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178387
+ncit_C178390:
+  description: An autosomal dominant condition caused by mutation(s) in the SAMD9L
+    gene, encoding sterile alpha motif domain-containing protein 9-like. It is characterized
+    by an increased risk of developing myelodysplastic syndrome.
+  termDef:
+    cde_id: C178390
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: SAMD9L-Related Predisposition to Myelodysplastic Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178390
+ncit_C178392:
+  description: A genetic predisposition to Wilms tumor due to germline mutation(s)
+    in the REST, TRIM28, or CTR9 genes, encoding RE1-silencing transcription factor,
+    transcription intermediary factor 1-beta, and RNA polymerase-associated protein
+    CTR9 homolog, respectively.
+  termDef:
+    cde_id: C178392
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genetic Predisposition to Non-Syndromic Wilms Tumor
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178392
+ncit_C178393:
+  description: Rhabdoid tumor predisposition syndrome caused by mutation(s) in the
+    SMARCB1 gene, encoding SWI/SNF-related matrix-associated actin-dependent regulator
+    of chromatin subfamily B member 1.
+  termDef:
+    cde_id: C178393
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Rhabdoid Tumor Predisposition Syndrome 1
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178393
+ncit_C178394:
+  description: Rhabdoid tumor predisposition syndrome caused by mutation(s) in the
+    SMARCA4 gene, encoding transcription activator BRG1.
+  termDef:
+    cde_id: C178394
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Rhabdoid Tumor Predisposition Syndrome 2
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C178394
 ncit_C178921:
   description: A laboratory test result that indicates that a specific disease, condition,
     or attribute being assessed is not clearly present or absent.
@@ -7374,6 +8225,60 @@ ncit_C17943:
     source: ncit
     term: Morphology
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17943
+ncit_C179469:
+  description: An inherited condition caused by mutation(s) in the ALK or PHOX2B genes,
+    encoding ALK tyrosine kinase receptor and paired mesoderm homeobox protein 2B,
+    respectively. The condition is characterized by an increased risk of developing
+    neuroblastoma.
+  termDef:
+    cde_id: C179469
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genetic Predisposition to Neuroblastoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C179469
+ncit_C179470:
+  description: An inherited condition caused by mutation(s) in the NOTCH3 or PDGFRB
+    genes, encoding neurogenic locus notch homolog protein 3 and platelet-derived
+    growth factor receptor beta, respectively. The condition is characterized by an
+    increased risk of developing myofibroma.
+  termDef:
+    cde_id: C179470
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genetic Predisposition to Myofibromatosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C179470
+ncit_C179471:
+  description: An inherited condition caused by mutation(s) in the SMARCE1 gene, encoding
+    SWI/SNF-related matrix-associated actin-dependent regulator of chromatin subfamily
+    E member 1. The condition is characterized by an increased risk of developing
+    meningioma.
+  termDef:
+    cde_id: C179471
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genetic Predisposition to Meningioma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C179471
+ncit_C179472:
+  description: An inherited condition caused by mutation(s) in the CDKN2A or CDK4
+    genes, encoding cyclin-dependent kinase inhibitor 2A and cyclin-dependent kinase
+    4, respectively. The condition is characterized by an increased risk of developing
+    melanoma.
+  termDef:
+    cde_id: C179472
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genetic Predisposition to Melanoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C179472
+ncit_C179473:
+  description: An inherited condition caused by mutation(s) in the MET gene, encoding
+    hepatocyte growth factor receptor. The condition is characterized by an increased
+    risk of developing papillary renal cell carcinoma.
+  termDef:
+    cde_id: C179473
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genetic Predisposition to Papillary Renal Cell Carcinoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C179473
 ncit_C179483:
   description: Terminology created by EVS and PCDC to support the OS Radiation Therapy
     Table.
@@ -7442,6 +8347,14 @@ ncit_C18004:
     source: ncit
     term: Staging System
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18004
+ncit_C18009:
+  description: A tumor sample, or entire tumor that is removed for microscopic examination.
+  termDef:
+    cde_id: C18009
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Tumor Tissue
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18009
 ncit_C180341:
   description: A scientific society formed by professionals from more than sixty medical
     centers across Spain. This group includes surgeons, pediatricians, oncologic radiation
@@ -7722,6 +8635,15 @@ ncit_C18068:
     source: ncit
     term: Radiation Dose Unit
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18068
+ncit_C180728:
+  description: T1 weighted magnetic resonance imaging done with the addition of a
+    contrast agent to enhance tissues.
+  termDef:
+    cde_id: C180728
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: T1-Weighted Magnetic Resonance Imaging with Contrast
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C180728
 ncit_C180729:
   description: A method of magnetic resonance imaging (MRI) that creates contrast
     between tissues based on differences in the transverse relaxation of a tissue's
@@ -7827,6 +8749,18 @@ ncit_C182032:
     source: ncit
     term: AMLBFM1998 AML Study Identifier
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C182032
+ncit_C18206:
+  description: A biological process that involves the transfer and growth of cancer
+    cells from the site of the primary tumor. Relocation of malignant cells during
+    metastasis can be restricted to movement within a specific tissue/organ or may
+    entail migration to a distal locus within the body. This phenotype is a characteristic
+    of all malignant tumors.
+  termDef:
+    cde_id: C18206
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Distant Metastasis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C18206
 ncit_C18213:
   description: A disease that is neither decreasing nor increasing in extent or severity.
   termDef:
@@ -8277,6 +9211,14 @@ ncit_C185641:
     source: ncit
     term: Non-Hematologic Toxicity
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185641
+ncit_C185642:
+  description: A problem scheduling an event.
+  termDef:
+    cde_id: C185642
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Scheduling Issue
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185642
 ncit_C185643:
   description: A particular drug is unavailable.
   termDef:
@@ -8373,6 +9315,15 @@ ncit_C185656:
     source: ncit
     term: Number of Units of Product Transfused
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185656
+ncit_C185657:
+  description: An evaluation prior to the completion of therapy that the individual
+    is responding to therapy.
+  termDef:
+    cde_id: C185657
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Interim Response
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C185657
 ncit_C185658:
   description: An evaluation prior to the completion of therapy that the individual
     is responding rapidly to therapy.
@@ -8846,6 +9797,15 @@ ncit_C186775:
     source: ncit
     term: POSTOP-CHEMO
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186775
+ncit_C186776:
+  description: A treatment arm for patients receiving mifepristone as part of the
+    postoperative chemotherapy.
+  termDef:
+    cde_id: C186776
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: POSTOP-CHEMO-MIF
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C186776
 ncit_C186777:
   description: A treatment arm for patients receiving chemotherapy in combination
     with zoledronic acid.
@@ -8938,6 +9898,68 @@ ncit_C189958:
     source: ncit
     term: Copy Number Loss
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C189958
+ncit_C190021:
+  description: The results of a bone marrow test.
+  termDef:
+    cde_id: C190021
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Bone Marrow Test Result
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C190021
+ncit_C190373:
+  description: A hereditary cancer syndrome characterized by the development of multiple
+    paragangliomas including pheochromocytomas. It is caused by mutations in SDHA,
+    SDHB, SDHC, SDHD, and SDHAF2 genes.
+  termDef:
+    cde_id: C190373
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Hereditary Paraganglioma-Pheochromocytoma Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C190373
+ncit_C191951:
+  description: Review by a single person or group of laboratory test results, protocols,
+    or other data generated from multiple locations.
+  termDef:
+    cde_id: C191951
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Central Review
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C191951
+ncit_C192774:
+  description: An international organization of healthcare professionals devoted to
+    the care and treatment of children and young people with soft tissue sarcoma.
+  termDef:
+    cde_id: C192774
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: European Paediatric Soft Tissue Sarcoma Study Group
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C192774
+ncit_C192775:
+  description: An international pediatric oncology committee that specializes in the
+    research of malignant mesenchymal tumors. Along with the Associazione Italiana
+    Ematologia Oncologia Pediatrica-Soft Tissue Sarcoma Committee (AIEOP-STSC), which
+    was formerly known as the Italian Cooperative Group (ICG), SIOP-MMT founded the
+    European pediatric Soft tissue sarcoma Study Group (EpSSG) and the Non-rhabdomyosarcoma
+    Soft Tissue Sarcoma (NRSTS) study in 2005 with the goal of making pediatric non-rhabdomyosarcoma
+    soft tissue sarcoma treatment uniform across Europe.
+  termDef:
+    cde_id: C192775
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: International Society of Paediatric Oncology Malignant Mesenchymal Tumour
+      Committee
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C192775
+ncit_C192777:
+  description: An international pediatric soft tissue sarcoma study group, also known
+    as the Cooperative Soft Tissue Sarcoma Group, that creates guidance for risk-adapted
+    treatment of soft tissue sarcoma and soft tissue tumors in children, adolescents,
+    and young adults in Europe.
+  termDef:
+    cde_id: C192777
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Cooperative Weichteilsarkom Studiengruppe
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C192777
 ncit_C19296:
   description: Any rearrangement to the genomic content that results in the loss of
     one or more nucleotides of DNA. Deletions are generally irreversible rearrangements.
@@ -8949,6 +9971,14 @@ ncit_C19296:
     source: ncit
     term: Deletion Mutation
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19296
+ncit_C19594:
+  description: Not characterized in any other way.
+  termDef:
+    cde_id: C19594
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Not Otherwise Specified
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19594
 ncit_C19697:
   description: A piece of tissue removed from an organism for examination, analysis,
     or propagation.
@@ -8958,6 +9988,21 @@ ncit_C19697:
     source: ncit
     term: Tissue Sample
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19697
+ncit_C19741:
+  description: A group with aims to conduct, develop, coordinate, and stimulate laboratory
+    and clinical research in Europe to improve the management of cancer and related
+    problems by increasing survival but also patients' quality of life. There are
+    more than 60 institutions and departments that have been recognized by EORTC as
+    affiliated. These groups conduct, on a voluntary basis, laboratory research and/or
+    clinical trials on all types of cancers using a multidisciplinary approach. EORTC
+    maintains close working relationship with NCI and the British Cancer Research
+    United Kingdom in London.
+  termDef:
+    cde_id: C19741
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: European Organization for Research and Treatment of Cancer
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19741
 ncit_C20197:
   description: A person who belongs to the sex that normally produces sperm. The term
     is used to indicate biological sex distinctions, cultural gender role distinctions,
@@ -9016,6 +10061,15 @@ ncit_C20493:
     source: ncit
     term: Interferon
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C20493
+ncit_C20826:
+  description: The use of molecular tools and techniques, especially gene and protein
+    expression profiles, to diagnose disease.
+  termDef:
+    cde_id: C20826
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Molecular Diagnosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C20826
 ncit_C20989:
   description: A systemic evaluation of the body and its functions using visual inspection,
     palpation, percussion and auscultation. The purpose is to determine the presence
@@ -9247,6 +10301,14 @@ ncit_C25245:
     source: ncit
     term: Surface
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25245
+ncit_C25269:
+  description: Exhibiting the symptoms of a particular disease.
+  termDef:
+    cde_id: C25269
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Symptomatic
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25269
 ncit_C25298:
   description: The maximum pressure exerted into the systemic arterial circulation
     during the contraction of the left ventricle of the heart.
@@ -9282,6 +10344,18 @@ ncit_C25351:
     source: ncit
     term: Reconstructive Surgery
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25351
+ncit_C25384:
+  description: A system for clinicopathologic evaluation of tumors based on the extent
+    of tumor involvement at the primary site (T, followed by a number indicating size
+    and depth of invasion), and lymph node involvement (N) and metastasis (M) each
+    followed by a number starting at 0 for no evident metastasis; numbers used depend
+    on the organ involved and influence the prognosis and choice of treatment.
+  termDef:
+    cde_id: C25384
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: TNM Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25384
 ncit_C25389:
   description: The anterior side of the thorax from the neck to the abdomen. The shape
     of the chest is often regarded as potential insight into a disease process, as
@@ -9292,6 +10366,14 @@ ncit_C25389:
     source: ncit
     term: Chest
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25389
+ncit_C25418:
+  description: Addition of extra material.
+  termDef:
+    cde_id: C25418
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Amplification
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25418
 ncit_C25458:
   description: Having been established or verified.
   termDef:
@@ -9341,6 +10423,14 @@ ncit_C25626:
     source: ncit
     term: Present
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25626
+ncit_C25688:
+  description: A condition or state at a particular time.
+  termDef:
+    cde_id: C25688
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Status
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25688
 ncit_C25738:
   description: A localized pathological necrosis of tissue resulting from obstruction
     of the blood supply usually by a thrombus, an embolus, or vascular torsion.
@@ -9368,6 +10458,14 @@ ncit_C25749:
     source: ncit
     term: Pulse
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25749
+ncit_C25751:
+  description: A symptom or state of reduced quality or strength.
+  termDef:
+    cde_id: C25751
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Deterioration
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C25751
 ncit_C25765:
   description: An acute myeloid leukemia arising from prior myelodysplastic syndrome,
     myeloproliferative neoplasm, or myelodysplastic/myeloproliferative neoplasm, or
@@ -9675,6 +10773,14 @@ ncit_C27971:
     source: ncit
     term: Stage IV
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C27971
+ncit_C27990:
+  description: The finding of bodily harm due to the poisonous effects of something.
+  termDef:
+    cde_id: C27990
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Toxicity
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C27990
 ncit_C27994:
   description: Toxicity that impairs or damages the heart. This condition is often
     caused by the administration of a pharmaceutical agent that initiates a poisonous
@@ -9720,6 +10826,20 @@ ncit_C28224:
     source: ncit
     term: Focal
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28224
+ncit_C28244:
+  description: A rare genetic syndrome with an autosomal dominant pattern of inheritance.
+    It is caused by a mutation in the FLCN gene which encodes the protein folliculin.
+    Clinical signs include multiple benign growths of the skin and lungs that begin
+    to manifest in the second or third decade of life. The clinical course is characterized
+    by the progressive growth of new and existing neoplasms. In those with mutations
+    in both copies of FLCN, the kidneys may also be affected by the growth of benign
+    or malignant neoplasms.
+  termDef:
+    cde_id: C28244
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Birt-Hogg-Dube Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28244
 ncit_C28252:
   description: A basic SI unit of mass. It is defined as the mass of an international
     prototype in the form of a platinum-iridium cylinder kept at Sevres in France.
@@ -9849,6 +10969,19 @@ ncit_C2883:
     source: ncit
     term: Arthritis
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C2883
+ncit_C2887:
+  description: Rare hereditary disease characterized by extreme sensitivity to ionizing
+    radiation or radiomimetic drugs because of a defect in DNA repair. AT heterozygosity
+    is estimated to occur in more than 2% of the U.S. population; heterozygotes exhibit
+    increased radiation sensitivity and are at increased risk for several types of
+    cancer. The normal version of the gene that is defective in AT appears to activate
+    the p53-dependent response to DNA damage.
+  termDef:
+    cde_id: C2887
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Ataxia Telangiectasia Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C2887
 ncit_C2889:
   description: A disorder resulting from loss of function or tissue destruction of
     an organ or multiple organs, arising from humoral or cellular immune responses
@@ -9904,6 +11037,17 @@ ncit_C2900:
     source: ncit
     term: Bladder Disorder
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C2900
+ncit_C2903:
+  description: Bloom syndrome is an autosomal recessive disorder associated with mutations
+    in BLM gene encoding protein that belongs to the family of DNA helicases. It is
+    characterized by predisposition to cancer, immunodeficiency, high sensitivity
+    to UV and genomic instability of somatic cells. (Oncogene 2001 Dec 13;20(57):8276-80)
+  termDef:
+    cde_id: C2903
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Bloom Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C2903
 ncit_C2916:
   description: A malignant tumor arising from epithelial cells. Carcinomas that arise
     from glandular epithelium are called adenocarcinomas, those that arise from squamous
@@ -10118,6 +11262,18 @@ ncit_C3046:
     source: ncit
     term: Fracture
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3046
+ncit_C3058:
+  description: The most malignant astrocytic tumor (WHO grade 4).  It is composed
+    of poorly differentiated neoplastic astrocytes and is characterized by the presence
+    of cellular polymorphism, nuclear atypia, brisk mitotic activity, vascular thrombosis,
+    microvascular proliferation, and necrosis. It typically affects adults and is
+    preferentially located in the cerebral hemispheres. (Adapted from WHO)
+  termDef:
+    cde_id: C3058
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Glioblastoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3058
 ncit_C3063:
   description: A reaction, which may be fatal, in an immunocompromised subject (host)
     who has received an antigenically incompatible tissue transplant (graft) from
@@ -10143,6 +11299,17 @@ ncit_C3071:
     source: ncit
     term: Graves Disease
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3071
+ncit_C3076:
+  description: An autosomal dominant hereditary syndrome characterized by a variety
+    of hamartomas and neoplasms including verrucous skin lesions, fibromas of the
+    oral cavity, facial trichilemmomas, hamartomatous colonic polyps, thyroid neoplasms,
+    breast cancer, and dysplastic gangliocytomas of the cerebellum.
+  termDef:
+    cde_id: C3076
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Cowden Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3076
 ncit_C3079:
   description: A non-neoplastic or neoplastic disorder that affects the heart and/or
     the pericardium. Representative examples include endocarditis, pericarditis, atrial
@@ -10167,6 +11334,20 @@ ncit_C3101:
     source: ncit
     term: Genetic Disorder
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3101
+ncit_C3105:
+  description: An inherited familial cancer syndrome which is characterized by development
+    of capillary hemangioblastomas of the central nervous system and retina; clear
+    cell renal carcinoma; pheochromocytoma; pancreatic tumors; and inner ear tumors.
+    The syndrome is associated with germline mutations of the VHL tumor suppressor
+    gene, located on chromosome 3p25-26. Symptoms of VHL syndrome may not be apparent
+    until the third decade of life. CNS hemangioblastoma is the most common cause
+    of death, followed by clear cell renal cell carcinoma. --2004
+  termDef:
+    cde_id: C3105
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Von Hippel Lindau Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3105
 ncit_C3111:
   description: A disorder characterized by an abnormal increase of cerebrospinal fluid
     in the ventricles of the brain.
@@ -10298,6 +11479,18 @@ ncit_C3183:
     source: ncit
     term: T Acute Lymphoblastic Leukemia
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3183
+ncit_C3194:
+  description: 'A usually painless malignant tumor that arises from adipose tissue.  Microscopically,
+    it may contain a spectrum of neoplastic adipocytes ranging from lipoblasts to
+    pleomorphic malignant adipocytes.  Morphologic variants include: well differentiated,
+    dedifferentiated, pleomorphic, and myxoid liposarcoma.  The metastatic potential
+    is higher in less differentiated tumors.'
+  termDef:
+    cde_id: C3194
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Liposarcoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3194
 ncit_C3198:
   description: A non-neoplastic or neoplastic disorder affecting the lung. Representative
     examples of non-neoplastic disorders include chronic obstructive pulmonary disease
@@ -10385,6 +11578,31 @@ ncit_C32141:
     source: ncit
     term: Arm
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C32141
+ncit_C3224:
+  description: 'A malignant, usually aggressive tumor composed of atypical, neoplastic
+    melanocytes. Most often, melanomas arise in the skin (cutaneous melanomas) and
+    include the following histologic subtypes: superficial spreading melanoma, nodular
+    melanoma, acral lentiginous melanoma, and lentigo maligna melanoma. Cutaneous
+    melanomas may arise from acquired or congenital melanocytic or dysplastic nevi.
+    Melanomas may also arise in other anatomic sites including the gastrointestinal
+    system, eye, urinary tract, and reproductive system. Melanomas frequently metastasize
+    to lymph nodes, liver, lungs, and brain.'
+  termDef:
+    cde_id: C3224
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Melanoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3224
+ncit_C3225:
+  description: Multiple endocrine neoplasia caused by inactivation of the tumor suppressor
+    gene MEN-1. Patients may develop hyperparathyroidism and parathyroid gland adenomas,
+    pituitary gland adenomas, pancreatic islet cell neoplasms, and carcinoid tumors.
+  termDef:
+    cde_id: C3225
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Multiple Endocrine Neoplasia Type 1
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3225
 ncit_C32250:
   description: The irregular and largest tarsal bone that forms the heel.
   termDef:
@@ -10759,6 +11977,23 @@ ncit_C3335:
     source: ncit
     term: Rothmund-Thomson Syndrome
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3335
+ncit_C3339:
+  description: An autosomal dominant disorder, characterized by the presence of multiple
+    adenomas in the colon and rectum. It is caused by a germline mutation in the adenomatous
+    polyposis coli (APC) gene which is located on the long arm of chromosome 5. The
+    adenomas are most often tubular, and they have the tendency to progress to adenocarcinoma.
+    They can occur throughout the colon, but they tend to concentrate in the rectum
+    and sigmoid colon. The colorectal adenomas are detected during endoscopic examination
+    between the age of 10 and 20 years. The adenomas increase in size and numbers
+    with age, and there is usually progression of one or more adenomas to adenocarcinoma.
+    The mean age of development of adenocarcinoma is about 40 years. Signs include
+    rectal bleeding and mucousy diarrhea.
+  termDef:
+    cde_id: C3339
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Familial Adenomatous Polyposis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3339
 ncit_C3346:
   description: 'An autoimmune condition characterized by red, well-delineated plaques
     with silvery scales that are usually on the extensor surfaces and scalp. They
@@ -10985,6 +12220,16 @@ ncit_C3421:
     source: ncit
     term: Trisomy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3421
+ncit_C3424:
+  description: Hereditary disease characterized by seizures, mental retardation, developmental
+    delay, and skin and ocular lesions. First signs usually occur during infancy or
+    childhood but in rare cases may not occur until 2nd or 3rd decade.
+  termDef:
+    cde_id: C3424
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Tuberous Sclerosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3424
 ncit_C3439:
   description: Any disease caused by a virus.
   termDef:
@@ -11033,6 +12278,21 @@ ncit_C34483:
     source: ncit
     term: Scar
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C34483
+ncit_C3452:
+  description: An inherited skin disorder characterized by photosensitivity with severe
+    sunburn in infancy, the development of numerous pigmented spots resembling freckles,
+    larger atrophic lesions associated with telangiectasis, and multiple solar keratoses.
+    Transmitted in an autosomal recessive manner, xeroderma pigmentosa involves a
+    defect in nucleotide excision repair (NER), leading to deficient repair of DNA
+    damaged by UV radiation and chromosome breakage. Individuals with this disease
+    develop multiple malignant cutaneous neoplasms at an early age and may suffer
+    from severe ophthalmic and neurologic abnormalities.
+  termDef:
+    cde_id: C3452
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Xeroderma Pigmentosum
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C3452
 ncit_C34649:
   description: An autoimmune disorder characterized by pulmonary hemorrhage and glomerulonephritis.
     It is a hypersensitivity reaction resulting in the formation of antibodies against
@@ -12479,6 +13739,14 @@ ncit_C43234:
     source: ncit
     term: Not Reported
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C43234
+ncit_C43324:
+  description: A neoplasm involving the outer hair sheath and infundibulum.
+  termDef:
+    cde_id: C43324
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Outer Hair Sheath and Infundibulum Neoplasm
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C43324
 ncit_C43362:
   description: The lower opening of the digestive tract, lying in the cleft between
     the buttocks, through which fecal matter is extruded.
@@ -12497,6 +13765,16 @@ ncit_C4344:
     source: ncit
     term: Acute Panmyelosis with Myelofibrosis
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4344
+ncit_C449:
+  description: A long linear double-stranded polymer formed from nucleotides attached
+    to a deoxyribose backbone and found in the nucleus of a cell; associated with
+    the transmission of genetic information.
+  termDef:
+    cde_id: C449
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: DNA
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449
 ncit_C4523:
   description: 'Stage 0 includes: pTis, N0, M0, S0.  pTis: Intratubular germ cell
     neoplasia (carcinoma in situ).  N0: regional lymph node metastasis.  M0: No distant
@@ -12507,6 +13785,14 @@ ncit_C4523:
     source: ncit
     term: Stage 0 Testicular Cancer AJCC v6 and v7
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4523
+ncit_C45447:
+  description: The determination of the DNA sequence of an individual.
+  termDef:
+    cde_id: C45447
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Genotyping
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C45447
 ncit_C45525:
   description: Any heart disorder characterized by a defect in valve structure or
     function.
@@ -12569,6 +13855,16 @@ ncit_C456:
     source: ncit
     term: Doxorubicin
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C456
+ncit_C4572:
+  description: A primary or metastatic malignant neoplasm involving the small intestine,
+    large intestine, or both.  Representative examples are carcinomas, lymphomas,
+    and sarcomas.
+  termDef:
+    cde_id: C4572
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Malignant Intestinal Neoplasm
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4572
 ncit_C45824:
   description: The genetic condition of a zygote, especially with respect to its being
     a homozygote or a heterozygote.
@@ -12649,6 +13945,27 @@ ncit_C46089:
     source: ncit
     term: Allogeneic Hematopoietic Stem Cell Transplantation
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C46089
+ncit_C4692:
+  description: A disorder, wherein unstable chromosomes have a tendency to break and
+    become rearranged, characterized by microcephaly, stunted growth, subnormal mental
+    development, cafe-au-lait spots, and immunodeficiency. The syndrome is named after
+    the University of Nijmegen in the Netherlands. (JABL99)
+  termDef:
+    cde_id: C4692
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Nijmegen Breakage Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4692
+ncit_C4705:
+  description: An autosomal dominant disorder most often caused by mutations in the
+    PRKAR1A gene. It is characterized by the presence of myxomas in the heart and
+    skin, skin hyperpigmentation, increased endocrine activity and melanotic schwannomas.
+  termDef:
+    cde_id: C4705
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Carney Complex
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4705
 ncit_C4731:
   description: A disorder affecting the cranial nerves or the peripheral nervous system.
     It manifests with pain, tingling, numbness, and muscle weakness. It may be the
@@ -12678,6 +13995,28 @@ ncit_C4808:
     source: ncit
     term: Late Adverse Effect
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4808
+ncit_C4815:
+  description: 'A carcinoma arising from the thyroid gland. It includes the following
+    main subtypes: follicular, papillary, medullary, poorly differentiated, and anaplastic
+    carcinoma.'
+  termDef:
+    cde_id: C4815
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Thyroid Gland Carcinoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4815
+ncit_C4817:
+  description: A small round cell tumor that lacks morphologic, immunohistochemical,
+    and electron microscopic evidence of neuroectodermal differentiation. It represents
+    one of the two ends of the spectrum called Ewing sarcoma/peripheral neuroectodermal
+    tumor. It affects mostly males under age 20, and it can occur in soft tissue or
+    bone. Pain and the presence of a mass are the most common clinical symptoms.
+  termDef:
+    cde_id: C4817
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Ewing Sarcoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4817
 ncit_C48190:
   description: Not existing in a specified place at a specified time.
   termDef:
@@ -12841,6 +14180,19 @@ ncit_C48718:
     source: ncit
     term: NX Stage Finding
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C48718
+ncit_C4878:
+  description: A carcinoma originating in the lung. Lung carcinomas usually arise
+    from the epithelium that lines the bronchial tree (bronchogenic carcinomas), and
+    are classified as small cell or non-small cell carcinomas. Non-small cell lung
+    carcinomas are usually adenocarcinomas, squamous cell carcinomas, or large cell
+    carcinomas. Metastatic carcinomas to the lung are also common, and can be difficult
+    to distinguish from primary tumors.
+  termDef:
+    cde_id: C4878
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Lung Carcinoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4878
 ncit_C48797:
   description: Vimentin (466 aa, ~54 kDa) is encoded by the human VIM gene. This protein
     plays a role in the localization of organelles and other cellular components.
@@ -12878,6 +14230,16 @@ ncit_C491:
     source: ncit
     term: Etoposide
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C491
+ncit_C4912:
+  description: A carcinoma arising from the bladder epithelium.  Approximately 90%
+    of the bladder carcinomas are transitional cell carcinomas.  The remainder are
+    squamous cell carcinomas, adenocarcinomas and small cell neuroendocrine carcinomas.
+  termDef:
+    cde_id: C4912
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Bladder Carcinoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C4912
 ncit_C49135:
   description: A new drug or biological drug that is used in a clinical investigation.
     The term also includes a biological product that is used in vitro for diagnostic
@@ -13134,6 +14496,16 @@ ncit_C50995:
     source: ncit
     term: Disease Response
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C50995
+ncit_C51302:
+  description: An autosomal dominant inherited syndrome caused by germline mutations
+    in the FH gene. It is characterized by predisposition to renal cell carcinoma,
+    leiomyomas of the skin and uterus, and leiomyosarcoma of the uterus.
+  termDef:
+    cde_id: C51302
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Hereditary Leiomyomatosis and Renal Cell Carcinoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C51302
 ncit_C51690:
   description: Surgical removal of a triangular wedge shaped section of tissue.
   termDef:
@@ -13316,6 +14688,15 @@ ncit_C53457:
     source: ncit
     term: Multiple Osteochondromas
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C53457
+ncit_C53489:
+  description: A multiaxial, hierarchical classification system for diseases in man
+    developed by the College of American Pathologists.
+  termDef:
+    cde_id: C53489
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Systematized Nomenclature of Medicine
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C53489
 ncit_C53606:
   description: An indication that a change in treatment or a change to a device will
     be required following an adverse event.
@@ -13429,6 +14810,16 @@ ncit_C60702:
     source: ncit
     term: Random
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C60702
+ncit_C61235:
+  description: A rare, autosomal recessive disorder characterized by exocrine pancreas
+    insufficiency, skeletal abnormalities, bone marrow dysfunction, and an increased
+    incidence of leukemia.
+  termDef:
+    cde_id: C61235
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Shwachman-Diamond Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C61235
 ncit_C61236:
   description: An inherited condition characterized by aplasia of the erythroid series
     only. The white cells and platelets are not affected. Patients develop anemia
@@ -13439,6 +14830,18 @@ ncit_C61236:
     source: ncit
     term: Congenital Pure Red Cell Aplasia
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C61236
+ncit_C61246:
+  description: An X-linked immunodeficiency syndrome that exclusively affects males,
+    although females can be carriers. It is caused by mutation(s) in SH2D1A and/or
+    XIAP genes and is characterized by life-threatening episodes of infectious mononucleosis,
+    hypogammaglobulinemia, and subsequent development of lymphomas (usually B-cell
+    lymphomas) and other lymphoproliferative disorders.
+  termDef:
+    cde_id: C61246
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: X-Linked Lymphoproliferative Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C61246
 ncit_C61313:
   description: A fully human monoclonal antibody directed against the receptor activator
     of nuclear factor kappa beta ligand (RANKL) with antiosteoclast activity. Denosumab
@@ -14167,6 +15570,15 @@ ncit_C65530:
     source: ncit
     term: Erlotinib
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C65530
+ncit_C6557:
+  description: Rare genetic disorder caused by mutations in the SMARCB1 and LZTR1
+    genes. It is characterized by the presence of multiple Schwannomas.
+  termDef:
+    cde_id: C6557
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Schwannomatosis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C6557
 ncit_C6634:
   description: A Hodgkin lymphoma that arises from the mediastinum.  It usually involves
     mediastinal lymph nodes and/or the thymus.  Signs and symptoms include fever,
@@ -14261,6 +15673,21 @@ ncit_C6728:
     source: ncit
     term: Gardner Syndrome
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C6728
+ncit_C6729:
+  description: 'A rare genetic syndrome with an autosomal dominant pattern of inheritance.
+    It was formerly called hereditary flat adenoma syndrome (HFAS) but is now recognized
+    as an attenuated variant of familial adenomatous polyposis (FAP). It is most commonly
+    associated with mutations in the APC gene specifically: exons 1-5, exon 9 and
+    in the distal 3'' terminus. Clinical presentation occurs in the middle decades
+    and is characterized by the proximal development of multiple (but less than 100),
+    non-polypoid colonic adenomas. Clinical progression to colorectal cancer may occur
+    later in life but the risk is less than with classic FAP.'
+  termDef:
+    cde_id: C6729
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Attenuated Familial Adenomatous Polyposis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C6729
 ncit_C67306:
   description: A unit of mass concentration defined as the concentration of one microgram
     of a substance per unit volume of the mixture equal to one liter. The concept
@@ -14690,6 +16117,19 @@ ncit_C74787:
     source: ncit
     term: Free Triiodothyronine Measurement
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C74787
+ncit_C75019:
+  description: An autosomal dominant overgrowth syndrome caused by mutation(s) of
+    the NSD1 or the NFIX gene, encoding H3 lysine-36 and H4 lysine-20 specific histone-lysine
+    N-methyltransferase, and nuclear factor 1 X-type, respectively. The condition
+    is characterized by a disproportionately large and long head with a slightly prominent
+    forehead and pointed chin, hypertelorism, down-slanting eyes, large hands and
+    feet, overgrowth in childhood, and developmental delay.
+  termDef:
+    cde_id: C75019
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Sotos Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C75019
 ncit_C7541:
   description: A malignant tumor that originates in the nuclear layer of the retina.
     As the most common primary tumor of the eye in children, retinoblastoma is still
@@ -14715,6 +16155,19 @@ ncit_C75419:
     source: ncit
     term: World Health Organization
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C75419
+ncit_C75466:
+  description: A rare genetic syndrome mapped to chromosome 16p13.3 and associated
+    with mutations in the CREBBP gene. It is characterized by mental and growth retardation,
+    distinctive facial features (prominent nose, low-set ears, microcephaly, and small
+    mouth), and broad thumbs and great toes. Patients are at an increased risk of
+    developing benign and malignant neoplasms, including nervous system neoplasms
+    and malignant lymphoproliferative disorders.
+  termDef:
+    cde_id: C75466
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Rubinstein-Taybi Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C75466
 ncit_C75568:
   description: Complete impairment of two or more organs or organ systems.
   termDef:
@@ -14758,6 +16211,24 @@ ncit_C770:
     source: ncit
     term: Prednisone
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C770
+ncit_C7715:
+  description: Soft tissue sarcoma occurring in childhood.
+  termDef:
+    cde_id: C7715
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Childhood Soft Tissue Sarcoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C7715
+ncit_C7754:
+  description: An autosomal dominant hereditary neoplastic syndrome. Mutations in
+    the SMAD4 or BMPR1A genes have been identified in some patients. It is characterized
+    by the presence of multiple juvenile polyps in the gastrointestinal tract.
+  termDef:
+    cde_id: C7754
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Juvenile Polyposis Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C7754
 ncit_C77608:
   description: The tissues that surround the organs that are present within the abdominal
     cavity. The abdominal wall tissue is composed of layers of fat, parietal peritoneum,
@@ -14901,6 +16372,16 @@ ncit_C81170:
     source: ncit
     term: Midline
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C81170
+ncit_C812:
+  description: Single-stranded long chain of nucleotides containing ribose. It is
+    the end product of DNA transcription by the enzyme RNA polymerase. It is essential
+    in protein synthesis.
+  termDef:
+    cde_id: C812
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Ribonucleic Acid
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812
 ncit_C81239:
   description: The circumstance or condition that results in the death of a living
     being.
@@ -14936,6 +16417,15 @@ ncit_C81729:
     source: ncit
     term: Trisomy 10
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C81729
+ncit_C81945:
+  description: A molecular genetic abnormality that refers to the presence of a mutation
+    in the ALK gene.
+  termDef:
+    cde_id: C81945
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: ALK Gene Mutation
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C81945
 ncit_C82179:
   description: An acute leukemia of ambiguous lineage.  It is characterized by the
     presence of either separate populations of blasts of more than one lineage, or
@@ -15266,6 +16756,27 @@ ncit_C84725:
     source: ncit
     term: Gastroschisis
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C84725
+ncit_C84756:
+  description: A rare autosomal recessive inherited disorder caused by mutations in
+    the ATP7B gene. It is characterized by copper accumulation in the tissues, particularly
+    brain and liver. It results in liver failure, neurologic, and psychotic manifestations.
+  termDef:
+    cde_id: C84756
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Hepatolenticular Degeneration
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C84756
+ncit_C84820:
+  description: 'A genetic syndrome caused by mutations in the PTPN11 and RAF1 genes.
+    It is characterized by the following abnormalities: multiple lentigines, electrocardiographic
+    conduction abnormalities, ocular hypertelorism, pulmonary stenosis, abnormalities
+    in genitalia, growth retardation, and deafness.'
+  termDef:
+    cde_id: C84820
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: LEOPARD Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C84820
 ncit_C84892:
   description: An autoimmune overlap syndrome characterized by the presence of symptoms
     of systemic lupus erythematosus, systemic scleroderma, and polymyositis.
@@ -15275,6 +16786,16 @@ ncit_C84892:
     source: ncit
     term: Mixed Connective Tissue Disease
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C84892
+ncit_C84906:
+  description: An autosomal recessive inherited disorder caused by mutations in the
+    TRIM37 gene. It is characterized by marked growth retardation and abnormalities
+    in multiple organs including heart, liver, muscle, eyes, and brain.
+  termDef:
+    cde_id: C84906
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Mulibrey Nanism
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C84906
 ncit_C8493:
   description: An autosomal dominant inherited syndrome caused by deleterious mutations
     in the BRCA1 or BRCA2 genes. Patients are at high risk of developing breast cancer,
@@ -15300,6 +16821,18 @@ ncit_C8494:
     source: ncit
     term: Lynch Syndrome
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C8494
+ncit_C84941:
+  description: An autosomal recessive inherited disorder caused by mutations of the
+    OCA2, SLC45A2, TYR and TYRP1 genes. It is characterized by hypopigmentation of
+    the skin, hair, and eyes, resulting in very fair skin, white colored hair, and
+    reduced pigmentation in the iris and retina. Individuals may have vision disturbances
+    and photophobia.
+  termDef:
+    cde_id: C84941
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Oculocutaneous Albinism
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C84941
 ncit_C8495:
   description: An inherited malignant tumor that originates in the nuclear layer of
     the retina. A predisposition to retinoblastoma has been associated with 13q14
@@ -15350,6 +16883,33 @@ ncit_C85257:
     source: ncit
     term: Recovered from Adverse Event without Sequelae
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C85257
+ncit_C85407:
+  description: A staging system for neuroblastoma proposed by Evans, based on both
+    the site of origin and the clinical behavior of the tumor.
+  termDef:
+    cde_id: C85407
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Evans Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C85407
+ncit_C85416:
+  description: A surgicopathological staging system for neuroblastoma, based on the
+    Evans staging system.
+  termDef:
+    cde_id: C85416
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: International Neuroblastoma Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C85416
+ncit_C85423:
+  description: A clinicopathological staging system for neuroblastoma, which places
+    emphasis on the presence or absence of regional lymph node involvement by tumor.
+  termDef:
+    cde_id: C85423
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Pediatric Oncology Group Neuroblastoma Staging System
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C85423
 ncit_C86021:
   description: Marked by strict and particular and complete accordance with fact.
   termDef:
@@ -15390,6 +16950,24 @@ ncit_C87069:
     source: ncit
     term: Cleft Palate
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C87069
+ncit_C8713:
+  description: Retinoblastoma involving both eyes. This occurs in the majority of
+    patients with the inherited variant. A minority of patient with bilateral retinoblastoma
+    were found to have involvement of the pineal gland as well.
+  termDef:
+    cde_id: C8713
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Bilateral Retinoblastoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C8713
+ncit_C8714:
+  description: A retinoblastoma that only involves a single eye.
+  termDef:
+    cde_id: C8714
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Unilateral Retinoblastoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C8714
 ncit_C87175:
   description: A congenital abnormality consisting of one or more clefts (splits)
     in the upper lip, which may be accompanied by a cleft palate; it is the result
@@ -15577,6 +17155,22 @@ ncit_C9020:
     source: ncit
     term: Acute Myelomonocytic Leukemia with Abnormal Eosinophils
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C9020
+ncit_C90529:
+  description: A cancer stage defined according to the AJCC 6th edition criteria.
+  termDef:
+    cde_id: C90529
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: AJCC v6 Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C90529
+ncit_C90530:
+  description: A cancer stage defined according to the AJCC 7th edition criteria.
+  termDef:
+    cde_id: C90530
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: AJCC v7 Stage
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C90530
 ncit_C90609:
   description: An anatomic structure formed by the crossing of the two optic nerves
     under the hypothalamus.
@@ -15632,6 +17226,19 @@ ncit_C91220:
     source: ncit
     term: French-American-British Classification
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91220
+ncit_C9145:
+  description: A usually aggressive malignant bone-forming mesenchymal neoplasm, predominantly
+    affecting adolescents and young adults. It usually involves bones and less frequently
+    extraosseous sites. It often involves the long bones (particularly distal femur,
+    proximal tibia, and proximal humerus). Pain with or without a palpable mass is
+    the most frequent clinical symptom. It may spread to other anatomic sites, particularly
+    the lungs.
+  termDef:
+    cde_id: C9145
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Osteosarcoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C9145
 ncit_C91752:
   description: Failure of a patient to follow medical advice, take medication as directed,
     or adhere to a prescribed course of treatment.
@@ -15743,6 +17350,15 @@ ncit_C9305:
     source: ncit
     term: Malignant Neoplasm
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C9305
+ncit_C9306:
+  description: A malignant neoplasm arising from muscle tissue, adipose tissue, blood
+    vessels, fibrous tissue, or other supportive tissues excluding the bones.
+  termDef:
+    cde_id: C9306
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Soft Tissue Sarcoma
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C9306
 ncit_C9309:
   description: A radiosensitive malignant germ cell tumor found in the testis (especially
     undescended), and extragonadal sites (anterior mediastinum and pineal gland).  It
@@ -15913,6 +17529,15 @@ ncit_C94626:
     source: ncit
     term: Chemoradiotherapy
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C94626
+ncit_C9483:
+  description: A fluid filled sac within the pineal gland. It is usually an incidental
+    finding of no real clinical significance.
+  termDef:
+    cde_id: C9483
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Pineal Gland Cyst
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C9483
 ncit_C96244:
   description: A FIGO stage term that applies to gynecologic cancers.  For cervical
     cancer, it refers to invasive cancer that is confined to the cervix; for endometrial
@@ -15981,6 +17606,17 @@ ncit_C96450:
     source: ncit
     term: Desmin
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96450
+ncit_C96520:
+  description: An autosomal recessive hereditary neoplastic syndrome caused by mutations
+    in the MUTYH gene on chromosome 1p34.1.  It is characterized by the presence of
+    multiple colorectal polyps that may progress to carcinoma.  Development of gastric
+    and small intestinal polyps may also occur.
+  termDef:
+    cde_id: C96520
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: MUTYH-Associated Polyposis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C96520
 ncit_C96570:
   description: A male who shares with his sibling the genetic makeup inherited from
     one or both of their shared biological parents.
@@ -16074,6 +17710,19 @@ ncit_C98183:
     source: ncit
     term: Femoral Lymph Node
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C98183
+ncit_C98641:
+  description: Tyrosinemia caused by mutations in the FAH gene. It is characterized
+    by deficiency of the enzyme fumarylacetoacetate hydrolase. It is the most severe
+    form of tyrosinemia. Signs and symptoms appear early in life and include failure
+    to thrive, vomiting, diarrhea, jaundice, and bleeding tendency. It may result
+    in liver and kidney failure. Patients with this type of tyrosinemia may also have
+    a predisposition for hepatocellular carcinoma.
+  termDef:
+    cde_id: C98641
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Tyrosinemia Type I
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C98641
 ncit_C98889:
   description: A disorder characterized by hypoventilation and hypoxemia. It appears
     early in life and is not associated with cardiopulmonary or neuromuscular abnormalities.
@@ -16083,6 +17732,37 @@ ncit_C98889:
     source: ncit
     term: Congenital Central Hypoventilation
     term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C98889
+ncit_C98993:
+  description: A rare syndrome that is characterized by the partial deletion of the
+    long arm of chromosome 13. Signs and symptoms include low birth weight, craniofacial
+    malformations, hands and feet malformations, and mental and psychomotor retardation.
+  termDef:
+    cde_id: C98993
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Monosomy 13q Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C98993
+ncit_C99000:
+  description: Inflammation of the eye tissues posterior to the orbital septum, and
+    generally secondary to an infection spread from adjacent sinuses. Signs and symptoms
+    of the affected eye include sudden loss of vision, erythema, edema, decreased
+    eye movement, and pain. Treatment is conducted via intravenous antibiotics, observation,
+    and surgical intervention when necessary.
+  termDef:
+    cde_id: C99000
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Orbital Cellulitis
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99000
+ncit_C99038:
+  description: A rare syndrome characterized by the presence of thrombocytopenia associated
+    with bilateral absence of the radius bone.
+  termDef:
+    cde_id: C99038
+    cde_version: Version:23.04d (Release date:2023-04-24)
+    source: ncit
+    term: Radial Aplasia-Thrombocytopenia Syndrome
+    term_url: https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C99038
 ncit_C99148:
   description: The skin area around the anus.
   termDef:
