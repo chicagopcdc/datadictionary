@@ -65,7 +65,7 @@ properties:
       - M5
       - M6
       - M7
-      - AML, Not Otherwise Specified
+      - AML, NOS
       - Unknown
       - Not Reported
   who_aml:
@@ -144,6 +144,7 @@ properties:
   detection_method:
     description: "The method used to detect the extent of the disease involvement."
     enum:
+      - Biopsy
       - Bone Marrow Results
       - Cerebrospinal Fluid Results
       - Clinical Signs or Symptoms
