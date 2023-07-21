@@ -84,6 +84,7 @@ properties:
       - Ankle
       - Ascitic Fluid
       - Axilla
+      - Axillary Nodes
       - Bladder
       - Bladder/Prostate
       - Bone
@@ -95,17 +96,22 @@ properties:
       - Buttock
       - Calcaneum
       - Carpal Bone
+      - Celiac Nodes
       - Central Nervous System
       - Cerebrospinal Fluid
+      - Cervical Nodes
       - Cervical Vertebra
       - Cervix
+      - Cervix Lymph Nodes
       - Cheek
       - Chest
       - Chest Wall
       - Clavicle
       - Coccyx
+      - Distant Lymph Nodes
       - Dorsal Vertebra
       - Elbow
+      - Epitrochlear Nodes
       - Ethmoid Bone
       - Eyelid
       - Face
@@ -120,13 +126,17 @@ properties:
       - Hand
       - Head
       - Head and Neck
+      - Hilar Nodes
       - Hip
       - Hip/Inguinal Region
       - Humerus
       - Hypopharynx
       - Ilium
+      - Infraclavicular Nodes
       - Infratemporal Fossa/Pterygopalatine
       - Infratemporal Fossa/Pterygopalatine and Parapharyngeal Area
+      - Inguinal Nodes
+      - Inguinal or Femoral Nodes
       - Intra-abdominal
       - Intraperitoneal
       - Intrathoracic
@@ -147,7 +157,9 @@ properties:
       - Lymph Nodes
       - Mandible
       - Maxilla
+      - Mediastinal Lymph Nodes
       - Mediastinum
+      - Mesenteric Nodes
       - Metacarpus
       - Metatarsus
       - Middle Ear
@@ -159,6 +171,7 @@ properties:
       - Not Reported
       - Occipital Bone
       - Occiptal Cortex
+      - Omentum Lymph Nodes
       - Omentum/Peritoneum
       - Oral Cavity
       - Orbit
@@ -171,6 +184,7 @@ properties:
       - Other Orbit
       - Other Parameningeal
       - Ovary
+      - Paraaortic Lymph Nodes
       - Paranasal Sinuses
       - Parapharyngeal Area
       - Paraspinal
@@ -179,15 +193,21 @@ properties:
       - Parietal Cortex
       - Parotid
       - Patella
+      - Pectoral Nodes
+      - Pelvic Lymph Nodes
       - Pelvis
       - Perineum
       - Peritoneum
       - Pineal
       - Pleura
       - Pleural Effusion
+      - Popliteal Nodes
+      - Preauricular Nodes
       - Prostate
       - Radius Bone
+      - Regional Lymph Nodes
       - Retroperitoneum
+      - Retroperitoneum Lymph Nodes
       - Rib
       - Sacral Region
       - Sacrococcygeal
@@ -201,7 +221,9 @@ properties:
       - Spheniod Bone
       - Spinal Cord
       - Spine
+      - Splenic Hilar Nodes
       - Sternum
+      - Supraclavicular Nodes
       - Suprasellar/Neurohypophyseal
       - Talus
       - Tarsal Bone
