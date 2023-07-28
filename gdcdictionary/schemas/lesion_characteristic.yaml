@@ -93,28 +93,34 @@ properties:
   lesion_site: 
     description: ""
     enum:
+      - Axilla or Pectoral
       - Axillary Nodes
       - Bone
       - Bone Marrow
       - Celiac Nodes
       - Cervical Nodes
-      - Epitrochlear or Brachial Nodes
+      - Epitrochlear Nodes
       - Hilar Nodes
+      - Iliac
+      - Iliac Crest
+      - Ilium
       - Infraclavicular Nodes
       - Inguinal or Femoral Nodes
       - Liver
       - Lung
       - Mediastinum
       - Mesenteric Nodes
-      - Para-Aortic Nodes, Portal, Retrocrural
-      - Pectoral Nodes
-      - Ilium
       - Muscle
+      - Paraaortic Lymph Nodes
+      - Pectoral Nodes
+      - Pleura
       - Popliteal Nodes
-      - Pre-Auricular Nodes
+      - Preauricular Nodes
+      - Skin
       - Spleen
       - Splenic Hilar Nodes
       - Supraclavicular Nodes
+      - Thyroid
       - "Waldeyer's Ring"
       - Other
       - Unknown
