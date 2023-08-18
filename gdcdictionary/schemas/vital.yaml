@@ -31,7 +31,7 @@ links:
     label: part_of
     target_type: timing
     multiplicity: many_to_one
-    required: true
+    required: false
 
 required:
   - submitter_id
