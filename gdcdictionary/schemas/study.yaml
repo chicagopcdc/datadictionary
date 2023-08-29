@@ -92,6 +92,7 @@ properties:
       - "9347"
       - "9360"
       - "9361"
+      - "9372"
       - "9375"
       - "9376"
       - "9382"
@@ -173,6 +174,7 @@ properties:
       - ADVL0212
       - ADVL0214
       - ADVL0215
+      - ADVL0314
       - ADVL0316
       - ADVL0413
       - ADVL0414
@@ -291,6 +293,7 @@ properties:
       - B953
       - B954
       - B973
+      - cHOD17
       - CWS-IV-2002
       - CWS2002p
       - CWS91
@@ -305,18 +308,31 @@ properties:
       - E15
       - E18
       - EE99
+      - ENSG5
       - EICESS92
       - GC1
       - GC2
       - GOG0078
       - GOG0090
       - GOG0116
+      - HLHR13
+      - HOD05
+      - HOD08
+      - HOD99
       - I03
       - JACLSAML99
       - JPLSGAML05
+      - LNESG1
       - MRCAML12
       - MRCAML15
       - N891
+      - NB2005
+      - NB2008
+      - NB2012
+      - NB84
+      - NB8814
+      - NB91
+      - NB97
       - NOPHOAML2004
       - NOPHOAML2012
       - NRSTS2005
@@ -330,6 +346,8 @@ properties:
       - P9851
       - P9963
       - P9972
+      - PEPN2011
+      - PEPN2111
       - POG-8844
       - POG9049
       - PPLLSGAML98
@@ -375,7 +393,24 @@ properties:
       - "Retrieval"
       - "Unknown"
       - "Not Reported"
-
+  treatment_arm:
+    description: "The specific treatment plan(s) within a clinical trial that describe(s) the activities subjects will be involved in as they progress through the study."
+    type: array
+    items:
+      type: string
+  age_at_enrollment:
+    description: "Age of subject (in days) when the subject enrolled in the study."
+    type:
+      - number
+  year_at_enrollment:
+    description: "Year the subject was enrolled"
+    type:
+      - number
+  enrolled_status:
+    description: "The current status of the subject's enrollment."
+    enum:
+      - "Enrolled"
+      - "Not Enrolled"
 
 
   

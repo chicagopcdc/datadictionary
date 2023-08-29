@@ -87,7 +87,6 @@ properties:
   response:
     description: "Description of the subject's response" 
     enum:
-      - Complete Remission
       - Complete Response
       - Mixed Response
       - Non-Response

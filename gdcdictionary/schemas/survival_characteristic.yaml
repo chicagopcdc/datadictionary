@@ -75,18 +75,15 @@ properties:
       - number
   cause_of_death:
     description: "The circumstance or condition that resulted in the death of the subject"
-    type: array
-    additionalItems: false
-    items:
-      enum:
-        - Disease Progression
-        - Pre-Treatment Disease Complications
-        - Post-Treatment Disease Complications
-        - Treatment-Related Mortality
-        - Secondary Malignancy
-        - Other
-        - Unknown
-        - Not Reported
+    enum:
+      - Disease Progression
+      - Pre-Treatment Disease Complications
+      - Post-Treatment Disease Complications
+      - Treatment-Related Mortality
+      - Secondary Malignancy
+      - Other
+      - Unknown
+      - Not Reported
   cause_of_death_other:
     description: ""
     type: 
@@ -109,14 +106,14 @@ properties:
       - Fungal Infection
       - Graft Versus Host Disease
       - Hemorrhage
-      - Infection, Not Otherwise Specified
+      - Immunotherapy-Related
+      - Infection, NOS
       - Multi-Organ Failure
-      - Organ Failure, Not Otherwise Specified
+      - Organ Failure, NOS
       - Pulmonary Disease
       - Sinusoidal Obstruction Syndrome 
       - Surgical Complication
       - Viral Infection
-      - Immunotherapy-Related
       - Other
       - Unknown
       - Not Reported

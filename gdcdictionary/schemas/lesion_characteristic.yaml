@@ -59,7 +59,7 @@ properties:
   lesion_assessment_review:
     description: "Institutional or Central Lesion Review"
     enum:
-      - Insitutional
+      - Institutional
       - Central
       - Unknown
       - Not Reported
@@ -93,28 +93,35 @@ properties:
   lesion_site: 
     description: ""
     enum:
+      - Axilla or Pectoral
       - Axillary Nodes
       - Bone
       - Bone Marrow
       - Celiac Nodes
-      - Cervical Nodes, Occipital, Submental
-      - Epitrochlear or Brachial Nodes
+      - Cervical Nodes
+      - Epitrochlear Nodes
       - Hilar Nodes
+      - Iliac
+      - Iliac Crest
+      - Ilium
       - Infraclavicular Nodes
       - Inguinal or Femoral Nodes
       - Liver
       - Lung
       - Mediastinum
       - Mesenteric Nodes
-      - Para-Aortic Nodes, Portal, Retrocrural,
+      - Muscle
+      - Paraaortic Lymph Nodes
       - Pectoral Nodes
-      - Ilium
+      - Pleura
       - Popliteal Nodes
-      - Pre-Auricular Nodes
+      - Preauricular Nodes
+      - Skin
       - Spleen
       - Splenic Hilar Nodes
       - Supraclavicular Nodes
-      - "Waldeyer's Ring: Nasopharynx, Tonsils"
+      - Thyroid
+      - "Waldeyer's Ring"
       - Other
       - Unknown
       - Not Reported
@@ -122,10 +129,10 @@ properties:
     description: "E-Lesion Extension Site"
     enum:
       - Bone
-      - Heart/pericardium
-      - Lungs/Pleura
+      - Heart
+      - Lungs
       - Soft Tissue
-      - Sternum/chest wall
+      - Chest Wall
       - Other
       - Unknown
       - Not Reported
