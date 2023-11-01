@@ -281,6 +281,7 @@ properties:
       - ARST0431
       - ARST0531
       - ARST08P1
+      - ARST1321
       - ARST1431
       - AS942
       - AS972
@@ -304,6 +305,7 @@ properties:
       - D9803
       - D9902
       - DBAML01
+      - "DFCI Registry"
       - E04
       - E15
       - E18
