@@ -203,6 +203,7 @@ properties:
       - inv(16)(p13.3q24.3)/CBFA2T3-GLIS2
       - inv(16)(p13q22)
       - inv(3)(q21;q21.2)
+      - inv(3)(q21.3;q26.2)
       - inv(X)(p11.4;p11.22)
       - K-RAS mutation
       - MLL Other partner
