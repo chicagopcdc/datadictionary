@@ -240,6 +240,8 @@ properties:
       - ALTE05N1
       - ALTE15N2
       - ALTE1621
+      - AML02
+      - AML08
       - AMLBFM2004
       - AMLBFM2012
       - AMLBFMRegistry2012
