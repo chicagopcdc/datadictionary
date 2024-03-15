@@ -139,6 +139,9 @@ properties:
       - 48XXXX
       - 48XXXY
       - 8q gain
+      - ALK Amplification
+      - ALK Copy Number Gain
+      - ALK Copy Number Loss
       - ALK mutation
       - ALK p.F1174L mutation
       - ALK p.R1275L mutation
@@ -375,11 +378,14 @@ properties:
     description: ""
     type:
       - number
-  
-
-
-
-  
+  copy_number_status:
+    description: ""
+    enum:
+      - Amplification
+      - Gain
+      - Loss
+      - No gain/loss/amplification
+      - Unknown
 
   timings:
     $ref: "_definitions.yaml#/to_one" 
