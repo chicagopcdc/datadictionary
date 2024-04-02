@@ -163,6 +163,7 @@ properties:
       - CKIT mutation - ex17
       - CKIT mutation - ex8
       - CKIT mutation - unspecified
+      - del(13q)
       - del(13q) (13q 14 - 21)
       - del(17p)
       - del(5q)(5q31-q32)
@@ -270,6 +271,7 @@ properties:
       - t(7;22)(p22;q12)
       - t(8;14)(q24;q32) or other variant of B-ALL
       - t(8;16)MOZ/CBP
+      - t(8;21)(q22;q22) RUNX1/ETO
       - t(9;11)(p22;q23) / MLL-MLLT3(AF9)
       - t(9;17)(q22;q11)
       - t(9;22)(q22;q12)
@@ -290,15 +292,16 @@ properties:
   variant_type:
     description: "A variation in or modification of the molecular sequence of a gene or gene product."
     enum:
-      - Translocation
+      - Amplification
+      - "Copy Number Alteration"
+      - Deletion
+      - Gain
+      - Insertion
       - Inversion
       - Mutation
-      - "Single Nucleotide Variant"
-      - "Copy Number Alteration"
       - Rearrangement
-      - Deletion
-      - Amplification
-      - Gain
+      - "Single Nucleotide Variant"
+      - Translocation
       - Other
       - Unknown
       - Not Reported
