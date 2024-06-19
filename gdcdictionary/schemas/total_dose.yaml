@@ -76,8 +76,6 @@ properties:
     enum:
       - Parenteral
       - Oral
-      - Unknown
-      - Not Reported
   antineoplastic_agent:
     description: "Antineoplastic Agent"
     enum:
