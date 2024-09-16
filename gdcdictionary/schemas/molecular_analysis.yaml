@@ -294,6 +294,7 @@ properties:
       - Trisomy 17
       - Trisomy 21
       - VGLLA2 rearranged
+      - Wild Type
       - WT1 mutation
       - ZC3H7B-BCOR
   variant_type:
