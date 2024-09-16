@@ -152,14 +152,14 @@ properties:
       - t(6;9)(p23;q34) DEK/NUP214
       - t(7;12)(q36;p13) HLXB9(MNX1)/ETV6(TEL)
       - t(8;16)MOZ/CBP
+      - t(8;21)
       - t(9;11)(p22;q23) / MLL-MLLT3(AF9)
       - t(9;22)(q34;q11.2) ABL/BCR
       - Trisomy 8
       - WT1 mutation
       - Other
-      - Unknown
       - Not Reported
-
+      - Unknown
   timings:
     $ref: "_definitions.yaml#/to_one" 
   subjects:
