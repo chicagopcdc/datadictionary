@@ -66,15 +66,15 @@ properties:
   molecular_analysis_method:
     description: ""
     enum:
-      - Karyotype
-      - Fluorescence In Situ Hybridization
-      - Reverse Transcriptase-Polymerase Chain Reaction
-      - Next Generation Sequencing
-      - Capillary Electropheresis
-      - Gel Electropheresis
+      - Capillary Electrophoresis
       - Cytogenetics
-      - Polymerase Chain Reaction
+      - Fluorescence In Situ Hybridization
+      - Gel Electrophoresis
       - Genotyping
+      - Karyotype
+      - Next Generation Sequencing
+      - Polymerase Chain Reaction
+      - Reverse Transcriptase-Polymerase Chain Reaction
       - Other
       - Unknown
       - Not Reported
@@ -139,6 +139,9 @@ properties:
       - 48XXXX
       - 48XXXY
       - 8q gain
+      - ALK Amplification
+      - ALK Copy Number Gain
+      - ALK Copy Number Loss
       - ALK mutation
       - ALK p.F1174L mutation
       - ALK p.R1275L mutation
@@ -160,12 +163,14 @@ properties:
       - CKIT mutation - ex17
       - CKIT mutation - ex8
       - CKIT mutation - unspecified
+      - del(13q)
       - del(13q) (13q 14 - 21)
       - del(17p)
       - del(5q)(5q31-q32)
       - der.12p
       - E2A/PBX1 t(1;19)
       - ETV6 rearranged
+      - ETV6-MN1 Fusion
       - ETV6-NTRK3
       - ETV6-RUNX1 t(12;21)(p13;q22)(formerly TEL-AML1)
       - EWSR1 rearranged
@@ -185,6 +190,7 @@ properties:
       - EWSR1-POU5F1
       - EWSR1-WT1
       - EWSR1-ZNF444
+      - FLT3 D835N Pathogenic Variant
       - FLT3 internal tandem duplication (ITD)
       - FLT3-TKD
       - FOXO1 rearranged
@@ -203,10 +209,13 @@ properties:
       - inv(16)(p13.3q24.3)/CBFA2T3-GLIS2
       - inv(16)(p13q22)
       - inv(3)(q21;q21.2)
+      - inv(3)(q21.3;q26.2)
       - inv(X)(p11.4;p11.22)
       - K-RAS mutation
       - MLL Other partner
       - MLL rearrangement
+      - MLL-MLLT3 Fusion
+      - MLL-MLLT10(AF10) Fusion
       - Monosomy 5
       - Monosomy 7
       - MYCN Amplification
@@ -217,6 +226,7 @@ properties:
       - NTRK Rearranged
       - Other
       - PAX3-Other fusion
+      - PML-RARA Fusion
       - PTPN11 mutation
       - ROS1 rearranged
       - RUNX1 mutation
@@ -261,11 +271,12 @@ properties:
       - t(5;11)(q35;p15) NSD1/NUP98
       - t(6;11)(q27;q23) / MLL-MLLT4(AF6)
       - t(6;22)(p21;q12)
-      - t(6;9)(p23;q34)
+      - t(6;9)(p23;q34) (DEK/NUP214)
       - t(7;12)(q36;p13) HLXB9(MNX1)/ETV6(TEL)
       - t(7;22)(p22;q12)
       - t(8;14)(q24;q32) or other variant of B-ALL
       - t(8;16)MOZ/CBP
+      - t(8;21)(q22;q22) RUNX1/ETO
       - t(9;11)(p22;q23) / MLL-MLLT3(AF9)
       - t(9;17)(q22;q11)
       - t(9;22)(q22;q12)
@@ -273,28 +284,32 @@ properties:
       - t(X;22((p11;q13)
       - t(X;4)(p11;q31)
       - TAF15-NR4A3
+      - TCF3-PBX1 Fusion
       - TGFBR3-MGEA5
       - TP53
       - TP53 mutation
-      - Trisomy 10
-      - Trisomy 17
       - Trisomy 4
       - Trisomy 8
+      - Trisomy 10
+      - Trisomy 17
+      - Trisomy 21
       - VGLLA2 rearranged
+      - Wild Type
       - WT1 mutation
       - ZC3H7B-BCOR
   variant_type:
     description: "A variation in or modification of the molecular sequence of a gene or gene product."
     enum:
-      - Translocation
+      - Amplification
+      - "Copy Number Alteration"
+      - Deletion
+      - Gain
+      - Insertion
       - Inversion
       - Mutation
-      - "Single Nucleotide Variant"
-      - "Copy Number Alteration"
       - Rearrangement
-      - Deletion
-      - Amplification
-      - Gain
+      - "Single Nucleotide Variant"
+      - Translocation
       - Other
       - Unknown
       - Not Reported
@@ -374,11 +389,14 @@ properties:
     description: ""
     type:
       - number
-  
-
-
-
-  
+  copy_number_status:
+    description: ""
+    enum:
+      - Amplification
+      - Gain
+      - Loss
+      - No gain/loss/amplification
+      - Unknown
 
   timings:
     $ref: "_definitions.yaml#/to_one" 
