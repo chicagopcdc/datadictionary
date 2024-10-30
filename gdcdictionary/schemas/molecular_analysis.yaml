@@ -230,6 +230,7 @@ properties:
       - PTPN11 mutation
       - ROS1 rearranged
       - RUNX1 mutation
+      - RUNX1-RUNX1T1 Fusion
       - SMARCB1 deleted/mutated
       - SSX-SS18
       - STAG2
@@ -281,6 +282,7 @@ properties:
       - t(9;17)(q22;q11)
       - t(9;22)(q22;q12)
       - t(9;22)(q34;q11.2) ABL/BCR
+      - t(v;q23,3); KMT2A
       - t(X;22((p11;q13)
       - t(X;4)(p11;q31)
       - TAF15-NR4A3
@@ -288,6 +290,7 @@ properties:
       - TGFBR3-MGEA5
       - TP53
       - TP53 mutation
+      - Trisomy 3
       - Trisomy 4
       - Trisomy 8
       - Trisomy 10
