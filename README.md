@@ -47,7 +47,8 @@ would look like, each node has a mock submission located in the `examples/valid/
 
 ## Contributing
 
-Read how to contribute [here](https://github.com/NCI-GDC/portal-ui/blob/develop/CONTRIBUTING.md).
+
+Read how to contribute [here](https://docs.gen3.org/docs/Contributor%20Guidelines/).
 
 ## Build JSON for deployment
 
@@ -57,3 +58,4 @@ go to branch `pcdc_dev`
 `cd dictionaryutils`
 `python bin/create_json.py`
 `bash ./bin/load_aws.sh`
+
