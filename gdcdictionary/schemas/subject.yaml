@@ -110,7 +110,7 @@ properties:
       - "Subject has had one or more events"
       - Unknown
   age_at_censor_status:
-    description: "Age of subject (in days) when the subject enrolled in the study."
+    description: "The age (in days) of the subject at the time of the event censor status."
     type:
       - number
 
