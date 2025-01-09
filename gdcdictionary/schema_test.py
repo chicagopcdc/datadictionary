@@ -10,22 +10,24 @@ Examples are at the end.
 
 from __future__ import print_function
 
-from jsonschema import validate, ValidationError
-import copy
-import yaml
-import glob
-import os
 import argparse
+import copy
+import glob
 import json
+import os
 import unittest
+import yaml
+
+from jsonschema import validate, ValidationError
+
 from gdcdictionary import gdcdictionary
 
 
-
 def load_yaml_schema(path):
+    """Load yaml schema"""
     with open(path, "r") as f:
         return yaml.safe_load(f)
-    
+
 
 CUR_DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_DIR = os.path.join(CUR_DIR, "examples")
@@ -45,7 +47,8 @@ def merge_schemas(a, b, path=None):
             else:
                 print(
                     "Overriding '{}':\n\t- {}\n\t+ {}".format(
-                        ".".join(path + [str(key)]), a[key], b[key])
+                        ".".join(path + [str(key)]), a[key], b[key]
+                    )
                 )
                 a[key] = b[key]
         else:
@@ -102,7 +105,7 @@ class SchemaTest(unittest.TestCase):
     def setUp(self):
         self.dictionary = gdcdictionary
         self.definitions = yaml.safe_load(
-            open(os.path.join(CUR_DIR, "schemas","_definitions.yaml"),"r")
+            open(os.path.join(CUR_DIR, "schemas","_definitions.yaml"), "r")
         )
 
     def test_schemas(self):
@@ -113,10 +116,10 @@ class SchemaTest(unittest.TestCase):
             print("Validating {}".format(path))
             doc = json.load(open(path, "r"))
             print(doc)
-            if type(doc) == dict:
+            if isinstance(doc, dict):
                 self.add_system_props(doc)
                 validate_entity(doc, self.dictionary.schema)
-            elif type(doc) == list:
+            elif isinstance(doc, list):
                 for entity in doc:
                     self.add_system_props(entity)
                     validate_entity(entity, self.dictionary.schema)
@@ -127,11 +130,11 @@ class SchemaTest(unittest.TestCase):
         for path in glob.glob(os.path.join(DATA_DIR, "invalid", "*.json")):
             print("Validating {}".format(path))
             doc = json.load(open(path, "r"))
-            if type(doc) == dict:
+            if isinstance(doc, dict):
                 self.add_system_props(doc)
                 with self.assertRaises(ValidationError):
                     validate_entity(doc, self.dictionary.schema)
-            elif type(doc) == list:
+            elif isinstance(doc, list):
                 for entity in doc:
                     self.add_system_props(entity)
                     with self.assertRaises(ValidationError):
@@ -152,11 +155,9 @@ class SchemaTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-
     ####################
     # Setup
     ####################
-
 
     parser = argparse.ArgumentParser(description="Validate JSON")
     parser.add_argument(
@@ -164,14 +165,14 @@ if __name__ == "__main__":
         metavar="file",
         type=argparse.FileType("r"),
         nargs="*",
-        help="json files to test if (in)valid"
+        help="json files to test if (in)valid",
     )
 
     parser.add_argument(
         "--invalid",
         action="store_true",
         default=False,
-        help="expect the files to be invalid instead of valid"
+        help="expect the files to be invalid instead of valid",
     )
 
     args = parser.parse_args()
@@ -189,23 +190,22 @@ if __name__ == "__main__":
             try:
                 print("CHECK if {0} is invalid:".format(f.name), end=" ")
                 print(type(doc))
-                if type(doc) == dict:
+                if isinstance(doc, dict):
                     validate_entity(doc, dictionary.schema)
-                elif type(doc) == list:
+                elif isinstance(doc, list):
                     for entity in doc:
                         validate_entity(entity, dictionary.schema)
                 else:
                     raise ValidationError("Invalid json")
             except ValidationError as e:
                 print("Invalid as expected.")
-                pass
             else:
                 raise Exception("Expected invalid, but validated.")
         else:
             print("CHECK if {0} is valid:".format(f.name), end=" ")
-            if type(doc) == dict:
+            if isinstance(doc, dict):
                 validate_entity(doc, dictionary.schema)
-            elif type(doc) == list:
+            elif isinstance(doc, list):
                 for entity in doc:
                     validate_entity(entity, dictionary.schema)
             else:
