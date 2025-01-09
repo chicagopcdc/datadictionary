@@ -25,14 +25,14 @@ from gdcdictionary import gdcdictionary
 
 def load_yaml_schema(path):
     """Load yaml schema"""
-    with open(path, "r", encoding="utf8") as f:
-        return yaml.safe_load(f)
+    with open(path, "r", encoding="utf8") as schema_file:
+        return yaml.safe_load(schema_file)
 
 
 CUR_DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_DIR = os.path.join(CUR_DIR, "examples")
 project1 = load_yaml_schema(os.path.join(CUR_DIR, "schemas/projects/project1.yaml"))
-DEFAULT_PROJECTS = {"project1": project1}
+TEST_PROJECTS = {"project1": project1}
 
 
 def merge_schemas(schema_a, schema_b, path=None):
@@ -62,19 +62,22 @@ def get_project_specific_schema(projects, project, schema, entity_type):
 
     """
     root = copy.deepcopy(schema)
-    project_overrides = projects.get(project)
-    if project_overrides:
-        overrides = project_overrides.get(entity_type)
-        if overrides:
-            merge_schemas(root, overrides, [entity_type])
+    if projects is not None:
+        project_overrides = projects.get(project)
+        if project_overrides:
+            overrides = project_overrides.get(entity_type)
+            if overrides:
+                merge_schemas(root, overrides, [entity_type])
     return root
 
 
-def validate_entity(entity, schemata, project=None, projects=DEFAULT_PROJECTS):
+def validate_entity(entity, schemata, project=None, projects=None):
     """Validate an entity by looking up the core schema for its type and
     overriding it with any project level overrides
 
     """
+    if not projects:
+        projects = TEST_PROJECTS
     local_schema = get_project_specific_schema(
         projects, project, schemata[entity["type"]], entity["type"]
     )
@@ -88,33 +91,41 @@ def validate_schemata(schemata, metaschema):
     for schema_value in schemata.values():
         validate(schema_value, metaschema)
         s_id = schema_value["id"]
+        schema_properties = schema_value["properties"]
 
-        def assert_link_is_also_prop(link, s_id):
+        def assert_link_is_also_prop(link, properties, s_id):
             assert (
-                link in schema_value["properties"]
+                link in properties
             ), f"Entity '{s_id}' has '{link}' as a link but not property"
 
         for link in [
-            schema_link ["name"] for schema_link in schema_value["links"] if "name" in schema_link 
+            schema_link ["name"]
+            for schema_link in schema_value["links"]
+            if "name" in schema_link
         ]:
-            assert_link_is_also_prop(link, s_id)
+            assert_link_is_also_prop(link, schema_properties, s_id)
         for subgroup in [
-            schema_link["subgroup"] for schema_link  in schema_value["links"] if "name" not in schema_link
+            schema_link["subgroup"]
+            for schema_link  in schema_value["links"]
+            if "name" not in schema_link
         ]:
-            for link in [link_subgroup["name"] for link_subgroup in subgroup if "name" in link_subgroup]:
-                assert_link_is_also_prop(link, s_id)
+            for link in [
+                link_subgroup["name"]
+                for link_subgroup in subgroup
+                if "name" in link_subgroup
+            ]:
+                assert_link_is_also_prop(link, schema_properties, s_id)
 
 
 class SchemaTest(unittest.TestCase):
     def setUp(self):
         self.dictionary = gdcdictionary
-        self.definitions = yaml.safe_load(
-            open(
+        with open(
                 os.path.join(CUR_DIR, "schemas", "_definitions.yaml"),
                 "r",
                 encoding="utf8",
-            )
-        )
+        ) as def_file:
+            self.definitions = yaml.safe_load(def_file)
 
     def test_schemas(self):
         """Validate schema against metaschema"""
