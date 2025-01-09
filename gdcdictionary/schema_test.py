@@ -25,7 +25,7 @@ from gdcdictionary import gdcdictionary
 
 def load_yaml_schema(path):
     """Load yaml schema"""
-    with open(path, "r") as f:
+    with open(path, "r", encoding="utf8") as f:
         return yaml.safe_load(f)
 
 
@@ -35,26 +35,25 @@ project1 = load_yaml_schema(os.path.join(CUR_DIR, "schemas/projects/project1.yam
 projects = {"project1": project1}
 
 
-def merge_schemas(a, b, path=None):
+def merge_schemas(schema_a, schema_b, path=None):
     """Recursively zip schemas together"""
     path = path if path is not None else []
-    for key in b:
-        if key in a:
-            if isinstance(a[key], dict) and isinstance(b[key], dict):
-                merge_schemas(a[key], b[key], path + [str(key)])
-            elif a[key] == b[key]:
+    for key in schema_b:
+        path_to_key = ".".join(path + [str(key)])
+        if key in schema_a:
+            if isinstance(schema_a[key], dict) and isinstance(schema_b[key], dict):
+                merge_schemas(schema_a[key], schema_b[key], path + [str(key)])
+            elif schema_a[key] == schema_b[key]:
                 pass
             else:
                 print(
-                    "Overriding '{}':\n\t- {}\n\t+ {}".format(
-                        ".".join(path + [str(key)]), a[key], b[key]
-                    )
+                    f"Overriding '{path_to_key}':\n\t- {schema_a[key]}\n\t+ {schema_b[key]}"
                 )
-                a[key] = b[key]
+                schema_a[key] = schema_b[key]
         else:
-            print("Adding '{}':\n\t+ {}".format(".".join(path + [str(key)]), b[key]))
-            a[key] = b[key]
-    return a
+            print(f"Adding '{path_to_key}':\n\t+ {schema_b[key]}")
+            schema_a[key] = schema_b[key]
+    return schema_a
 
 
 def get_project_specific_schema(projects, project, schema, entity_type):
@@ -88,11 +87,11 @@ def validate_schemata(schemata, metaschema):
     print("Validating schemas against metaschema... ", end=" ")
     for s in schemata.values():
         validate(s, metaschema)
-
+        s_id = s["id"]
         def assert_link_is_also_prop(link):
             assert (
                 link in s["properties"]
-            ), "Entity '{}' has '{}' as a link but not property".format(s["id"], link)
+            ), f"Entity '{s_id}' has '{link}' as a link but not property"
 
         for link in [l["name"] for l in s["links"] if "name" in l]:
             assert_link_is_also_prop(link)
@@ -105,16 +104,18 @@ class SchemaTest(unittest.TestCase):
     def setUp(self):
         self.dictionary = gdcdictionary
         self.definitions = yaml.safe_load(
-            open(os.path.join(CUR_DIR, "schemas","_definitions.yaml"), "r")
+            open(os.path.join(CUR_DIR, "schemas", "_definitions.yaml"), "r", encoding="utf8")
         )
 
     def test_schemas(self):
+        """Validate schema against metaschema"""
         validate_schemata(self.dictionary.schema, self.dictionary.metaschema)
 
     def test_valid_files(self):
+        """Test files that are expected to be valid"""
         for path in glob.glob(os.path.join(DATA_DIR, "valid", "*.json")):
-            print("Validating {}".format(path))
-            doc = json.load(open(path, "r"))
+            print(f"Validating {path}")
+            doc = json.load(open(path, "r", encoding="utf8"))
             print(doc)
             if isinstance(doc, dict):
                 self.add_system_props(doc)
@@ -127,9 +128,10 @@ class SchemaTest(unittest.TestCase):
                 raise Exception("Invalid json")
 
     def test_invalid_files(self):
+        """Test files that are expected to be invalid"""
         for path in glob.glob(os.path.join(DATA_DIR, "invalid", "*.json")):
-            print("Validating {}".format(path))
-            doc = json.load(open(path, "r"))
+            print(f"Validating {path}")
+            doc = json.load(open(path, "r", encoding="utf8"))
             if isinstance(doc, dict):
                 self.add_system_props(doc)
                 with self.assertRaises(ValidationError):
@@ -143,6 +145,7 @@ class SchemaTest(unittest.TestCase):
                 raise Exception("Invalid json")
 
     def add_system_props(self, doc):
+        """Add system props"""
         schema = self.dictionary.schema[doc["type"]]
         for key in schema["systemProperties"]:
             use_def_default = (
@@ -188,8 +191,7 @@ if __name__ == "__main__":
         doc = json.load(f)
         if args.invalid:
             try:
-                print("CHECK if {0} is invalid:".format(f.name), end=" ")
-                print(type(doc))
+                print(f"CHECK if {f.name} is valid:", end=" ")
                 if isinstance(doc, dict):
                     validate_entity(doc, dictionary.schema)
                 elif isinstance(doc, list):
@@ -202,7 +204,7 @@ if __name__ == "__main__":
             else:
                 raise Exception("Expected invalid, but validated.")
         else:
-            print("CHECK if {0} is valid:".format(f.name), end=" ")
+            print(f"CHECK if {f.name} is valid:", end=" ")
             if isinstance(doc, dict):
                 validate_entity(doc, dictionary.schema)
             elif isinstance(doc, list):
