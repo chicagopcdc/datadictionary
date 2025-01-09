@@ -14,11 +14,10 @@ import glob
 import json
 import os
 import unittest
+
 import yaml
-
-from jsonschema import validate, ValidationError
-
 from gdcdictionary import gdcdictionary
+from jsonschema import validate, ValidationError
 
 
 def load_yaml_schema(path):
@@ -219,7 +218,7 @@ if __name__ == "__main__":
                         validate_entity(entity, dictionary.schema)
                 else:
                     raise ValidationError("Invalid json")
-            except ValidationError as e:
+            except ValidationError:
                 print("Invalid as expected.")
             else:
                 raise ValueError("Expected invalid, but validated.")
