@@ -8,8 +8,6 @@ Examples are at the end.
 
 """
 
-from __future__ import print_function
-
 import argparse
 import copy
 import glob
@@ -99,14 +97,14 @@ def validate_schemata(schemata, metaschema):
             ), f"Entity '{s_id}' has '{link}' as a link but not property"
 
         for link in [
-            schema_link ["name"]
+            schema_link["name"]
             for schema_link in schema_value["links"]
             if "name" in schema_link
         ]:
             assert_link_is_also_prop(link, schema_properties, s_id)
         for subgroup in [
             schema_link["subgroup"]
-            for schema_link  in schema_value["links"]
+            for schema_link in schema_value["links"]
             if "name" not in schema_link
         ]:
             for link in [
@@ -121,9 +119,9 @@ class SchemaTest(unittest.TestCase):
     def setUp(self):
         self.dictionary = gdcdictionary
         with open(
-                os.path.join(CUR_DIR, "schemas", "_definitions.yaml"),
-                "r",
-                encoding="utf8",
+            os.path.join(CUR_DIR, "schemas", "_definitions.yaml"),
+            "r",
+            encoding="utf8",
         ) as def_file:
             self.definitions = yaml.safe_load(def_file)
 
@@ -135,7 +133,8 @@ class SchemaTest(unittest.TestCase):
         """Test files that are expected to be valid"""
         for path in glob.glob(os.path.join(DATA_DIR, "valid", "*.json")):
             print(f"Validating {path}")
-            doc = json.load(open(path, "r", encoding="utf8"))
+            with open(path, "r", encoding="utf8") as json_file:
+                doc = json.load(json_file)
             print(doc)
             if isinstance(doc, dict):
                 self.add_system_props(doc)
@@ -151,7 +150,8 @@ class SchemaTest(unittest.TestCase):
         """Test files that are expected to be invalid"""
         for path in glob.glob(os.path.join(DATA_DIR, "invalid", "*.json")):
             print(f"Validating {path}")
-            doc = json.load(open(path, "r", encoding="utf8"))
+            with open(path, "r", encoding="utf8") as json_file:
+                doc = json.load(json_file)
             if isinstance(doc, dict):
                 self.add_system_props(doc)
                 with self.assertRaises(ValidationError):
