@@ -32,7 +32,7 @@ def load_yaml_schema(path):
 CUR_DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_DIR = os.path.join(CUR_DIR, "examples")
 project1 = load_yaml_schema(os.path.join(CUR_DIR, "schemas/projects/project1.yaml"))
-projects = {"project1": project1}
+DEFAULT_PROJECTS = {"project1": project1}
 
 
 def merge_schemas(schema_a, schema_b, path=None):
@@ -70,7 +70,7 @@ def get_project_specific_schema(projects, project, schema, entity_type):
     return root
 
 
-def validate_entity(entity, schemata, project=None, name=""):
+def validate_entity(entity, schemata, project=None, projects=DEFAULT_PROJECTS):
     """Validate an entity by looking up the core schema for its type and
     overriding it with any project level overrides
 
@@ -85,26 +85,35 @@ def validate_entity(entity, schemata, project=None, name=""):
 def validate_schemata(schemata, metaschema):
     """Validate schemata"""
     print("Validating schemas against metaschema... ", end=" ")
-    for s in schemata.values():
-        validate(s, metaschema)
-        s_id = s["id"]
-        def assert_link_is_also_prop(link):
+    for schema_value in schemata.values():
+        validate(schema_value, metaschema)
+        s_id = schema_value["id"]
+
+        def assert_link_is_also_prop(link, s_id):
             assert (
-                link in s["properties"]
+                link in schema_value["properties"]
             ), f"Entity '{s_id}' has '{link}' as a link but not property"
 
-        for link in [l["name"] for l in s["links"] if "name" in l]:
-            assert_link_is_also_prop(link)
-        for subgroup in [l["subgroup"] for l in s["links"] if "name" not in l]:
-            for link in [l["name"] for l in subgroup if "name" in l]:
-                assert_link_is_also_prop(link)
+        for link in [
+            schema_link ["name"] for schema_link in schema_value["links"] if "name" in schema_link 
+        ]:
+            assert_link_is_also_prop(link, s_id)
+        for subgroup in [
+            schema_link["subgroup"] for schema_link  in schema_value["links"] if "name" not in schema_link
+        ]:
+            for link in [link_subgroup["name"] for link_subgroup in subgroup if "name" in link_subgroup]:
+                assert_link_is_also_prop(link, s_id)
 
 
 class SchemaTest(unittest.TestCase):
     def setUp(self):
         self.dictionary = gdcdictionary
         self.definitions = yaml.safe_load(
-            open(os.path.join(CUR_DIR, "schemas", "_definitions.yaml"), "r", encoding="utf8")
+            open(
+                os.path.join(CUR_DIR, "schemas", "_definitions.yaml"),
+                "r",
+                encoding="utf8",
+            )
         )
 
     def test_schemas(self):
@@ -125,7 +134,7 @@ class SchemaTest(unittest.TestCase):
                     self.add_system_props(entity)
                     validate_entity(entity, self.dictionary.schema)
             else:
-                raise Exception("Invalid json")
+                raise ValueError("Invalid json")
 
     def test_invalid_files(self):
         """Test files that are expected to be invalid"""
@@ -142,7 +151,7 @@ class SchemaTest(unittest.TestCase):
                     with self.assertRaises(ValidationError):
                         validate_entity(entity, self.dictionary.schema)
             else:
-                raise Exception("Invalid json")
+                raise ValueError("Invalid json")
 
     def add_system_props(self, doc):
         """Add system props"""
@@ -202,7 +211,7 @@ if __name__ == "__main__":
             except ValidationError as e:
                 print("Invalid as expected.")
             else:
-                raise Exception("Expected invalid, but validated.")
+                raise ValueError("Expected invalid, but validated.")
         else:
             print(f"CHECK if {f.name} is valid:", end=" ")
             if isinstance(doc, dict):
