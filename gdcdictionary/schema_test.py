@@ -17,7 +17,7 @@ import unittest
 
 import yaml
 from gdcdictionary import gdcdictionary
-from jsonschema import validate, ValidationError
+from jsonschema import ValidationError, validate
 
 
 def load_yaml_schema(path):
