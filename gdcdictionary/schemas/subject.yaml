@@ -73,36 +73,37 @@ properties:
     enum:
       - AIEOP
       - BFM-SG
+      - CCLG
       - COG
+      - CRCTU
+      - CWS
       - DCOG
+      - DFCI
+      - EpSSG
+      - EURO-EWING
+      - FSG
+      - GPLP
+      - GPOH
+      - ICG
+      - ISG
+      - JACLS
+      - JCCG
+      - JNBSG
+      - JPLSG
+      - MMT
       - MRC
       - NOPHO
-      - PPLLSG
-      - SJCRH
-      - CCLG
       - NRG-Oncology
-      - Utah-Huntsman
-      - GPOH
-      - SSG
-      - FSG
-      - UK
-      - EURO-EWING
-      - ISG
-      - CRCTU
-      - University College of London
-      - JACLS
-      - JPLSG
+      - PPLLSG
       - SFCE
-      - SOPOBE 
-      - DFCI
-      - JNBSG
-      - SIOPEN
-      - MMT
-      - EpSSG
       - SIOP MMT
-      - ICG
-      - CWS
-      - JCCG
+      - SIOPEN
+      - SJCRH
+      - SOPOBE 
+      - SSG
+      - UK
+      - University College of London
+      - Utah-Huntsman
   censor_status:
     description: "Censor Status"
     enum:
@@ -110,7 +111,7 @@ properties:
       - "Subject has had one or more events"
       - Unknown
   age_at_censor_status:
-    description: "Age of subject (in days) when the subject enrolled in the study."
+    description: "The age (in days) of the subject at the time of the event censor status."
     type:
       - number
 

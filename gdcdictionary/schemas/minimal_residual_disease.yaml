@@ -146,6 +146,8 @@ properties:
       - t(3;12)(q23;p12.3)(ETV6/EVI1)
       - t(3;3)(q21;q26.2)
       - t(3;5)(q25;q34)NPM1/MLF1
+      - t(3;5)(q25;q34)NPM1/MLF2
+      - t(3;5)(q25;q34)NPM1/MLF3
       - t(4;11)(q21;q23) / MLL-MLLT2(AF4)
       - t(5;11)(q35;p15) NSD1/NUP98
       - t(6;11)(q27;q23) / MLL-MLLT4(AF6)
