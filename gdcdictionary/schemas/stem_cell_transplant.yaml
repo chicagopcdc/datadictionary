@@ -168,7 +168,13 @@ properties:
     description: "Number of Stem Cells Given in SCT Apheresis (10^6 CD34+/kg)"
     type:
       - number
-
+  transplant_performed:
+    description:
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+  
 
   timings:
     $ref: "_definitions.yaml#/to_one" 
