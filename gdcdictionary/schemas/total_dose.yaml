@@ -102,6 +102,7 @@ properties:
       - Daunorubicin (Liposomal)
       - Daunorubicin and Cytarabine (Liposomal)
       - Dexamethasone
+      - Dinutuximab-beta
       - Doxorubicin
       - Etoposide
       - Etoposide Phosphate
@@ -114,6 +115,7 @@ properties:
       - Ifosfamide
       - Melphalan
       - Methotrexate
+      - MIBG
       - Midostaurin
       - Mitoxantrone
       - Mylotarg
@@ -170,7 +172,18 @@ properties:
       - Medication Not Administered
       - Unknown
       - Not Reported
-
+  regimen:
+    description:
+    enum:
+      - GPOH Induction
+      - COJEC
+      - N7
+      - COJEC+TVD
+      - Other
+  regimen_other:
+    description:
+      type:
+        - string
 
   timings:
     $ref: "_definitions.yaml#/to_one" 
