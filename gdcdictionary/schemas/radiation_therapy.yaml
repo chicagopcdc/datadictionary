@@ -140,8 +140,8 @@ properties:
       - Photon Stereotactic Body Radiation Therapy
       - Proton
       - Proton Stereotactic Body Radiation Therapy
-      - Unknown
       - Other
+      - Unknown
       - Not Reported
   rt_dose:
     description: "Total radiation dose"
@@ -190,11 +190,9 @@ properties:
       - Pre-operative
       - Post-operative
       - None
+      - Other
       - Unknown
       - Not Reported
-
-
-
   
 
   timings:
