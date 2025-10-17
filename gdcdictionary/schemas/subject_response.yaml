@@ -69,6 +69,14 @@ properties:
       - Other
       - Unknown
       - Not Reported
+  mibg_score:
+    description:
+    type:
+      - number
+  mibg_score_type:
+    description:
+    enum:
+      - MIBG SIOPEN Score
   tx_prior_response:
     description: "Treatment type prior to response assessment"
     enum:
@@ -88,6 +96,7 @@ properties:
     description: "Description of the subject's response" 
     enum:
       - Complete Response
+      - Minor Response
       - Mixed Response
       - Non-Response
       - Not Applicable
@@ -119,11 +128,12 @@ properties:
   response_criteria:
     description: ""
     enum:
-      - RECIST
-      - WHO
       - Choi
+      - INRC Park 2017
       - mRECIST
       - PERCIST
+      - RECIST
+      - WHO
       - Unknown
       - Not Reported
   response_criteria_version:
