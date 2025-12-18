@@ -334,8 +334,27 @@ properties:
       - Delayed
       - Unknown
       - Not Reported
-
-
+  mass_present:
+    description: "Is there a mass present at the time of surgery?"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Applicable
+  viable_tumor_margin:
+    description: "Is there viable tumor at the margin at the time of surgery?"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Applicable
+  viable_tumor_specimen:
+    description: "Is there viable tumor in the specimen at the time of surgery?"
+    enum:
+      - "No"
+      - "Yes"
+      - Unknown
+      - Not Applicable
 
 
   timings:
