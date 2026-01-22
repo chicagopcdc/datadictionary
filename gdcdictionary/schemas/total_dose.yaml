@@ -182,8 +182,8 @@ properties:
       - Other
   regimen_other:
     description:
-      type:
-        - string
+    type:
+      - string
 
   timings:
     $ref: "_definitions.yaml#/to_one" 
